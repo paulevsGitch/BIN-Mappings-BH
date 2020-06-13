@@ -5,7 +5,7 @@ BIN (Boring Instructive Names) is a set of less cursed Plasma mappings for beta 
 
 The gradle used for this is mostly still based of yarn's, so improvements to the gradle tasks are welcome.
 
-[Maintainers](maintainers.md)
+[Maintainers](MAINTAINERS.md)
 
 ## Usage
 To use yarn-deobfuscated Minecraft for Minecraft modding or as a dependency in a Java project, you can use [loom](https://github.com/fabricmc/fabric-loom) Gradle plugin. See [fabric wiki tutorial](https://fabricmc.net/wiki/tutorial:setup) for more information.
@@ -18,7 +18,7 @@ Alternatively, use the functions provided by enigma to decompile
 Please remember that copying and pasting mappings from alternate projects under more restrictive licenses (such as the real MCP) is **completely forbidden** without explicit permission from the 
 owners of said mappings.
 
-When contributing remember to [read the conventions](conventions.md).
+When contributing remember to [read the conventions](CONVENTIONS.md).
 
 To contribute, fork the project and clone it locally, and use  Enigma to map the jar. Then push to your fork and submit a pull request.
 

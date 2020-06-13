@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_617 net/minecraft/client/sound/SoundHelper
 	FIELD field_2667 soundSystem Lpaulscode/sound/SoundSystem;
+	FIELD field_2668 soundMapMusic Lnet/minecraft/class_266;
+	FIELD field_2669 soundMapSounds Lnet/minecraft/class_266;
+	FIELD field_2670 soundMapStreaming Lnet/minecraft/class_266;
 	FIELD field_2672 gameOptions Lnet/minecraft/class_322;
 	FIELD field_2674 rand Ljava/util/Random;
 	METHOD method_2009 playSound (Ljava/lang/String;FF)V
@@ -9,3 +12,4 @@ CLASS net/minecraft/class_617 net/minecraft/client/sound/SoundHelper
 		ARG 1 entity
 	METHOD method_2015 playSound (Ljava/lang/String;FFFFF)V
 	METHOD method_2017 playBackgroundMusic ()V
+	METHOD method_2019 setLibsAndCodecs ()V

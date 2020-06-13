@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_177 net/minecraft/item/Door
+	FIELD field_617 material Lnet/minecraft/class_15;

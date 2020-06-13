@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_226 net/minecraft/entity/FallingTile
-	FIELD field_847 tile I
-	METHOD method_769 getFallingLevel ()Lnet/minecraft/class_18;

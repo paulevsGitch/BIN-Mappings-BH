@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_23 net/minecraft/achievement/Achievements
+	FIELD field_108 displayMinColumn I
+	FIELD field_109 displayMinRow I
+	FIELD field_110 displayMaxColumn I
+	FIELD field_111 displayMaxRow I
 	FIELD field_112 ACHIEVEMENTS Ljava/util/List;
 	FIELD field_113 OPEN_INVENTORY Lnet/minecraft/class_24;
 	FIELD field_114 MINE_WOOD Lnet/minecraft/class_24;

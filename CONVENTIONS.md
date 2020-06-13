@@ -1,15 +1,21 @@
 # Conventions:
 
+## These conventions are likely to change a fair bit during mapping, so be sure to check back to make sure nothing has changed.
+
 1. Use British English.
 
-2. Use concise names. e.g. `Creeper` instead of `CreeperEntity`
+2. Use concise names where it is sensible. (e.g: `net.minecraft.entity.Creeper` instead of `EntityCreeper`)
 
-    2a. Where concise names such as `Bed` could be multiple things, use the concise name for what the name is used to reference most often (In this case "Bed" is mostly thought of as a tile/block, so it is given to that)
+    2a. If a class extends a built-in java class (e.g: `SessionValidator` becomes `ThreadSessionValidator`)
 
-    2b. Where the concise name is better used / already used for another class, append the type to the end. e.g. Bed: (the tile is "Bed", the itemtype is "BedItem", and the entity is "BedEntity")
+    2b. If a class is generally only used in other classes, append `Base` to the end. (e.g: `Item` becomes `ItemBase`)
 
-3. Use outdated, cursed Mojang names where applicable. e.g Tile instead of Block
+    2c. If a class is for rendering, it should have `Renderer` appended. (e.g: `Wolf` becomes `WolfRenderer`)
 
-4. The mappings are cursed. Feel free to make cursed names where appropriate
+    2d. If a class is an interface, append `I` to the start. (e.g: `Block` becomes `IBlock`)
 
-5. Notwithstanding these rules, the name must still make some sense
+3. Use sensible, MCP-esque names.
+
+4. Everything should be in a suitibly named package. (e.g: `Creeper` belongs in `net.minecraft.entity.mob`, `ItemBed` belongs in `net.minecraft.item`)
+
+    4a. If a class inherits a minecraft class and has `Base` appended, it belongs in the package of the class it inherits from. Exception if a class is different enough to warrant a new package for it.

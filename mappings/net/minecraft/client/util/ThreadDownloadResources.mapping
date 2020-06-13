@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_28 net/minecraft/client/util/ThreadDownloadResources
+	FIELD field_137 workingDirectory Ljava/io/File;

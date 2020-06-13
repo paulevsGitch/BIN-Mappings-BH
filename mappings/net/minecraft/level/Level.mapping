@@ -68,6 +68,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tileId
+	METHOD method_201 placeBlockWithMetaData (IIIII)Z
 	METHOD method_210 spawnEntity (Lnet/minecraft/class_57;)Z
 	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
 	METHOD method_214 getChunkFromCache (II)Lnet/minecraft/class_43;

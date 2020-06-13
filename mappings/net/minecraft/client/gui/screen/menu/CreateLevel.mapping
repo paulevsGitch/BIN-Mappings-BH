@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_180 net/minecraft/client/gui/screen/menu/CreateLevel
+	FIELD field_631 parent Lnet/minecraft/class_32;
+	METHOD method_608 addButtons ()V

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_266 net/minecraft/util/SoundMap
+	FIELD field_1088 rand Ljava/util/Random;

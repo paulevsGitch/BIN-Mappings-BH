@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_142 net/minecraft/entity/Item
+	FIELD field_564 item Lnet/minecraft/class_31;
+	FIELD field_565 age I
+	FIELD field_566 pickupDelay I
+	FIELD field_569 health I

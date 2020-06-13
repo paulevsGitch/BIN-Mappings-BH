@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_585 net/minecraft/client/gui/screen/container/PlayerInventoryScreen
-	FIELD field_2523 mouseX F
-	FIELD field_2524 mouseY F

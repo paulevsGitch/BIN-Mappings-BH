@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_138 net/minecraft/tileentity/TileEntityFurnace
+	FIELD field_1566 burnTime I
+	FIELD field_1567 fuelTime I
+	FIELD field_1568 cookTime I
+	FIELD field_1569 contents [Lnet/minecraft/class_31;
+	METHOD method_1280 getFuelTime (Lnet/minecraft/class_31;)I
+	METHOD method_1281 isBurning ()Z
+	METHOD method_1282 craftRecipe ()V
+	METHOD method_1283 canAcceptRecipeOutput ()Z

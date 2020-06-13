@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_20 net/minecraft/client/render/particle/Note
+	METHOD <init> (Lnet/minecraft/class_18;DDDDDDF)V
+		ARG 1 level

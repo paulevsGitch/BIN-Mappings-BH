@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_469 net/minecraft/block/MovingPiston
+	METHOD <init> (I)V
+		ARG 1 id

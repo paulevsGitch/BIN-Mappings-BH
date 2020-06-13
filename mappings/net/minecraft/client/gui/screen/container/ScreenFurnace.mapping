@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_524 net/minecraft/client/gui/screen/container/ScreenFurnace
+	FIELD field_2191 entity Lnet/minecraft/class_138;

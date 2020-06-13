@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_130 net/minecraft/util/ImageDownloadThread
+	FIELD field_492 image Ljava/awt/image/BufferedImage;

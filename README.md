@@ -1,10 +1,11 @@
-# Plasma (originally Minecraft Cursed POMF)
+# BIN Mappings
+## Less cursed Plasma Mappings
 
-Plasma is a set of mappings for legacy minecraft versions.
+BIN (Boring Instructive Names) is a set of less cursed Plasma mappings for beta 1.7.3.
 
 The gradle used for this is mostly still based of yarn's, so improvements to the gradle tasks are welcome.
 
-To see the current version being targetted, check the branch name!
+[Maintainers](maintainers.md)
 
 ## Usage
 To use yarn-deobfuscated Minecraft for Minecraft modding or as a dependency in a Java project, you can use [loom](https://github.com/fabricmc/fabric-loom) Gradle plugin. See [fabric wiki tutorial](https://fabricmc.net/wiki/tutorial:setup) for more information.
@@ -17,24 +18,25 @@ Alternatively, use the functions provided by enigma to decompile
 Please remember that copying and pasting mappings from alternate projects under more restrictive licenses (such as the real MCP) is **completely forbidden** without explicit permission from the 
 owners of said mappings.
 
-When contributing remember to read the conventions (Conventions.md).
+When contributing remember to [read the conventions](conventions.md).
 
-To contribute, fork the project and clone it locally, and use enigma to map the jar. Then push to your fork and submit a pull request.
+To contribute, fork the project and clone it locally, and use  Enigma to map the jar. Then push to your fork and submit a pull request.
 
 **Anyone** can comment and suggest changes on pull requests. We want to make sure the mappings are the best quality, so make your voice known!
-### Getting Started
 
-MCPomf started as a yarn fork, so tasks currently still reference yarn.
+# Getting Started
+
+MCPomf (now Plasma) started as a yarn fork, so tasks currently still reference yarn.
 
 1. Fork and clone the repo
 2. Run `./gradlew yarn` (Linux, macOS) or `.\gradlew yarn` (Windows)
 3. Profit
 
 ## Gradle
-MCPomf uses Gradle to provide a number of utility tasks for working with the mappings.
+This uses Gradle to provide a number of utility tasks for working with the mappings.
 
 ### `yarn`
-[`setupYarn`](#setupYarn) and download and launch the latest version of Fabric's fork of [Enigma](https://github.com/FabricMC/Enigma)
+Runs [`setupYarn`](#setupYarn) and downloads and launches the latest version of Fabric's fork of [Enigma](https://github.com/FabricMC/Enigma) with the mappings and jars pre-loaded for editing.
 
 Compared to launching Enigma externally, the gradle task adds a name guesser plugin that automatically map enums and a few constant field names.
 
@@ -48,4 +50,4 @@ Builds a deobfuscated jar with yarn mappings and automapped fields (enums, etc.)
 Downloads the client and server Minecraft jars for the current Minecraft version to `.gradle/minecraft`
 
 ### `setupYarn`
-[`download`](#download)
+Runs [`download`](#download) and does some things to make yarn work.

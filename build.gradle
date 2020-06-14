@@ -31,10 +31,8 @@ plugins {
 def minecraft_version = "b1.7.3"
 
 def ENV = System.getenv()
-//def build_number = ENV.BUILD_NUMBER ?: "local"
-def build_number = 1
 
-def yarnVersion = "${minecraft_version}+build.$build_number"
+def yarnVersion = "${minecraft_version}+commit+${getGitHash()}"
 
 
 repositories {
@@ -108,6 +106,15 @@ import net.fabricmc.tinyremapper.MemberInstance
 
 import java.util.concurrent.TimeUnit
 import java.util.zip.GZIPOutputStream
+
+String getGitHash() {
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'rev-parse', '--short', 'HEAD'
+        standardOutput = stdout
+    }
+    return stdout.toString().trim()
+}
 
 boolean validateChecksum(File file, String checksum) {
 	if (file != null) {

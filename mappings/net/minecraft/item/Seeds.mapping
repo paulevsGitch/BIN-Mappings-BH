@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_380 net/minecraft/item/Seeds
 	FIELD field_1430 cropTileId I
+	METHOD <init> (II)V
+		ARG 1 id

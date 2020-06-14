@@ -91,7 +91,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1911 REDSTONE_REPEATER_LIT Lnet/minecraft/class_17;
 	FIELD field_1912 LOCKED_CHEST Lnet/minecraft/class_17;
 	FIELD field_1913 TRAPDOOR Lnet/minecraft/class_17;
-	FIELD field_1914 tex I
+	FIELD field_1914 texture I
 	FIELD field_1915 id I
 	FIELD field_1916 hardness F
 	FIELD field_1917 resistance F

@@ -38,6 +38,9 @@ CLASS net/minecraft/class_57 net/minecraft/entity/EntityBase
 	FIELD field_1647 fire I
 	FIELD field_1652 skinUrl Ljava/lang/String;
 	FIELD field_1653 cloakUrl Ljava/lang/String;
+	FIELD field_1654 clientX I
+	FIELD field_1655 clientY I
+	FIELD field_1656 clientZ I
 	METHOD <init> (Lnet/minecraft/class_18;)V
 		ARG 1 level
 	METHOD equals (Ljava/lang/Object;)Z

@@ -7,14 +7,21 @@ CLASS net/minecraft/class_240 net/minecraft/network/PacketHandler
 	METHOD method_1438 (Lnet/minecraft/class_435;)V
 		ARG 1 packet
 	METHOD method_1440 handlePlayerHealthUpdate (Lnet/minecraft/class_36;)V
+	METHOD method_1441 handleLightning (Lnet/minecraft/class_45;)V
+	METHOD method_1443 handleEntityVelocity (Lnet/minecraft/class_119;)V
 	METHOD method_1444 handleLevelTimeUpdate (Lnet/minecraft/class_156;)V
 		ARG 1 packet
 	METHOD method_1446 handleScreenOpen (Lnet/minecraft/class_201;)V
 		ARG 1 packet
+	METHOD method_1451 handleOtherPlayerSpawn (Lnet/minecraft/class_272;)V
+	METHOD method_1453 handleWorldJoin (Lnet/minecraft/class_295;)V
+	METHOD method_1457 handleEntityTeleport (Lnet/minecraft/class_374;)V
 	METHOD method_1458 handleExplosion (Lnet/minecraft/class_382;)V
 		ARG 1 packet
 	METHOD method_1462 handleEntitySpawn (Lnet/minecraft/class_414;)V
 		ARG 1 packet
+	METHOD method_1465 handleEntityMetadata (Lnet/minecraft/class_438;)V
+	METHOD method_1466 handleEntityPainting (Lnet/minecraft/class_439;)V
 	METHOD method_1467 handleUpdateRain (Lnet/minecraft/class_440;)V
 	METHOD method_1469 (Lnet/minecraft/class_161;)V
 		ARG 1 packet

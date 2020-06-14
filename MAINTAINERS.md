@@ -1,7 +1,8 @@
 # BIN Mapping Maintainers
 - calmilamsy
+- Johnanater
 
-Contact the BIN Mapping maintainers on Modiciation Station: https://discord.gg/8Qky5XY
+Contact the BIN Mapping maintainers on Modification Station: https://discord.gg/8Qky5XY
 
 # Cursed Mapping Maintainers
 - Valoeghese

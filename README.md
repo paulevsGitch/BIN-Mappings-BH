@@ -1,9 +1,9 @@
 # BIN Mappings
 ## Less cursed Plasma Mappings
 
-BIN (Boring Instructive Names) is a set of less cursed Plasma mappings for beta 1.7.3.
+BIN (Boring Instructive Names) is a set of less cursed Plasma Mappings for beta 1.7.3.
 
-The gradle used for this is mostly still based of yarn's, so improvements to the gradle tasks are welcome.
+The Gradle used for this is mostly still based of Yarn's, so improvements to the Gradle tasks are welcome.
 
 [Maintainers](MAINTAINERS.md)
 

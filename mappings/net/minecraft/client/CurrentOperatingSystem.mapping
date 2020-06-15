@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_375 net/minecraft/client/CurrentOperatingSystem
+	FIELD field_1426 currentOperatingSystem [I

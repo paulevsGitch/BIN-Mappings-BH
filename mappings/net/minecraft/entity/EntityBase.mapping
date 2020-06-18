@@ -95,6 +95,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/EntityBase
 	METHOD method_1386 remove ()V
 	METHOD method_1387 isInsideWall ()Z
 	METHOD method_1389 handleFallDamage (F)V
+		ARG 1 height
 	METHOD method_1390 handleKilledEntity (Lnet/minecraft/class_127;)V
 	METHOD method_1391 onKilledOther (Lnet/minecraft/class_57;I)V
 	METHOD method_1394 getBrightnessAtEyes (F)F

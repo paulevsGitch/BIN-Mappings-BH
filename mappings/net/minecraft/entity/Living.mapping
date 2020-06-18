@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_127 net/minecraft/entity/Living
 	FIELD field_1019 texture Ljava/lang/String;
+	FIELD field_1022 type Ljava/lang/String;
 	FIELD field_1027 lastHandSwingProgress F
 	FIELD field_1031 jumping Z
 	FIELD field_1033 movementSpeed F
@@ -29,3 +30,4 @@ CLASS net/minecraft/class_127 net/minecraft/entity/Living
 	METHOD method_944 jump ()V
 	METHOD method_945 travel (FF)V
 	METHOD method_946 applyDamage (I)V
+		ARG 1 damageAmount

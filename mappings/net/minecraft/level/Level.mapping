@@ -109,6 +109,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 2 y
 		ARG 3 z
 	METHOD method_258 getSpawnPosition ()Lnet/minecraft/class_63;
+	METHOD method_259 getCache ()Lnet/minecraft/class_51;
 	METHOD method_260 removeTileEntity (III)V
 	METHOD method_262 getProperties ()Lnet/minecraft/class_7;
 	METHOD method_264 onPlayerDisconnect ()V

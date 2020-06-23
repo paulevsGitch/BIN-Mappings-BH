@@ -13,6 +13,14 @@ To use yarn-deobfuscated Minecraft for Minecraft modding or as a dependency in a
 To obtain a deobfuscated Minecraft jar, [`./gradlew mapNamedJar`](#mapNamedJar) will generate a jar named like `<minecraft version>-named.jar`, which can be sent to a decompiler for deobfuscated code.
 Alternatively, use the functions provided by enigma to decompile
 
+### Making a Mod
+
+You will want to use [BIN Example Mod](https://github.com/calmilamsy/BIN-fabric-example-mod).
+
+### Using a Mod
+
+You will want to use the [Cursed Fabric MultiMC Instance](https://github.com/calmilamsy/Cursed-Fabric-MultiMC)
+
 ## Contributing
 
 Please remember that copying and pasting mappings from alternate projects under more restrictive licenses (such as the real MCP) is **completely forbidden** without explicit permission from the 

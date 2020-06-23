@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_410 net/minecraft/entity/projectile/Arrow
-	FIELD field_1574 player Z
+	FIELD field_1574 spawnedByPlayer Z
 	FIELD field_1575 shake I
 	FIELD field_1576 owner Lnet/minecraft/class_127;
 	FIELD field_1577 xTile I

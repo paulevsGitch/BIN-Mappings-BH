@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_499 net/minecraft/entity/projectile/ThrownEgg
+CLASS net/minecraft/class_499 net/minecraft/entity/projectile/Egg
 	FIELD field_2038 shake I
 	FIELD field_2039 xTile I
 	FIELD field_2040 yTile I

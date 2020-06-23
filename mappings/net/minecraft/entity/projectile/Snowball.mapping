@@ -1,7 +1,7 @@
-CLASS net/minecraft/class_372 net/minecraft/entity/projectile/Snowball
-	FIELD field_2192 shake I
-	FIELD field_2197 xTile I
-	FIELD field_2198 yTile I
-	FIELD field_2199 zTile I
-	FIELD field_2200 inTile I
-	FIELD field_2201 inGround Z
+CLASS net/minecraft/class_484 net/minecraft/entity/projectile/Snowball
+	FIELD field_1990 shake I
+	FIELD field_1991 xTile I
+	FIELD field_1992 yTile I
+	FIELD field_1993 zTile I
+	FIELD field_1994 inTile I
+	FIELD field_1995 inGround Z

@@ -4,7 +4,7 @@ CLASS net/minecraft/class_24 net/minecraft/achievement/Achievement
 	FIELD field_1204 parent Lnet/minecraft/class_24;
 	FIELD field_1205 displayItem Lnet/minecraft/class_31;
 	FIELD field_1206 description Ljava/lang/String;
-	FIELD field_1207 unusual Z
+	FIELD field_1207 isUnusual Z
 	FIELD field_1208 descriptonFormat Lnet/minecraft/class_241;
 	METHOD <init> (ILjava/lang/String;IILnet/minecraft/class_124;Lnet/minecraft/class_24;)V
 		ARG 1 ID

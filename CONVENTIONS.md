@@ -8,11 +8,13 @@
 
     2a. If a class extends a built-in java class (e.g: `SessionValidator` becomes `ThreadSessionValidator`)
 
-    2b. If a class is generally only used in other classes, append `Base` to the end. (e.g: `Item` becomes `ItemBase`)
+    2b. If a class is generally only used for other classes to extend, append `Base` to the end. (e.g: `Item` becomes `ItemBase`)
 
     2c. If a class is for rendering, it should have `Renderer` appended. (e.g: `Wolf` becomes `WolfRenderer`)
 
     2d. If a class is an interface, append `I` to the start. (e.g: `Block` becomes `IBlock`)
+
+    2e. `World` (in MCP) should be called `Level` instead. (e.g: `WorldRenderer` becomes `LevelRenderer`)
 
 3. Use sensible, MCP-esque names.
 

@@ -149,6 +149,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 4 z
 	METHOD method_1569 emitsRedstonePower ()Z
 	METHOD method_1574 getPistonPushMode ()I
+	METHOD method_1575 getBlastResistance (Lnet/minecraft/class_57;)F
 	METHOD method_1578 setBoundingBox (FFFFFF)V
 		ARG 1 minX
 		ARG 2 minY
@@ -158,11 +159,12 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 6 maxZ
 	METHOD method_1580 sounds (Lnet/minecraft/class_475;)Lnet/minecraft/class_17;
 		ARG 1 sounds
-	METHOD method_1581 (Lnet/minecraft/class_18;IIILnet/minecraft/class_31;)V
+	METHOD method_1581 drop (Lnet/minecraft/class_18;IIILnet/minecraft/class_31;)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_1582 getHardness (Lnet/minecraft/class_54;)F
 	METHOD method_1583 setName (Ljava/lang/String;)Lnet/minecraft/class_17;
 	METHOD method_1584 setTicksRandomly (Z)Lnet/minecraft/class_17;
 		ARG 1 ticksRandomly
@@ -177,6 +179,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 3 y
 		ARG 4 z
 		ARG 5 meta
+	METHOD method_1593 init ()V
 	METHOD method_1594 setUnbreakable ()Lnet/minecraft/class_17;
 	METHOD method_1595 getHardness ()F
 	METHOD method_1596 getTranslatedName ()Ljava/lang/String;
@@ -194,7 +197,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 5 rand
 	METHOD method_1603 getDropCount (Ljava/util/Random;)I
 		ARG 1 rand
-	METHOD method_1606 onPlaced (Lnet/minecraft/class_18;IIII)V
+	METHOD method_1606 onTilePlaced (Lnet/minecraft/class_18;IIII)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -208,7 +211,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 3 y
 		ARG 4 z
 		ARG 5 player
-	METHOD method_1609 (Lnet/minecraft/class_18;IIII)V
+	METHOD method_1609 onAdjacentBlockUpdate (Lnet/minecraft/class_18;IIII)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -220,7 +223,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 3 y
 		ARG 4 z
 		ARG 5 player
-	METHOD method_1611 (Lnet/minecraft/class_18;III)V
+	METHOD method_1611 onTilePlaced (Lnet/minecraft/class_18;III)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -250,7 +253,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1625 beforeDestroyedByExplosion (Lnet/minecraft/class_18;IIIIF)V
+	METHOD method_1625 drop (Lnet/minecraft/class_18;IIIIF)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y

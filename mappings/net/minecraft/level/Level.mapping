@@ -97,10 +97,20 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 1 chunkX
 		ARG 2 chunkY
 	METHOD method_239 isTileLoaded (III)Z
+	METHOD method_244 updateAdjacentBlocks (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
 	METHOD method_249 isAboveGroundCached (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_253 updateAdjacentBlock (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
 	METHOD method_254 getSeed ()J
 	METHOD method_255 getLightLevel (III)I
 	METHOD method_256 getLevelTime ()J

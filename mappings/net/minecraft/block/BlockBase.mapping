@@ -136,7 +136,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 3 y
 		ARG 4 z
 		ARG 5 meta
-	METHOD method_1563 onTileAction (Lnet/minecraft/class_18;IIIII)V
+	METHOD method_1563 onBlockAction (Lnet/minecraft/class_18;IIIII)V
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -197,7 +197,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 5 rand
 	METHOD method_1603 getDropCount (Ljava/util/Random;)I
 		ARG 1 rand
-	METHOD method_1606 onTilePlaced (Lnet/minecraft/class_18;IIII)V
+	METHOD method_1606 onBlockPlaced (Lnet/minecraft/class_18;IIII)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -223,7 +223,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 3 y
 		ARG 4 z
 		ARG 5 player
-	METHOD method_1611 onTilePlaced (Lnet/minecraft/class_18;III)V
+	METHOD method_1611 onBlockPlaced (Lnet/minecraft/class_18;III)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -264,7 +264,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 1 side
 		ARG 2 meta
 	METHOD method_1628 afterBreak (Lnet/minecraft/class_18;Lnet/minecraft/class_54;IIII)V
-	METHOD method_1630 onTileRemoved (Lnet/minecraft/class_18;III)V
+	METHOD method_1630 onBlockRemoved (Lnet/minecraft/class_18;III)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y

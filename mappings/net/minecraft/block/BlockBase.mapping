@@ -116,6 +116,8 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 	FIELD field_1938 TICKS_RANDOMLY [Z
 	FIELD field_1939 FULL_OPAQUE [Z
 	FIELD field_1940 HAS_TILE_ENTITY [Z
+	FIELD field_1941 LIGHT_OPACITY [I
+	FIELD field_1943 EMITTANCE [I
 	FIELD field_1944 disableNotifyOnMetaDataChange [Z
 	FIELD field_1945 STONE Lnet/minecraft/class_17;
 	FIELD field_1946 GRASS Lnet/minecraft/class_476;
@@ -136,7 +138,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 3 y
 		ARG 4 z
 		ARG 5 meta
-	METHOD method_1563 onBlockAction (Lnet/minecraft/class_18;IIIII)V
+	METHOD method_1563 onTileAction (Lnet/minecraft/class_18;IIIII)V
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -253,7 +255,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1625 drop (Lnet/minecraft/class_18;IIIIF)V
+	METHOD method_1625 beforeDestroyedByExplosion (Lnet/minecraft/class_18;IIIIF)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y

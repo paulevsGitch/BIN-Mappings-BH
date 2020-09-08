@@ -12,6 +12,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/Living
 	FIELD field_1042 attackTime I
 	FIELD field_1049 limbDistance F
 	FIELD field_1059 despawnCounter I
+	METHOD method_909 getMonsterHeldItem ()Lnet/minecraft/class_31;
 	METHOD method_910 tickHandSwing ()V
 	METHOD method_911 getAmbientSound ()Ljava/lang/String;
 	METHOD method_912 getHurtSound ()Ljava/lang/String;
@@ -20,6 +21,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/Living
 	METHOD method_915 getSoundVolume ()F
 	METHOD method_916 getLimitPerChunk ()I
 	METHOD method_919 onSpawnedFromSpawner ()V
+	METHOD method_933 getDrops ()V
 	METHOD method_935 canSpawn ()Z
 	METHOD method_937 updateDespawnCounter ()V
 	METHOD method_938 onKilledBy (Lnet/minecraft/class_57;)V

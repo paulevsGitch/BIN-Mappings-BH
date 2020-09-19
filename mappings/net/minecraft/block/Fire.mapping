@@ -1,1 +1,12 @@
 CLASS net/minecraft/class_474 net/minecraft/block/Fire
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 texture
+	METHOD method_1823 (Lnet/minecraft/class_18;IIIILjava/util/Random;I)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1824 (Lnet/minecraft/class_14;III)Z
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

@@ -119,3 +119,4 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD method_2148 isSmoothLightingEnabled ()Z
 	METHOD method_2149 isDebugHudEnabled ()Z
 	METHOD method_2151 getOperatingSystem ()Lnet/minecraft/class_531;
+	METHOD method_2152 checkTakingScreenshot ()V

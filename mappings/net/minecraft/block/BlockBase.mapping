@@ -132,6 +132,10 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 	METHOD <init> (ILnet/minecraft/class_15;)V
 		ARG 1 id
 		ARG 2 material
+	METHOD method_1560 (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1561 canPlaceAt (Lnet/minecraft/class_18;IIII)Z
 		ARG 1 level
 		ARG 2 x
@@ -144,12 +148,24 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 4 z
 		ARG 5 blockMeta
 	METHOD method_1565 getTickrate ()I
+	METHOD method_1566 canGrow (Lnet/minecraft/class_18;III)Z
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1567 canPlaceAt (Lnet/minecraft/class_18;III)Z
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_1568 (Lnet/minecraft/class_14;IIII)Z
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1569 emitsRedstonePower ()Z
+	METHOD method_1570 (Lnet/minecraft/class_18;IIII)Z
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1574 getPistonPushMode ()I
 	METHOD method_1575 getBlastResistance (Lnet/minecraft/class_57;)F
 	METHOD method_1578 setBoundingBox (FFFFFF)V
@@ -188,6 +204,10 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 	METHOD method_1597 getName ()Ljava/lang/String;
 	METHOD method_1598 isStatEnabled ()Z
 	METHOD method_1599 disableStat ()Lnet/minecraft/class_17;
+	METHOD method_1600 getColor (Lnet/minecraft/class_14;III)I
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1601 getDropId (ILjava/util/Random;)I
 		ARG 1 meta
 		ARG 2 rand
@@ -207,7 +227,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 5 facing
 	METHOD method_1607 getTextureForSide (I)I
 		ARG 1 side
-	METHOD method_1608 (Lnet/minecraft/class_18;IIILnet/minecraft/class_54;)Z
+	METHOD method_1608 canUse (Lnet/minecraft/class_18;IIILnet/minecraft/class_54;)Z
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -237,6 +257,13 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 4 z
 	METHOD method_1614 afterPlaced (Lnet/minecraft/class_18;IIILnet/minecraft/class_127;)V
 	METHOD method_1615 onEntityCollision (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1616 (Lnet/minecraft/class_14;III)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1617 randomDisplayTick (Lnet/minecraft/class_18;IIILjava/util/Random;)V
 		ARG 1 level
 		ARG 2 x
@@ -262,10 +289,17 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 4 z
 		ARG 5 meta
 		ARG 6 dropChance
+	METHOD method_1626 (Lnet/minecraft/class_14;IIII)I
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1627 getTextureForSide (II)I
 		ARG 1 side
 		ARG 2 meta
 	METHOD method_1628 afterBreak (Lnet/minecraft/class_18;Lnet/minecraft/class_54;IIII)V
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
 	METHOD method_1630 onBlockRemoved (Lnet/minecraft/class_18;III)V
 		ARG 1 level
 		ARG 2 x

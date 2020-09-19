@@ -21,7 +21,10 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerBase
 	METHOD method_486 openChestScreen (Lnet/minecraft/class_134;)V
 	METHOD method_487 openFurnaceScreen (Lnet/minecraft/class_138;)V
 	METHOD method_488 increaseStat (Lnet/minecraft/class_139;I)V
+		ARG 2 amount
 	METHOD method_489 openSignScreen (Lnet/minecraft/class_140;)V
+	METHOD method_490 (Ljava/lang/String;)V
+		ARG 1 message
 	METHOD method_491 onItemPickup (Lnet/minecraft/class_57;I)V
 	METHOD method_492 respawn ()V
 	METHOD method_493 closeContainer ()V

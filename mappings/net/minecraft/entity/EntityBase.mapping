@@ -55,14 +55,26 @@ CLASS net/minecraft/class_57 net/minecraft/entity/EntityBase
 	METHOD method_1321 setSize (FF)V
 		ARG 1 width
 		ARG 2 height
+	METHOD method_1322 accelerate (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1323 interact (Lnet/minecraft/class_54;)Z
 	METHOD method_1324 movementInputToVelocity (FFF)V
 	METHOD method_1325 dropItem (IIF)Lnet/minecraft/class_142;
+		ARG 1 id
+		ARG 2 amount
+		ARG 3 damage
 	METHOD method_1327 dropItem (Lnet/minecraft/class_31;F)Lnet/minecraft/class_142;
+		ARG 1 item
+		ARG 2 height
 	METHOD method_1328 isInFluid (Lnet/minecraft/class_15;)Z
 	METHOD method_1331 getDataTracker ()Lnet/minecraft/class_216;
 	METHOD method_1333 isTouchingWater ()Z
+	METHOD method_1337 getStringId ()Ljava/lang/String;
 	METHOD method_1339 dropItem (II)Lnet/minecraft/class_142;
+		ARG 1 id
+		ARG 2 amount
 	METHOD method_1340 setPosition (DDD)V
 	METHOD method_1341 setPositionAndAngles (DDDFF)V
 	METHOD method_1342 setRotation (FF)V
@@ -98,4 +110,6 @@ CLASS net/minecraft/class_57 net/minecraft/entity/EntityBase
 		ARG 1 height
 	METHOD method_1390 handleKilledEntity (Lnet/minecraft/class_127;)V
 	METHOD method_1391 onKilledOther (Lnet/minecraft/class_57;I)V
+	METHOD method_1392 damageByFire (I)V
+		ARG 1 amount
 	METHOD method_1394 getBrightnessAtEyes (F)F

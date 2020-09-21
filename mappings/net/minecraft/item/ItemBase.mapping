@@ -87,6 +87,8 @@ CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
 	FIELD field_461 id I
 	FIELD field_462 maxStackSize I
 	FIELD field_463 texturePosition I
+	FIELD field_464 isRendered3d Z
+	FIELD field_465 hasSubItems Z
 	FIELD field_466 containerItemType Lnet/minecraft/class_124;
 	FIELD field_467 translationKey Ljava/lang/String;
 	FIELD field_468 byId [Lnet/minecraft/class_124;
@@ -117,7 +119,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
 		ARG 1 id
 	METHOD method_437 postMine (Lnet/minecraft/class_31;IIIILnet/minecraft/class_127;)Z
 		ARG 6 damageTarget
-	METHOD method_438 (Lnet/minecraft/class_31;Lnet/minecraft/class_17;)F
+	METHOD method_438 getStrengthOnBlock (Lnet/minecraft/class_31;Lnet/minecraft/class_17;)F
 		ARG 1 item
 		ARG 2 tile
 	METHOD method_439 getTexturePosition (Lnet/minecraft/class_31;)I
@@ -139,6 +141,8 @@ CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
 	METHOD method_446 postHit (Lnet/minecraft/class_31;Lnet/minecraft/class_127;Lnet/minecraft/class_127;)Z
 		ARG 2 damageSource
 		ARG 3 damageTarget
+	METHOD method_448 isRendered3d ()Z
+	METHOD method_449 shouldSpinWhenRendering ()Z
 	METHOD method_450 isEffectiveOn (Lnet/minecraft/class_17;)Z
 		ARG 1 tile
 	METHOD method_451 use (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_54;)Lnet/minecraft/class_31;
@@ -154,15 +158,20 @@ CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
 	METHOD method_455 interactWithEntity (Lnet/minecraft/class_31;Lnet/minecraft/class_127;)V
 	METHOD method_456 setName (Ljava/lang/String;)Lnet/minecraft/class_124;
 		ARG 1 newName
-	METHOD method_457 setBurnable (Z)Lnet/minecraft/class_124;
+	METHOD method_457 setHasSubItems (Z)Lnet/minecraft/class_124;
+		ARG 1 hasSubItems
 	METHOD method_458 setTexturePosition (I)Lnet/minecraft/class_124;
 		ARG 1 texturePosition
 	METHOD method_459 getMaxStackSize ()I
 	METHOD method_460 setMaxStackSize (I)Lnet/minecraft/class_124;
 		ARG 1 newMaxStackSize
+	METHOD method_461 onCreation (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_54;)V
+	METHOD method_462 getHasSubItems ()Z
 	METHOD method_463 setDurability (I)Lnet/minecraft/class_124;
 		ARG 1 durability
 	METHOD method_464 getDurability ()I
+	METHOD method_465 hasDurability ()Z
+	METHOD method_466 setRendered3d ()Lnet/minecraft/class_124;
 	METHOD method_467 getContainerItemType ()Lnet/minecraft/class_124;
 	METHOD method_468 hasContainerItemType ()Z
 	METHOD method_469 getTranslatedName ()Ljava/lang/String;

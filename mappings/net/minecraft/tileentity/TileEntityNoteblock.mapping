@@ -2,3 +2,6 @@ CLASS net/minecraft/class_444 net/minecraft/tileentity/TileEntityNoteblock
 	FIELD field_1699 note B
 	METHOD method_1476 incrementNote ()V
 	METHOD method_1477 playNote (Lnet/minecraft/class_18;III)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

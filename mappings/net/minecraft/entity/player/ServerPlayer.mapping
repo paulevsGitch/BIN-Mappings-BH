@@ -1,2 +1,6 @@
 CLASS net/minecraft/class_69 net/minecraft/entity/player/ServerPlayer
 	FIELD field_255 packetHandler Lnet/minecraft/class_11;
+	FIELD field_256 server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_18;Ljava/lang/String;Lnet/minecraft/class_70;)V
+		ARG 1 server
+		ARG 3 name

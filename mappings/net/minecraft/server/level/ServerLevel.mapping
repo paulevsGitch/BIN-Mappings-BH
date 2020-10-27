@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_73 net/minecraft/server/level/ServerLevel
+	FIELD field_273 serverLevelSource Lnet/minecraft/class_79;
+	FIELD field_276 minecraftServer Lnet/minecraft/server/MinecraftServer;

@@ -30,7 +30,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 4 seed
 	METHOD method_149 getClosestPlayer (DDDD)Lnet/minecraft/class_54;
 	METHOD method_150 playSound (DDDLjava/lang/String;FF)V
-	METHOD method_152 (II)I
+	METHOD method_152 getTopBlockAboveSeaLevel (II)I
 		ARG 1 x
 		ARG 2 z
 	METHOD method_154 setTileWithMetadata (IIIII)Z
@@ -81,6 +81,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 4 y
 		ARG 6 z
 		ARG 8 power
+		ARG 9 causeFires
 	METHOD method_191 playSound (Lnet/minecraft/class_57;Ljava/lang/String;FF)V
 	METHOD method_195 saveLevel (ZLnet/minecraft/class_62;)V
 		ARG 2 listener

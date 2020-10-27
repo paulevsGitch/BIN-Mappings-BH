@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_447 net/minecraft/client/GameStartupError
+	FIELD field_1704 errorString Ljava/lang/String;
+	FIELD field_1705 errorThrowable Ljava/lang/Throwable;

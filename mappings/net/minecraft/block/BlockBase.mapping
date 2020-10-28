@@ -171,6 +171,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 4 z
 	METHOD method_1574 getPistonPushMode ()I
 	METHOD method_1575 getBlastResistance (Lnet/minecraft/class_57;)F
+	METHOD method_1577 setLightEmittance (F)Lnet/minecraft/class_17;
 	METHOD method_1578 setBoundingBox (FFFFFF)V
 		ARG 1 minX
 		ARG 2 minY
@@ -193,6 +194,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 1 resistance
 	METHOD method_1587 setHardness (F)Lnet/minecraft/class_17;
 		ARG 1 hardness
+	METHOD method_1590 setLightOpacity (I)Lnet/minecraft/class_17;
 	METHOD method_1591 disableNotifyOnMetaDataChange ()Lnet/minecraft/class_17;
 	METHOD method_1592 drop (Lnet/minecraft/class_18;IIII)V
 		ARG 1 level
@@ -303,6 +305,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 3 x
 		ARG 4 y
 		ARG 5 z
+	METHOD method_1629 droppedMeta (I)I
 	METHOD method_1630 onBlockRemoved (Lnet/minecraft/class_18;III)V
 		ARG 1 level
 		ARG 2 x

@@ -50,7 +50,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 	FIELD field_1869 SNOW_BLOCK Lnet/minecraft/class_17;
 	FIELD field_1870 CACTUS Lnet/minecraft/class_17;
 	FIELD field_1871 CLAY Lnet/minecraft/class_17;
-	FIELD field_1872 REEDS Lnet/minecraft/class_17;
+	FIELD field_1872 SUGAR_CANES Lnet/minecraft/class_17;
 	FIELD field_1873 JUKEBOX Lnet/minecraft/class_17;
 	FIELD field_1874 PISTON Lnet/minecraft/class_17;
 	FIELD field_1875 PISTON_HEAD Lnet/minecraft/class_205;

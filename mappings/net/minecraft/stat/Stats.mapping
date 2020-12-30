@@ -27,4 +27,10 @@ CLASS net/minecraft/class_217 net/minecraft/stat/Stats
 	FIELD field_837 damageTaken Lnet/minecraft/class_139;
 	FIELD field_838 deaths Lnet/minecraft/class_139;
 	FIELD field_839 mobKills Lnet/minecraft/class_139;
+	METHOD method_749 (Ljava/lang/String;I)[Lnet/minecraft/class_139;
+		ARG 0 name
+	METHOD method_750 ([Lnet/minecraft/class_139;)V
+		ARG 0 stats
 	METHOD method_755 onItemsRegistered ()V
+	METHOD method_757 (I)Lnet/minecraft/class_139;
+		ARG 0 id

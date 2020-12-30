@@ -19,9 +19,14 @@ CLASS net/minecraft/class_43 net/minecraft/level/chunk/Chunk
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 blockId
 	METHOD method_862 placeTileEntity (IIILnet/minecraft/class_55;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_868 addEntity (Lnet/minecraft/class_57;)V
 	METHOD method_869 removeEntity (Lnet/minecraft/class_57;I)V
+		ARG 2 index
 	METHOD method_873 generateHeightmap ()V
 	METHOD method_874 getHeight (II)I
 	METHOD method_877 removeEntity (Lnet/minecraft/class_57;)V
@@ -30,6 +35,10 @@ CLASS net/minecraft/class_43 net/minecraft/level/chunk/Chunk
 		ARG 1 localX
 		ARG 2 y
 		ARG 3 localZ
+	METHOD method_882 (III)Lnet/minecraft/class_55;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_888 (III)V
 		ARG 1 x
 		ARG 2 y

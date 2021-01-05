@@ -138,9 +138,11 @@ CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
 		ARG 5 y
 		ARG 6 z
 		ARG 7 facing
+	METHOD method_445 isMap ()Z
 	METHOD method_446 postHit (Lnet/minecraft/class_31;Lnet/minecraft/class_127;Lnet/minecraft/class_127;)Z
 		ARG 2 damageSource
 		ARG 3 damageTarget
+	METHOD method_447 getAttack (Lnet/minecraft/class_57;)I
 	METHOD method_448 isRendered3d ()Z
 	METHOD method_449 shouldSpinWhenRendering ()Z
 	METHOD method_450 isEffectiveOn (Lnet/minecraft/class_17;)Z
@@ -166,7 +168,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
 	METHOD method_460 setMaxStackSize (I)Lnet/minecraft/class_124;
 		ARG 1 newMaxStackSize
 	METHOD method_461 onCreation (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_54;)V
-	METHOD method_462 getHasSubItems ()Z
+	METHOD method_462 usesMeta ()Z
 	METHOD method_463 setDurability (I)Lnet/minecraft/class_124;
 		ARG 1 durability
 	METHOD method_464 getDurability ()I

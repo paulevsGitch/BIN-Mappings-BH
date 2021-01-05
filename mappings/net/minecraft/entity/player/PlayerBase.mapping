@@ -34,6 +34,7 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerBase
 		ARG 3 z
 	METHOD method_496 updateCursorItem (Lnet/minecraft/class_31;)V
 	METHOD method_497 wakeUp (ZZZ)V
+	METHOD method_498 isPvpable ()Z
 	METHOD method_499 updateEyeHeight ()V
 	METHOD method_500 swingHand ()V
 	METHOD method_501 dropSelectedItem ()V

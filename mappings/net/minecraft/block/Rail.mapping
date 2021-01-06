@@ -3,3 +3,4 @@ CLASS net/minecraft/class_16 net/minecraft/block/Rail
 		FIELD field_1265 x I
 		FIELD field_1266 y I
 		FIELD field_1267 z I
+	METHOD method_1107 isRail (I)Z

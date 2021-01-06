@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_510 net/minecraft/block/RedstoneRepeater
+	FIELD field_2125 powered Z

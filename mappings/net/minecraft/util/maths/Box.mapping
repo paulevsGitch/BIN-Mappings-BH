@@ -7,6 +7,7 @@ CLASS net/minecraft/class_25 net/minecraft/util/maths/Box
 	FIELD field_134 maxZ D
 	FIELD field_135 uselessWasteOfMemory Ljava/util/List;
 	FIELD field_136 thisIsAlwaysZero I
+	METHOD method_106 averageDimension ()D
 	METHOD method_87 create (DDDDDD)Lnet/minecraft/class_25;
 	METHOD method_93 expand (DDD)Lnet/minecraft/class_25;
-	METHOD method_106 averageDimension ()D
+	METHOD method_94 createButWasteMemory (DDDDDD)Lnet/minecraft/class_25;

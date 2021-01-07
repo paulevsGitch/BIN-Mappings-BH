@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_588 net/minecraft/client/gui/InGame
-	FIELD field_2541 field_2541 Ljava/lang/String;
+	FIELD field_2541 unused Ljava/lang/String;
 	FIELD field_2543 lastVingetteStrength F
 	FIELD field_2544 itemRenderer Lnet/minecraft/class_92;
 	FIELD field_2545 chatMessages Ljava/util/List;

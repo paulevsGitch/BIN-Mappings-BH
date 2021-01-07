@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_574 net/minecraft/client/gui/ingame/ChatMessage
+	FIELD field_2469 messageText Ljava/lang/String;
+	FIELD field_2470 messageAge I

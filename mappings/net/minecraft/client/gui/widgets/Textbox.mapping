@@ -1,6 +1,11 @@
 CLASS net/minecraft/class_181 net/minecraft/client/gui/widgets/Textbox
+	FIELD field_2420 enabled Z
 	FIELD field_2422 font Lnet/minecraft/class_34;
 	METHOD <init> (Lnet/minecraft/class_32;Lnet/minecraft/class_34;IIIILjava/lang/String;)V
 		ARG 1 screen
 		ARG 2 font
+	METHOD method_1876 getText ()Ljava/lang/String;
+	METHOD method_1877 keyPressed (CI)V
+	METHOD method_1879 mouseClicked (III)V
 	METHOD method_1882 tick ()V
+	METHOD method_1883 draw ()V

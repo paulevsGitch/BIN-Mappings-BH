@@ -15,7 +15,7 @@ buildscript {
 		classpath "org.apache.commons:commons-compress:1.19"
 		classpath "com.google.guava:guava:28.0-jre"
 		classpath 'de.undercouch:gradle-download-task:3.4.3'
-		classpath "cuchaz:enigma:0.14.2.134"
+		classpath "com.github.fabricmc:enigma:63d4cfc"
 		classpath 'net.fabricmc:tiny-remapper:0.1.0.40' // TODO anything above this fails, bandaid fix.
 		classpath 'com.github.Chocohead:Stitch:f955c99'
 		classpath 'com.github.Chocohead:tiny-mappings-parser:337c8b6'
@@ -57,7 +57,7 @@ configurations {
 }
 
 dependencies {
-	enigmaRuntime "cuchaz:enigma:0.14.2.134"
+	enigmaRuntime "com.github.fabricmc:enigma:8f9df2a"
 	enigmaRuntime 'com.github.Chocohead:Stitch:f955c99'
 }
 
@@ -331,8 +331,8 @@ task yarn(dependsOn: setupYarn) {
 			arg(value: mergedJar.getAbsolutePath())
 			arg(value: '-mappings')
 			arg(value: mappingsDir.getAbsolutePath())
-			arg(value: '-profile')
-			arg(value: 'enigma_profile.json')
+			//arg(value: '-profile')
+			//arg(value: 'enigma_profile.json')
 		}
 	}
 }

@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_271 net/minecraft/client/options/Option
 	FIELD field_1110 slider Z
+	FIELD field_1111 toggle Z
 	FIELD field_1112 translationKey Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;ZZ)V
 		ARG 1 name

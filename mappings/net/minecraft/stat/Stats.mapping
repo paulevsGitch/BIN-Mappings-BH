@@ -2,6 +2,7 @@ CLASS net/minecraft/class_217 net/minecraft/stat/Stats
 	FIELD field_806 playerKills Lnet/minecraft/class_139;
 	FIELD field_807 fishCaught Lnet/minecraft/class_139;
 	FIELD field_808 mineBlock [Lnet/minecraft/class_139;
+	FIELD field_809 timesCrafted [Lnet/minecraft/class_139;
 	FIELD field_810 useItem [Lnet/minecraft/class_139;
 	FIELD field_811 breakItem [Lnet/minecraft/class_139;
 	FIELD field_814 idMap Ljava/util/Map;
@@ -29,8 +30,12 @@ CLASS net/minecraft/class_217 net/minecraft/stat/Stats
 	FIELD field_839 mobKills Lnet/minecraft/class_139;
 	METHOD method_749 (Ljava/lang/String;I)[Lnet/minecraft/class_139;
 		ARG 0 name
-	METHOD method_750 ([Lnet/minecraft/class_139;)V
+	METHOD method_750 setSimilarItems ([Lnet/minecraft/class_139;)V
 		ARG 0 stats
+	METHOD method_751 addSimilarItem ([Lnet/minecraft/class_139;II)V
+		ARG 0 statArray
+		ARG 1 itemToDisplayAs
+		ARG 2 itemToRedirect
 	METHOD method_755 onItemsRegistered ()V
 	METHOD method_757 (I)Lnet/minecraft/class_139;
 		ARG 0 id

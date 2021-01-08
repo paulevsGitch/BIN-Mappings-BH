@@ -5,6 +5,6 @@ CLASS net/minecraft/class_336 net/minecraft/client/render/TextureBinder
 	FIELD field_1414 id I
 	FIELD field_1415 textureSize I
 	FIELD field_1416 renderMode I
-	METHOD method_1205 setup ()V
+	METHOD method_1205 update ()V
 	METHOD method_1206 bindTexture (Lnet/minecraft/class_76;)V
 		ARG 1 manager

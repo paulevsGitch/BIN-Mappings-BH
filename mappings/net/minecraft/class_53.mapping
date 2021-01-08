@@ -1,2 +1,3 @@
-CLASS net/minecraft/class_53
+CLASS net/minecraft/class_53 net/minecraft/class_53
+	COMMENT Per-dimension map handler?
 	FIELD field_550 dimensionData Lnet/minecraft/class_52;

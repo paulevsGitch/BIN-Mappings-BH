@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_506 net/minecraft/container/Chest
+	FIELD field_2110 inventory Lnet/minecraft/class_134;

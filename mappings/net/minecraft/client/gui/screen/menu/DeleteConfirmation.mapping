@@ -4,3 +4,8 @@ CLASS net/minecraft/class_565 net/minecraft/client/gui/screen/menu/DeleteConfirm
 	FIELD field_2396 worldName Ljava/lang/String;
 	FIELD field_2397 deleteButton Ljava/lang/String;
 	FIELD field_2398 cancelButton Ljava/lang/String;
+	METHOD <init> (Lnet/minecraft/class_32;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+		ARG 2 deleteText
+		ARG 3 worldName
+		ARG 4 deleteButton
+		ARG 5 cancelButton

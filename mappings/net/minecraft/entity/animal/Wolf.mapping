@@ -12,11 +12,15 @@ CLASS net/minecraft/class_121 net/minecraft/entity/animal/Wolf
 	METHOD method_423 isWet ()Z
 	METHOD method_425 isTamed ()Z
 	METHOD method_426 setOwner (Ljava/lang/String;)V
+		ARG 1 newOwnerUsername
 	METHOD method_427 spawnBoneParticles (Z)V
 		ARG 1 tamed
 	METHOD method_428 setSitting (Z)V
+		ARG 1 newSitting
 	METHOD method_430 setAngry (Z)V
+		ARG 1 newAngry
 	METHOD method_431 setHasOwner (Z)V
+		ARG 1 newHasOwner
 	METHOD method_432 getOwner ()Ljava/lang/String;
 	METHOD method_433 isSitting ()Z
 	METHOD method_434 isAngry ()Z

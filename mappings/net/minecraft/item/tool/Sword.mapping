@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_352 net/minecraft/item/tool/Sword
+	METHOD <init> (ILnet/minecraft/class_428;)V
+		ARG 1 id

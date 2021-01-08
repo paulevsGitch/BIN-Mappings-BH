@@ -9,3 +9,4 @@ CLASS net/minecraft/class_134 net/minecraft/inventory/InventoryBase
 	METHOD method_952 getContainerName ()Ljava/lang/String;
 	METHOD method_953 getMaxItemCount ()I
 	METHOD method_954 getInventoryItem (I)Lnet/minecraft/class_31;
+		ARG 1 index

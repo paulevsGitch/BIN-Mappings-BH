@@ -47,6 +47,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/EntityBase
 		ARG 1 object
 	METHOD method_1310 initDataTracker ()V
 	METHOD method_1313 handleStatus (B)V
+		ARG 1 status
+	METHOD method_1314 getTextured ()Ljava/lang/String;
 	METHOD method_1315 afterSpawn ()V
 	METHOD method_1316 initCloak ()V
 	METHOD method_1317 baseTick ()V
@@ -77,10 +79,22 @@ CLASS net/minecraft/class_57 net/minecraft/entity/EntityBase
 		ARG 2 amount
 	METHOD method_1340 setPosition (DDD)V
 	METHOD method_1341 setPositionAndAngles (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
 	METHOD method_1342 setRotation (FF)V
 	METHOD method_1346 toTag (Lnet/minecraft/class_8;)V
 	METHOD method_1347 squaredDistanceTo (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1348 fromTag (Lnet/minecraft/class_8;)V
+	METHOD method_1350 distanceTo (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1351 distanceTo (Lnet/minecraft/class_57;)F
 	METHOD method_1354 onPlayerCollision (Lnet/minecraft/class_54;)V
 	METHOD method_1355 damage (Lnet/minecraft/class_57;I)Z
@@ -92,15 +106,26 @@ CLASS net/minecraft/class_57 net/minecraft/entity/EntityBase
 		ARG 1 tag
 	METHOD method_1364 shouldRenderAtDistance (D)Z
 	METHOD method_1365 setVelocity (DDD)V
+		ARG 1 velocityX
+		ARG 3 velocityY
+		ARG 5 velocityZ
 	METHOD method_1366 getEyeHeight ()F
 	METHOD method_1367 shouldRenderFrom (Lnet/minecraft/class_26;)Z
 	METHOD method_1368 writeCustomDataToTag (Lnet/minecraft/class_8;)V
 		ARG 1 tag
 	METHOD method_1370 tick ()V
 	METHOD method_1371 move (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1372 (DDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1375 setLevel (Lnet/minecraft/class_18;)V
 	METHOD method_1376 startRiding (Lnet/minecraft/class_57;)V
 	METHOD method_1378 getStandingEyeHeight ()F
+	METHOD method_1379 getBoundingBox (Lnet/minecraft/class_57;)Lnet/minecraft/class_25;
 	METHOD method_1383 onStruckByLightning (Lnet/minecraft/class_411;)V
 	METHOD method_1384 tickRiding ()V
 	METHOD method_1385 getHeightOffset ()D
@@ -110,6 +135,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/EntityBase
 		ARG 1 height
 	METHOD method_1390 handleKilledEntity (Lnet/minecraft/class_127;)V
 	METHOD method_1391 onKilledOther (Lnet/minecraft/class_57;I)V
+		ARG 2 score
 	METHOD method_1392 damageByFire (I)V
 		ARG 1 amount
 	METHOD method_1394 getBrightnessAtEyes (F)F

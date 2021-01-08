@@ -5,3 +5,7 @@ CLASS net/minecraft/class_372 net/minecraft/entity/projectile/Fireball
 	FIELD field_2199 zTile I
 	FIELD field_2200 inTile I
 	FIELD field_2201 inGround Z
+	METHOD <init> (Lnet/minecraft/class_18;DDDDDD)V
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z

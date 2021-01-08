@@ -12,6 +12,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	FIELD field_206 rainGradient F
 	FIELD field_207 prevThunderGradient F
 	FIELD field_208 thunderGradient F
+	FIELD field_211 stopPhysics Z
 	FIELD field_213 difficulty I
 	FIELD field_214 rand Ljava/util/Random;
 	FIELD field_216 dimension Lnet/minecraft/class_50;
@@ -188,6 +189,9 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 3 z
 	METHOD method_251 checkSessionLock ()V
 	METHOD method_252 getLightLevel (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_253 updateAdjacentBlock (IIII)V
 		ARG 1 x
 		ARG 2 y

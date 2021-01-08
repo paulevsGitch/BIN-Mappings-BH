@@ -13,11 +13,18 @@ CLASS net/minecraft/class_181 net/minecraft/client/gui/widgets/Textbox
 	METHOD <init> (Lnet/minecraft/class_32;Lnet/minecraft/class_34;IIIILjava/lang/String;)V
 		ARG 1 screen
 		ARG 2 font
+		ARG 3 x
+		ARG 4 y
+		ARG 5 width
+		ARG 6 height
+		ARG 7 text
 	METHOD method_1876 getText ()Ljava/lang/String;
 	METHOD method_1877 keyPressed (CI)V
 	METHOD method_1878 setMaxLength (I)V
+		ARG 1 maxLength
 	METHOD method_1879 mouseClicked (III)V
 	METHOD method_1880 setText (Ljava/lang/String;)V
+		ARG 1 text
 	METHOD method_1881 setSelected (Z)V
 	METHOD method_1882 tick ()V
 	METHOD method_1883 draw ()V

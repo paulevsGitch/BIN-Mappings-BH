@@ -1,6 +1,12 @@
 CLASS net/minecraft/class_15 net/minecraft/block/material/Material
+	FIELD field_1000 CACTUS Lnet/minecraft/class_15;
+	FIELD field_1001 CLAY Lnet/minecraft/class_15;
+	FIELD field_1002 PUMPKIN Lnet/minecraft/class_15;
+	FIELD field_1003 PORTAL Lnet/minecraft/class_15;
+	FIELD field_1004 CAKE Lnet/minecraft/class_15;
 	FIELD field_971 COBWEB Lnet/minecraft/class_15;
 	FIELD field_972 PISTON Lnet/minecraft/class_15;
+	FIELD field_973 materialColour Lnet/minecraft/class_259;
 	FIELD field_974 burnable Z
 	FIELD field_975 replaceable Z
 	FIELD field_977 requiresTool Z
@@ -26,13 +32,6 @@ CLASS net/minecraft/class_15 net/minecraft/block/material/Material
 	FIELD field_997 ICE Lnet/minecraft/class_15;
 	FIELD field_998 SNOW Lnet/minecraft/class_15;
 	FIELD field_999 SNOW_BLOCK Lnet/minecraft/class_15;
-	FIELD field_1000 CACTUS Lnet/minecraft/class_15;
-	FIELD field_1001 CLAY Lnet/minecraft/class_15;
-	FIELD field_1002 PUMPKIN Lnet/minecraft/class_15;
-	FIELD field_1003 PORTAL Lnet/minecraft/class_15;
-	FIELD field_1004 CAKE Lnet/minecraft/class_15;
-	METHOD method_905 isSolid ()Z
-	METHOD method_907 blocksMovement ()Z
 	METHOD method_893 isLiquid ()Z
 	METHOD method_894 isBurnable ()Z
 	METHOD method_895 replaceable ()Lnet/minecraft/class_15;
@@ -43,3 +42,5 @@ CLASS net/minecraft/class_15 net/minecraft/block/material/Material
 	METHOD method_901 unpushable ()Lnet/minecraft/class_15;
 	METHOD method_903 requiresTool ()Lnet/minecraft/class_15;
 	METHOD method_904 burnable ()Lnet/minecraft/class_15;
+	METHOD method_905 isSolid ()Z
+	METHOD method_907 blocksMovement ()Z

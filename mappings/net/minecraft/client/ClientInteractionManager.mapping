@@ -3,8 +3,24 @@ CLASS net/minecraft/class_504 net/minecraft/client/ClientInteractionManager
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_1705 cancelBlockRemoving ()V
+	METHOD method_1707 (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_1711 rotatePlayer (Lnet/minecraft/class_54;)V
+	METHOD method_1713 (Lnet/minecraft/class_54;Lnet/minecraft/class_18;Lnet/minecraft/class_31;IIII)Z
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
 	METHOD method_1715 getBlockReachDistance ()F
+	METHOD method_1716 (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_1718 (Lnet/minecraft/class_54;)V
 		ARG 1 player
 	METHOD method_1720 tick ()V
+	METHOD method_1721 (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

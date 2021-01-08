@@ -7,6 +7,7 @@ CLASS net/minecraft/class_271 net/minecraft/client/options/Option
 		ARG 2 id
 		ARG 3 translationKey
 		ARG 4 slider
+		ARG 5 toggle
 	METHOD method_966 isSlider ()Z
 	METHOD method_967 getById (I)Lnet/minecraft/class_271;
 		ARG 0 id

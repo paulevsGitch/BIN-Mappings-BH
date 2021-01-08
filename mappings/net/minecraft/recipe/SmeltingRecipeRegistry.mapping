@@ -3,6 +3,7 @@ CLASS net/minecraft/class_44 net/minecraft/recipe/SmeltingRecipeRegistry
 	FIELD field_171 recipes Ljava/util/Map;
 	METHOD method_144 getInstance ()Lnet/minecraft/class_44;
 	METHOD method_145 getResult (I)Lnet/minecraft/class_31;
+		ARG 1 index
 	METHOD method_146 addSmeltingRecipe (ILnet/minecraft/class_31;)V
 		ARG 1 inputId
 		ARG 2 output

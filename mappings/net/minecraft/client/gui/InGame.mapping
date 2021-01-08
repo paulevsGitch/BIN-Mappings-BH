@@ -20,4 +20,5 @@ CLASS net/minecraft/class_588 net/minecraft/client/gui/InGame
 	METHOD method_1950 clearChat ()V
 	METHOD method_1951 renderPortalOverlay (FII)V
 	METHOD method_1952 showJukeboxMessage (Ljava/lang/String;)V
+		ARG 1 recordName
 	METHOD method_1953 translateAndSendMessage (Ljava/lang/String;)V

@@ -10,3 +10,11 @@ CLASS net/minecraft/class_410 net/minecraft/entity/projectile/Arrow
 	FIELD field_1582 inGround Z
 	FIELD field_1583 ticksInGround I
 	FIELD field_1584 ticksFlying I
+	METHOD <init> (Lnet/minecraft/class_18;DDD)V
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD method_1291 (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z

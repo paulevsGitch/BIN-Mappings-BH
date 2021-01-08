@@ -29,7 +29,7 @@ CLASS net/minecraft/class_32 net/minecraft/client/gui/screen/ScreenBase
 		ARG 1 minecraft
 		ARG 2 width
 		ARG 3 height
-	METHOD method_126 updateServer (ZI)V
+	METHOD method_126 updateList (ZI)V
 	METHOD method_127 renderDirtBackground (I)V
 		ARG 1 alpha
 	METHOD method_128 mouseReleased (III)V
@@ -41,3 +41,4 @@ CLASS net/minecraft/class_32 net/minecraft/client/gui/screen/ScreenBase
 	METHOD method_132 onKeyboardEvent ()V
 	METHOD method_133 onClose ()V
 	METHOD method_134 renderBackground ()V
+	METHOD method_135 handleTab ()V

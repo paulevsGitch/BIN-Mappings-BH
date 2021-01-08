@@ -120,6 +120,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 	FIELD field_1939 FULL_OPAQUE [Z
 	FIELD field_1940 HAS_TILE_ENTITY [Z
 	FIELD field_1941 LIGHT_OPACITY [I
+	FIELD field_1942 ALLOWS_GRASS_UNDER [Z
 	FIELD field_1943 EMITTANCE [I
 	FIELD field_1944 NO_NOTIFY_ON_META_CHANGE [Z
 	FIELD field_1945 STONE Lnet/minecraft/class_17;
@@ -136,30 +137,38 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 1 id
 		ARG 2 material
 	METHOD method_1560 onSteppedOn (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 entityBase
 	METHOD method_1561 canPlaceAt (Lnet/minecraft/class_18;IIII)Z
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 meta
-	METHOD method_1562 (Lnet/minecraft/class_18;IIILnet/minecraft/class_25;Ljava/util/ArrayList;)V
+	METHOD method_1562 doesBoxCollide (Lnet/minecraft/class_18;IIILnet/minecraft/class_25;Ljava/util/ArrayList;)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 box
+		ARG 6 blocksThatCollide
 	METHOD method_1563 onTileAction (Lnet/minecraft/class_18;IIIII)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 blockMeta
+		ARG 6 extraInfo
 	METHOD method_1564 (Lnet/minecraft/class_18;IIILnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 	METHOD method_1565 getTickrate ()I
 	METHOD method_1566 canGrow (Lnet/minecraft/class_18;III)Z
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -169,23 +178,41 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 3 y
 		ARG 4 z
 	METHOD method_1568 isPowered (Lnet/minecraft/class_14;IIII)Z
+		ARG 1 tileView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 meta
 	METHOD method_1569 getEmitsRedstonePower ()Z
 	METHOD method_1570 indirectlyPowered (Lnet/minecraft/class_18;IIII)Z
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 meta
-	METHOD method_1573 isSolid (Lnet/minecraft/class_14;IIII)Z
+	METHOD method_1571 isCollidable (IZ)Z
+		ARG 1 meta
+	METHOD method_1572 onCollideWithEntity (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;Lnet/minecraft/class_26;)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 entityBase
+		ARG 6 vec3f
+	METHOD method_1573 isSolid (Lnet/minecraft/class_14;IIII)Z
+		ARG 1 tileView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 meta
 	METHOD method_1574 getPistonPushMode ()I
 	METHOD method_1575 getBlastResistance (Lnet/minecraft/class_57;)F
+		ARG 1 entityBase
+	METHOD method_1576 isCollidable ()Z
 	METHOD method_1577 setLightEmittance (F)Lnet/minecraft/class_17;
+		COMMENT Torches use 13, glowstone uses 14.
+		COMMENT Too high a value will cause light updates to cancel.
+		ARG 1 brightness
 	METHOD method_1578 setBoundingBox (FFFFFF)V
 		ARG 1 minX
 		ARG 2 minY
@@ -193,6 +220,8 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
+	METHOD method_1579 isInsideYZ (Lnet/minecraft/class_26;)Z
+		ARG 1 vec3f
 	METHOD method_1580 sounds (Lnet/minecraft/class_475;)Lnet/minecraft/class_17;
 		ARG 1 sounds
 	METHOD method_1581 drop (Lnet/minecraft/class_18;IIILnet/minecraft/class_31;)V
@@ -200,15 +229,26 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 itemInstance
 	METHOD method_1582 getHardness (Lnet/minecraft/class_54;)F
+		ARG 1 playerBase
 	METHOD method_1583 setName (Ljava/lang/String;)Lnet/minecraft/class_17;
+		ARG 1 name
 	METHOD method_1584 setTicksRandomly (Z)Lnet/minecraft/class_17;
 		ARG 1 ticksRandomly
 	METHOD method_1585 setBlastResistance (F)Lnet/minecraft/class_17;
 		ARG 1 resistance
+	METHOD method_1586 isInsideXZ (Lnet/minecraft/class_26;)Z
+		ARG 1 vec3f
 	METHOD method_1587 setHardness (F)Lnet/minecraft/class_17;
 		ARG 1 hardness
+	METHOD method_1588 isInsideXY (Lnet/minecraft/class_26;)Z
+		ARG 1 vec3f
+	METHOD method_1589 getBaseColour (I)I
 	METHOD method_1590 setLightOpacity (I)Lnet/minecraft/class_17;
+		COMMENT Maximum value is 256.
+		COMMENT Leaves use 1, water uses 3 and lava uses 255.
+		ARG 1 opacity
 	METHOD method_1591 disableNotifyOnMetaDataChange ()Lnet/minecraft/class_17;
 	METHOD method_1592 drop (Lnet/minecraft/class_18;IIII)V
 		ARG 1 level
@@ -223,7 +263,8 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 	METHOD method_1597 getName ()Ljava/lang/String;
 	METHOD method_1598 isStatEnabled ()Z
 	METHOD method_1599 disableStat ()Lnet/minecraft/class_17;
-	METHOD method_1600 getColor (Lnet/minecraft/class_14;III)I
+	METHOD method_1600 getColourMultiplier (Lnet/minecraft/class_14;III)I
+		ARG 1 tileView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -238,7 +279,8 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 5 rand
 	METHOD method_1603 getDropCount (Ljava/util/Random;)I
 		ARG 1 rand
-	METHOD method_1604 (Lnet/minecraft/class_14;III)F
+	METHOD method_1604 getBrightness (Lnet/minecraft/class_14;III)F
+		ARG 1 tileView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -274,23 +316,30 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 3 y
 		ARG 4 z
 	METHOD method_1612 activate (Lnet/minecraft/class_18;IIII)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 meta
 	METHOD method_1613 onDestroyedByExplosion (Lnet/minecraft/class_18;III)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 	METHOD method_1614 afterPlaced (Lnet/minecraft/class_18;IIILnet/minecraft/class_127;)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 living
 	METHOD method_1615 onEntityCollision (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1616 (Lnet/minecraft/class_14;III)V
+		ARG 5 entityBase
+	METHOD method_1616 updateBoundingBox (Lnet/minecraft/class_14;III)V
+		ARG 1 tileView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -300,10 +349,12 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 3 y
 		ARG 4 z
 		ARG 5 rand
-	METHOD method_1618 (Lnet/minecraft/class_14;IIII)Z
+	METHOD method_1618 isSideRendered (Lnet/minecraft/class_14;IIII)Z
+		ARG 1 tileView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 side
 	METHOD method_1620 isFullOpaque ()Z
 	METHOD method_1621 getRenderType ()I
 	METHOD method_1622 getOutlineShape (Lnet/minecraft/class_18;III)Lnet/minecraft/class_25;
@@ -325,17 +376,23 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 		ARG 5 meta
 		ARG 6 dropChance
 	METHOD method_1626 getTextureForSide (Lnet/minecraft/class_14;IIII)I
+		ARG 1 tileView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 meta
 	METHOD method_1627 getTextureForSide (II)I
 		ARG 1 side
 		ARG 2 meta
 	METHOD method_1628 afterBreak (Lnet/minecraft/class_18;Lnet/minecraft/class_54;IIII)V
+		ARG 1 level
+		ARG 2 playerBase
 		ARG 3 x
 		ARG 4 y
 		ARG 5 z
+		ARG 6 meta
 	METHOD method_1629 droppedMeta (I)I
+		ARG 1 meta
 	METHOD method_1630 onBlockRemoved (Lnet/minecraft/class_18;III)V
 		ARG 1 level
 		ARG 2 x

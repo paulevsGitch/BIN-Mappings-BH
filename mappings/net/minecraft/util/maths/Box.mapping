@@ -9,5 +9,6 @@ CLASS net/minecraft/class_25 net/minecraft/util/maths/Box
 	FIELD field_136 thisIsAlwaysZero I
 	METHOD method_106 averageDimension ()D
 	METHOD method_87 create (DDDDDD)Lnet/minecraft/class_25;
+	METHOD method_90 boxIntersects (Lnet/minecraft/class_25;)Z
 	METHOD method_93 expand (DDD)Lnet/minecraft/class_25;
 	METHOD method_94 createButWasteMemory (DDDDDD)Lnet/minecraft/class_25;

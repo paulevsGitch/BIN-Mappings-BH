@@ -9,7 +9,7 @@ CLASS net/minecraft/class_15 net/minecraft/block/material/Material
 	FIELD field_973 materialColour Lnet/minecraft/class_259;
 	FIELD field_974 burnable Z
 	FIELD field_975 replaceable Z
-	FIELD field_976 oqapue Z
+	FIELD field_976 opaque Z
 	FIELD field_977 requiresTool Z
 	FIELD field_978 pistonPushMode I
 	FIELD field_979 AIR Lnet/minecraft/class_15;

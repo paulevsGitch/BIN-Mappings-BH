@@ -1,0 +1,6 @@
+[submodule "BIN-Mappings-VersionCheck"]
+	path = BIN-Mappings-VersionCheck
+	url = https://github.com/calmilamsy/BIN-Mappings-VersionCheck.git
+[submodule "glass-commons"]
+	path = glass-commons
+	url = https://github.com/calmilamsy/glass-commons.git

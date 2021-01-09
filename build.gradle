@@ -24,6 +24,7 @@ buildscript {
 
 plugins {
 	id 'de.undercouch.download' version '3.4.3'
+	id "java"
 	id 'maven'
 	id 'maven-publish'
 }
@@ -233,11 +234,12 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 task downloadMcLibs(dependsOn: downloadWantedVersionManifest) {
 	inputs.files versionFile
 
-	outputs.file(libraries)
-
-	outputs.upToDateWhen {
-		return false
-	}
+	// Broken.
+//	outputs.file(libraries)
+//
+//	outputs.upToDateWhen {
+//		return false
+//	}
 
 	doLast {
 		if (!versionFile.exists()) {
@@ -253,8 +255,10 @@ task downloadMcLibs(dependsOn: downloadWantedVersionManifest) {
 		}
 
 		version.libraries.each {
-			def downloadUrl = it.downloads?.artifact?.url
+			String downloadUrl = it.downloads?.artifact?.url
 			if (downloadUrl == null) return
+			// Lazy fix for some broken behaviour.
+			if ((new File(libraries, downloadUrl.substring(downloadUrl.lastIndexOf("/") + 1))).exists()) return
 
 			download {
 				src downloadUrl
@@ -340,7 +344,7 @@ task yarn(dependsOn: setupYarn) {
 task buildEnigma(type: Zip) {
 	from mappingsDir
 	include "**/*"
-	archiveName "yarn-enigma-${yarnVersion}.zip"
+	archiveName "BIN-Mappings-enigma.zip"
 	destinationDir(libs)
 }
 
@@ -387,6 +391,8 @@ task mergeTiny(dependsOn: [downloadIntermediary, buildYarnTiny], type: FileOutpu
 	def yarnTinyInput = buildYarnTiny.fileOutput
 
 	def outputFile = new File(tempDir, "mappings.tiny")
+	// Prevent build fail if a previous build failed.
+	if (outputFile.exists()) outputFile.delete()
 	outputs.file(outputFile)
 	fileOutput = outputFile
 
@@ -405,18 +411,31 @@ task mergeTiny(dependsOn: [downloadIntermediary, buildYarnTiny], type: FileOutpu
 	}
 }
 
-task tinyJar(type: Jar, dependsOn: "mergeTiny") {
+subprojects.each { subproject -> evaluationDependsOn(subproject.path)}
+task tinyJar(type: Jar, dependsOn: subprojects.build) {
+	dependsOn("mergeTiny")
 	outputs.upToDateWhen { return false }
-	archiveName = "BIN-Mappings-${yarnVersion}.jar"
+	archiveName = "BIN-Mappings.jar"
 	destinationDir(libs)
 	classifier = ""
 	from(mergeTiny.fileOutput) {
 		rename { "mappings/mappings.tiny" }
 	}
+	subprojects.each { subproject ->
+		from subproject.configurations.archives.allArtifacts.files.collect {
+			logger.lifecycle(it.getAbsolutePath())
+			zipTree(it)
+		}
+	}
+	manifest {
+		attributes 'Implementation-Title': 'BIN-Mappings',
+				'Implementation-Version': getGitHash(),
+				'Main-Class': 'net.glasslauncher.binversioncheck.Main'
+	}
 }
 
 task compressTiny(dependsOn: ["tinyJar", "mergeTiny"], type: FileOutput) {
-	def outputFile = new File(libs, "yarn-tiny-${yarnVersion}.gz")
+	def outputFile = new File(libs, "BIN-Mappings-tiny.gz")
 	outputs.file(outputFile)
 	fileOutput = outputFile
 

@@ -158,8 +158,8 @@ CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
 		ARG 1 itemType
 	METHOD method_454 inventoryTick (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_57;IZ)V
 	METHOD method_455 interactWithEntity (Lnet/minecraft/class_31;Lnet/minecraft/class_127;)V
-	METHOD method_456 setName (Ljava/lang/String;)Lnet/minecraft/class_124;
-		ARG 1 newName
+	METHOD method_456 setTranslationKey (Ljava/lang/String;)Lnet/minecraft/class_124;
+		ARG 1 translationKey
 	METHOD method_457 setHasSubItems (Z)Lnet/minecraft/class_124;
 		ARG 1 hasSubItems
 	METHOD method_458 setTexturePosition (I)Lnet/minecraft/class_124;

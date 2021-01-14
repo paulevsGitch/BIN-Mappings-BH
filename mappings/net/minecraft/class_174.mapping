@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_174 net/minecraft/class_174
-	COMMENT Handles sending entity position to client.

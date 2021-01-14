@@ -17,6 +17,10 @@ CLASS net/minecraft/class_7 net/minecraft/level/LevelProperties
 	METHOD <init> (JLjava/lang/String;)V
 		ARG 1 seed
 		ARG 3 name
+	METHOD <init> (Lnet/minecraft/class_7;)V
+		ARG 1 levelProperties
+	METHOD <init> (Lnet/minecraft/class_8;)V
+		ARG 1 worldTag
 	METHOD method_10 setThundering (Z)V
 		ARG 1 newThundering
 	METHOD method_11 getSeed ()J
@@ -42,8 +46,10 @@ CLASS net/minecraft/class_7 net/minecraft/level/LevelProperties
 	METHOD method_27 setSpawnX (I)V
 		ARG 1 newX
 	METHOD method_28 setPlayerData (Lnet/minecraft/class_8;)V
+		ARG 1 playerTag
 	METHOD method_29 setSpawnY (I)V
 		ARG 1 newY
+	METHOD method_3 getPlayerTag ()Lnet/minecraft/class_8;
 	METHOD method_30 setSpawnZ (I)V
 		ARG 1 newZ
 	METHOD method_31 getPlayerData ()Lnet/minecraft/class_8;
@@ -58,5 +64,9 @@ CLASS net/minecraft/class_7 net/minecraft/level/LevelProperties
 	METHOD method_6 setTime (J)V
 		ARG 1 newTime
 	METHOD method_7 updateProperties (Lnet/minecraft/class_8;Lnet/minecraft/class_8;)V
+		ARG 1 worldTag
+		ARG 2 playerTag
 	METHOD method_8 setName (Ljava/lang/String;)V
 		ARG 1 newName
+	METHOD method_9 getFirstEntityDataFromList (Ljava/util/List;)Lnet/minecraft/class_8;
+		ARG 1 list

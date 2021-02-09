@@ -31,14 +31,14 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 	FIELD field_1850 FURNACE Lnet/minecraft/class_17;
 	FIELD field_1851 FURNACE_LIT Lnet/minecraft/class_17;
 	FIELD field_1852 STANDING_SIGN Lnet/minecraft/class_17;
-	FIELD field_1853 DOOR_WOOD Lnet/minecraft/class_17;
+	FIELD field_1853 WOOD_DOOR Lnet/minecraft/class_17;
 	FIELD field_1854 LADDER Lnet/minecraft/class_17;
 	FIELD field_1855 RAIL Lnet/minecraft/class_17;
-	FIELD field_1856 STAIRS_STONE Lnet/minecraft/class_17;
+	FIELD field_1856 COBBLESTONE_STAIRS Lnet/minecraft/class_17;
 	FIELD field_1857 WALL_SIGN Lnet/minecraft/class_17;
 	FIELD field_1858 LEVER Lnet/minecraft/class_17;
 	FIELD field_1859 WOODEN_PRESSURE_PLATE Lnet/minecraft/class_17;
-	FIELD field_1860 DOOR_IRON Lnet/minecraft/class_17;
+	FIELD field_1860 IRON_DOOR Lnet/minecraft/class_17;
 	FIELD field_1861 STONE_PRESSURE_PLATE Lnet/minecraft/class_17;
 	FIELD field_1862 REDSTONE_ORE Lnet/minecraft/class_17;
 	FIELD field_1863 REDSTONE_ORE_LIT Lnet/minecraft/class_17;
@@ -64,7 +64,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 	FIELD field_1883 IRON_BLOCK Lnet/minecraft/class_17;
 	FIELD field_1884 DOUBLE_STONE_SLAB Lnet/minecraft/class_17;
 	FIELD field_1885 STONE_SLAB Lnet/minecraft/class_17;
-	FIELD field_1886 BRICK Lnet/minecraft/class_17;
+	FIELD field_1886 BRICKS Lnet/minecraft/class_17;
 	FIELD field_1887 TNT Lnet/minecraft/class_17;
 	FIELD field_1888 BOOKSHELF Lnet/minecraft/class_17;
 	FIELD field_1889 MOSSY_COBBLESTONE Lnet/minecraft/class_17;
@@ -72,7 +72,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
 	FIELD field_1891 TORCH Lnet/minecraft/class_17;
 	FIELD field_1892 FIRE Lnet/minecraft/class_474;
 	FIELD field_1893 MOB_SPAWNER Lnet/minecraft/class_17;
-	FIELD field_1894 STAIRS_WOOD Lnet/minecraft/class_17;
+	FIELD field_1894 WOOD_STAIRS Lnet/minecraft/class_17;
 	FIELD field_1895 CHEST Lnet/minecraft/class_17;
 	FIELD field_1896 REDSTONE_DUST Lnet/minecraft/class_17;
 	FIELD field_1897 DIAMOND_ORE Lnet/minecraft/class_17;

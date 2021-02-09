@@ -459,8 +459,6 @@ clean.doFirst {
 tasks.build.dependsOn "compressTiny"
 tasks.build.dependsOn "buildEnigma"
 tasks.build.dependsOn "tinyJar"
-// Fix for jitpack being bad
-tasks.install.dependsOn "tinyJar"
 
 task mapNamedJar(dependsOn: [mergeJars, mergeTiny]) {
 	inputs.files downloadMcLibs.outputs.files.files

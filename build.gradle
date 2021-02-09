@@ -421,10 +421,6 @@ task tinyJar(type: Jar, dependsOn: subprojects.build) {
 	from(mergeTiny.fileOutput) {
 		rename { "mappings/mappings.tiny" }
 	}
-	manifest {
-		attributes 'Implementation-Title': 'BIN-Mappings',
-				'Main-Class': 'net.glasslauncher.binversioncheck.Main'
-	}
 }
 
 task compressTiny(dependsOn: ["tinyJar", "mergeTiny"], type: FileOutput) {

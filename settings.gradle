@@ -1,2 +1,0 @@
-include(":BIN-Mappings-VersionCheck")
-include(":glass-commons")

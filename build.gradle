@@ -421,15 +421,8 @@ task tinyJar(type: Jar, dependsOn: subprojects.build) {
 	from(mergeTiny.fileOutput) {
 		rename { "mappings/mappings.tiny" }
 	}
-	subprojects.each { subproject ->
-		from subproject.configurations.archives.allArtifacts.files.collect {
-			logger.lifecycle(it.getAbsolutePath())
-			zipTree(it)
-		}
-	}
 	manifest {
 		attributes 'Implementation-Title': 'BIN-Mappings',
-				'Implementation-Version': getGitHash(),
 				'Main-Class': 'net.glasslauncher.binversioncheck.Main'
 	}
 }
@@ -508,13 +501,15 @@ publishing {
 	}
 	repositories {
 		maven {
-			url "http://mavenupload.modmuss50.me/"
-			if (project.hasProperty('mavenPass')) {
+			url "https://maven.glass-launcher.net/jenkins"
+			logger.lifecycle(": Test" + hasProperty("artifactoryUser"))
+//			if (hasProperty("artifactoryUser") && hasProperty("artifactoryPass")) {
+				logger.lifecycle(": Found artifactory credentials")
 				credentials {
-					username 'buildslave'
-					password project.getProperty('mavenPass')
+					username artifactoryUser
+					password artifactoryPass
 				}
-			}
+//			}
 		}
 	}
 }

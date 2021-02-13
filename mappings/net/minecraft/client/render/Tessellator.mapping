@@ -3,7 +3,7 @@ CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
 	FIELD field_2054 INSTANCE Lnet/minecraft/class_67;
 	FIELD field_2055 useTriangles Z
 	FIELD field_2056 unused Z
-		COMMENT
+		COMMENT Used on init and can only ever be false.
 	FIELD field_2057 byteBuffer Ljava/nio/ByteBuffer;
 	FIELD field_2058 intBuffer Ljava/nio/IntBuffer;
 	FIELD field_2059 floatBuffer Ljava/nio/FloatBuffer;

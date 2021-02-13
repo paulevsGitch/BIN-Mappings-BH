@@ -1,3 +1,2 @@
 CLASS net/minecraft/class_467 net/minecraft/class_467
-	COMMENT Gravity and portal handler?
 	FIELD field_1772 rand Ljava/util/Random;

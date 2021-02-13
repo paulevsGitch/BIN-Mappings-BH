@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_488 net/minecraft/server/network/ServerEntityTracker
-	COMMENT
 	FIELD field_2004 trackedEntities Ljava/util/Set;
 	FIELD field_2005 entityHashes Lnet/minecraft/class_80;
 	FIELD field_2006 minecraftServer Lnet/minecraft/server/MinecraftServer;

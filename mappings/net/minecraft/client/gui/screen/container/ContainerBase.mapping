@@ -6,6 +6,7 @@ CLASS net/minecraft/class_293 net/minecraft/client/gui/screen/container/Containe
 	METHOD <init> (Lnet/minecraft/class_71;)V
 		ARG 1 container
 	METHOD method_984 renderContainerBackground (F)V
+		ARG 1 tickDelta
 	METHOD method_985 renderForeground ()V
 	METHOD method_986 getSlot (II)Lnet/minecraft/class_133;
 		ARG 1 mouseX

@@ -27,6 +27,7 @@ CLASS net/minecraft/class_191 net/minecraft/entity/data/PaintingMotive
 	FIELD field_694 BURNING_SKULL Lnet/minecraft/class_191;
 	FIELD field_695 SKELETON Lnet/minecraft/class_191;
 	FIELD field_696 DONKEY_KONG Lnet/minecraft/class_191;
+	FIELD field_697 MAX_LENGTH I
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;IIII)V
 		ARG 3 id
 		ARG 4 width

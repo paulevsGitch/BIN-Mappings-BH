@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_107 net/minecraft/entity/Painting
-	FIELD field_1384 dir I
+	FIELD field_1384 direction I
 	FIELD field_1385 tileX I
 	FIELD field_1386 tileY I
 	FIELD field_1387 tileZ I

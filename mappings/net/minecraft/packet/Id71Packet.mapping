@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_45 net/minecraft/packet/Id71Packet
-	FIELD field_173 remoteX I
-	FIELD field_174 remoteY I
-	FIELD field_175 remoteZ I

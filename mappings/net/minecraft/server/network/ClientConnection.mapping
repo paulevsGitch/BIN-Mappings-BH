@@ -1,12 +1,32 @@
 CLASS net/minecraft/class_117 net/minecraft/server/network/ClientConnection
+	FIELD field_1274 staticLock Ljava/lang/Object;
+	FIELD field_1275 readThreads I
+	FIELD field_1276 writeThreads I
+	FIELD field_1279 packetWriteDelay I
 	FIELD field_1280 lock Ljava/lang/Object;
 	FIELD field_1281 socket Ljava/net/Socket;
 	FIELD field_1282 remoteAddress Ljava/net/SocketAddress;
+	FIELD field_1283 readStream Ljava/io/DataInputStream;
+	FIELD field_1284 writeStream Ljava/io/DataOutputStream;
+	FIELD field_1287 packetQueue Ljava/util/List;
+	FIELD field_1288 levelPacketQueue Ljava/util/List;
 	FIELD field_1289 handler Lnet/minecraft/class_240;
 	FIELD field_1291 writeThread Ljava/lang/Thread;
 	FIELD field_1292 readThread Ljava/lang/Thread;
+	FIELD field_1297 queueLength I
+	FIELD field_1298 initialLevelPacketCooldown I
 	METHOD <init> (Ljava/net/Socket;Ljava/lang/String;Lnet/minecraft/class_240;)V
 		ARG 1 socket
+		ARG 2 name
 		ARG 3 handler
+	METHOD method_1123 addPacketToQueue (Lnet/minecraft/class_169;)V
+		ARG 1 packet
 	METHOD method_1125 disconnectClient (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD method_1128 setPacketHandler (Lnet/minecraft/class_240;)V
+		ARG 1 handler
 	METHOD method_1131 getIPAddress ()Ljava/net/SocketAddress;
+	METHOD method_1137 sendQueuedPacket ()Z
+	CLASS 1
+		METHOD run ()V
+	CLASS 4
+		METHOD run ()V

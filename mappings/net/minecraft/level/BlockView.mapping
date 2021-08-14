@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_14 net/minecraft/level/TileView
+CLASS net/minecraft/class_14 net/minecraft/level/BlockView
 	METHOD method_1776 getTileId (III)I
 		ARG 1 x
 		ARG 2 y

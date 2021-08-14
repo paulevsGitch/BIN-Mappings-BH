@@ -6,6 +6,8 @@ CLASS net/minecraft/class_223 net/minecraft/block/Piston
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_760 getRotationByMeta (I)I
+	METHOD method_762 isExtendedByMeta (I)Z
 	METHOD method_764 (Lnet/minecraft/class_18;III)V
 		ARG 2 x
 		ARG 3 y

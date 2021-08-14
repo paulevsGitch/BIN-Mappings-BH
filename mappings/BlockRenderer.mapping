@@ -1,0 +1,75 @@
+CLASS net/minecraft/class_13 BlockRenderer
+	FIELD field_82 blockView Lnet/minecraft/class_14;
+	FIELD field_83 textureOverride I
+	FIELD field_84 mirrorTexture Z
+	FIELD field_85 renderAllSides Z
+	FIELD field_86 eastFaceRotation I
+	FIELD field_87 westFaceRotation I
+	FIELD field_88 southFaceRotation I
+	FIELD field_89 northFaceRotation I
+	FIELD field_90 topFaceRotation I
+	FIELD field_91 bottomFaceRotation I
+	METHOD method_44 renderRails (Lnet/minecraft/class_16;III)Z
+	METHOD method_45 renderTorchTilted (Lnet/minecraft/class_17;DDDDD)V
+	METHOD method_46 renderBottomFace (Lnet/minecraft/class_17;DDDI)V
+	METHOD method_49 renderAllSides (Lnet/minecraft/class_17;III)V
+		ARG 1 block
+		ARG 2 blockX
+		ARG 3 blockY
+		ARG 4 blockZ
+	METHOD method_51 renderWithTexture (Lnet/minecraft/class_17;IIII)V
+		ARG 1 block
+		ARG 2 blockX
+		ARG 3 blockY
+		ARG 4 blockZ
+		ARG 5 texture
+	METHOD method_55 renderTopFace (Lnet/minecraft/class_17;DDDI)V
+	METHOD method_57 render (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 blockX
+		ARG 3 blockY
+		ARG 4 blockZ
+	METHOD method_59 renderPiston (Lnet/minecraft/class_17;IIIZ)Z
+		ARG 1 block
+		ARG 2 blockX
+		ARG 3 blockY
+		ARG 4 blockZ
+		ARG 5 forceExtended
+	METHOD method_61 renderEastFace (Lnet/minecraft/class_17;DDDI)V
+	METHOD method_62 renderTorch (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 blockX
+		ARG 3 blockY
+		ARG 4 blockZ
+	METHOD method_64 renderPistonHead (Lnet/minecraft/class_17;IIIZ)Z
+	METHOD method_65 renderWestFace (Lnet/minecraft/class_17;DDDI)V
+	METHOD method_66 renderPistonExtended (Lnet/minecraft/class_17;III)V
+		ARG 1 block
+		ARG 2 blockX
+		ARG 3 blockY
+		ARG 4 blockZ
+	METHOD method_67 renderNorthFace (Lnet/minecraft/class_17;DDDI)V
+	METHOD method_68 renderLever (Lnet/minecraft/class_17;III)Z
+	METHOD method_69 renderSouthFace (Lnet/minecraft/class_17;DDDI)V
+	METHOD method_70 renderFire (Lnet/minecraft/class_17;III)Z
+	METHOD method_71 renderRedstoneDust (Lnet/minecraft/class_17;III)Z
+	METHOD method_72 renderLadder (Lnet/minecraft/class_17;III)Z
+	METHOD method_73 renderCrossed (Lnet/minecraft/class_17;III)Z
+	METHOD method_74 renderCrops (Lnet/minecraft/class_17;III)Z
+	METHOD method_75 renderFluid (Lnet/minecraft/class_17;III)Z
+	METHOD method_76 renderStandardBlock (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+	METHOD method_77 renderCactus (Lnet/minecraft/class_17;III)Z
+	METHOD method_78 renderFence (Lnet/minecraft/class_17;III)Z
+	METHOD method_79 renderStairs (Lnet/minecraft/class_17;III)Z
+	METHOD method_80 renderDoor (Lnet/minecraft/class_17;III)Z
+	METHOD method_81 renderBed (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 blockX
+		ARG 3 blockY
+		ARG 4 blockZ
+	METHOD method_82 renderRedstoneRepeater (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 blockX
+		ARG 3 blockY
+		ARG 4 blockZ

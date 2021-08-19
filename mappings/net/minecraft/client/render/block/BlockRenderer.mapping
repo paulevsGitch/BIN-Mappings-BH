@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_13 BlockRenderer
+CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 	FIELD field_82 blockView Lnet/minecraft/class_14;
 	FIELD field_83 textureOverride I
 	FIELD field_84 mirrorTexture Z

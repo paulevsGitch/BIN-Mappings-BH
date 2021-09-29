@@ -6,6 +6,7 @@ CLASS net/minecraft/class_97 net/minecraft/client/gui/widgets/ScrollableBase
 	FIELD field_1535 width I
 	FIELD field_1536 height I
 	FIELD field_1537 entryHeight I
+	FIELD field_1540 scrollAmount F
 	FIELD field_1543 isDrawingSelectionBackground Z
 	METHOD <init> (Lnet/minecraft/client/Minecraft;IIIII)V
 		ARG 2 x

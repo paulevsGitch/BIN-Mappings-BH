@@ -1,4 +1,51 @@
 CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
+	FIELD field_100 brightnessBottomNorthEast F
+	FIELD field_101 brightnessBottomNorth F
+	FIELD field_102 brightnessBottomNorthWest F
+	FIELD field_103 brightnessBottomEast F
+	FIELD field_104 brightnessBottomWest F
+	FIELD field_105 brightnessBottomSouthEast F
+	FIELD field_41 brightnessBottomSouth F
+	FIELD field_42 brightnessBottomSouthWest F
+	FIELD field_43 brightnessTopNorthEast F
+	FIELD field_44 brightnessTopNorth F
+	FIELD field_45 brightnessTopNorthWest F
+	FIELD field_46 brightnessTopEast F
+	FIELD field_47 brightnessTopSouthEast F
+	FIELD field_48 brightnessTopSouth F
+	FIELD field_49 brightnessTopWest F
+	FIELD field_50 brightnessTopSouthWest F
+	FIELD field_51 brightnessNorthEast F
+	FIELD field_52 brightnessSouthEast F
+	FIELD field_53 brightnessNorthWest F
+	FIELD field_54 brightnessSouthWest F
+	FIELD field_55 one I
+	FIELD field_56 colourRed00 F
+	FIELD field_57 colourRed01 F
+	FIELD field_58 colurRed11 F
+	FIELD field_59 colourRed10 F
+	FIELD field_60 colourGreen00 F
+	FIELD field_61 colourGreen01 F
+	FIELD field_62 colourGreen11 F
+	FIELD field_63 colourGreen10 F
+	FIELD field_64 colourBlue00 F
+	FIELD field_65 colourBlue01 F
+	FIELD field_66 colourBlue11 F
+	FIELD field_67 fancyGraphics Z
+	FIELD field_68 colourBlue10 F
+	FIELD field_69 allowsGrassUnderTopEast Z
+	FIELD field_70 allowsGrassUnderTopSouth Z
+	FIELD field_71 allowsGrassUnderTopNorth Z
+	FIELD field_72 allowsGrassUnderTopWest Z
+	FIELD field_73 allowsGrassUnderNorthEast Z
+	FIELD field_74 allowsGrassUnderSouthWest Z
+	FIELD field_75 allowsGrassUnderNorthWest Z
+	FIELD field_76 allowsGrassUnderSouthEast Z
+	FIELD field_77 allowsGrassUnderBottomEast Z
+	FIELD field_78 allowsGrassUnderBottomSouth Z
+	FIELD field_79 allowsGrassUnderBottomNorth Z
+	FIELD field_80 allowsGrassUnderBottomWest Z
+	FIELD field_81 itemColourEnabled Z
 	FIELD field_82 blockView Lnet/minecraft/class_14;
 	FIELD field_83 textureOverride I
 	FIELD field_84 mirrorTexture Z
@@ -9,6 +56,14 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 	FIELD field_89 northFaceRotation I
 	FIELD field_90 topFaceRotation I
 	FIELD field_91 bottomFaceRotation I
+	FIELD field_92 shadeTopFace Z
+	FIELD field_93 brightnessMiddle F
+	FIELD field_94 brightnessNorth F
+	FIELD field_95 brightnessBottom F
+	FIELD field_96 brightnessEast F
+	FIELD field_97 brightnessSouth F
+	FIELD field_98 brightnessTop F
+	FIELD field_99 brightnessWest F
 	METHOD method_44 renderRails (Lnet/minecraft/class_16;III)Z
 	METHOD method_45 renderTorchTilted (Lnet/minecraft/class_17;DDDDD)V
 	METHOD method_46 renderBottomFace (Lnet/minecraft/class_17;DDDI)V
@@ -17,18 +72,29 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 2 blockX
 		ARG 3 blockY
 		ARG 4 blockZ
+	METHOD method_50 renderSmooth (Lnet/minecraft/class_17;IIIFFF)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 colourMultiplierRed
+		ARG 6 colourMultiplierGreen
+		ARG 7 colourMultiplierBlue
 	METHOD method_51 renderWithTexture (Lnet/minecraft/class_17;IIII)V
 		ARG 1 block
 		ARG 2 blockX
 		ARG 3 blockY
 		ARG 4 blockZ
 		ARG 5 texture
+	METHOD method_53 (Lnet/minecraft/class_17;Lnet/minecraft/class_18;III)V
+		ARG 1 block
 	METHOD method_55 renderTopFace (Lnet/minecraft/class_17;DDDI)V
 	METHOD method_57 render (Lnet/minecraft/class_17;III)Z
 		ARG 1 block
 		ARG 2 blockX
 		ARG 3 blockY
 		ARG 4 blockZ
+	METHOD method_58 renderFast (Lnet/minecraft/class_17;IIIFFF)Z
 	METHOD method_59 renderPiston (Lnet/minecraft/class_17;IIIZ)Z
 		ARG 1 block
 		ARG 2 blockX
@@ -59,6 +125,9 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 	METHOD method_75 renderFluid (Lnet/minecraft/class_17;III)Z
 	METHOD method_76 renderStandardBlock (Lnet/minecraft/class_17;III)Z
 		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_77 renderCactus (Lnet/minecraft/class_17;III)Z
 	METHOD method_78 renderFence (Lnet/minecraft/class_17;III)Z
 	METHOD method_79 renderStairs (Lnet/minecraft/class_17;III)Z

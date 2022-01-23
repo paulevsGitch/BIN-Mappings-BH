@@ -124,7 +124,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
 		ARG 2 tile
 	METHOD method_439 getTexturePosition (Lnet/minecraft/class_31;)I
 		ARG 1 item
-	METHOD method_440 getNameColour (I)I
+	METHOD method_440 getColourMultiplier (I)I
 	METHOD method_441 getTexturePosition (I)I
 		ARG 1 damage
 	METHOD method_442 getTranslationKey (Lnet/minecraft/class_31;)Ljava/lang/String;

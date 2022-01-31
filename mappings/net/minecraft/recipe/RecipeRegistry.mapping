@@ -4,7 +4,11 @@ CLASS net/minecraft/class_148 net/minecraft/recipe/RecipeRegistry
 	METHOD method_538 getInstance ()Lnet/minecraft/class_148;
 	METHOD method_539 addShapedRecipe (Lnet/minecraft/class_31;[Ljava/lang/Object;)V
 		ARG 1 output
+		ARG 2 recipeArray
 	METHOD method_540 getCraftingOutput (Lnet/minecraft/class_159;)Lnet/minecraft/class_31;
 	METHOD method_541 getRecipes ()Ljava/util/List;
 	METHOD method_542 addShapelessRecipe (Lnet/minecraft/class_31;[Ljava/lang/Object;)V
 		ARG 1 output
+		ARG 2 recipeArray
+	CLASS 1
+		METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I

@@ -6,3 +6,6 @@ CLASS net/minecraft/class_159 net/minecraft/inventory/Crafting
 		ARG 1 container
 		ARG 2 width
 		ARG 3 height
+	METHOD method_974 getInventoryItemXY (II)Lnet/minecraft/class_31;
+		ARG 1 x
+		ARG 2 y

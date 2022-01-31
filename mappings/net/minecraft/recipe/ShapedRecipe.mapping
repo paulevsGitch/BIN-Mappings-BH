@@ -9,4 +9,7 @@ CLASS net/minecraft/class_193 net/minecraft/recipe/ShapedRecipe
 		ARG 2 height
 		ARG 3 ingredients
 		ARG 4 output
-	METHOD method_652 matchesSmall (Lnet/minecraft/class_159;IIZ)Z
+	METHOD method_652 matches (Lnet/minecraft/class_159;IIZ)Z
+		ARG 2 itemX
+		ARG 3 itemY
+		ARG 4 isSmall

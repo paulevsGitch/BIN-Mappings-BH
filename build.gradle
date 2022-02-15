@@ -1,6 +1,5 @@
 buildscript {
 	repositories {
-		jcenter()
 		maven {
 			name "Modmuss50 Repository"
 			url 'https://maven.modmuss50.me'
@@ -14,18 +13,20 @@ buildscript {
 		classpath "commons-io:commons-io:2.6"
 		classpath "org.apache.commons:commons-compress:1.19"
 		classpath "com.google.guava:guava:28.0-jre"
-		classpath 'de.undercouch:gradle-download-task:3.4.3'
-		classpath "com.github.fabricmc:enigma:63d4cfc"
-		classpath 'net.fabricmc:tiny-remapper:0.1.0.40' // TODO anything above this fails, bandaid fix.
-		classpath 'com.github.Chocohead:Stitch:f955c99'
-		classpath 'com.github.Chocohead:tiny-mappings-parser:337c8b6'
+		classpath 'de.undercouch:gradle-download-task:4.1.1'
+		classpath ("cuchaz:enigma-cli:${project.enigma_version}")
+		// TODO: ASM crashes in later TR versions
+		classpath("net.fabricmc:tiny-remapper:0.1.0.40")
+		classpath('com.github.Chocohead:Stitch:f955c99')
+		classpath('com.github.Chocohead:tiny-mappings-parser:337c8b6')
+		classpath "net.fabricmc:name-proposal:${project.name_proposal_version}"
 	}
 }
 
 plugins {
-	id 'de.undercouch.download' version '3.4.3'
-	id 'maven'
+	id 'de.undercouch.download' version '4.1.1'
 	id 'maven-publish'
+	id 'java'
 }
 
 def minecraft_version = "b1.7.3"
@@ -57,7 +58,7 @@ configurations {
 }
 
 dependencies {
-	enigmaRuntime "com.github.fabricmc:enigma:8f9df2a"
+	enigmaRuntime("cuchaz:enigma-swing:${project.enigma_version}")
 	enigmaRuntime 'com.github.Chocohead:Stitch:f955c99'
 }
 
@@ -320,24 +321,18 @@ task setupYarn(dependsOn: mergeJars) {
 
 }
 
-task yarn(dependsOn: setupYarn) {
-	doLast {
-		ant.setLifecycleLogLevel "WARN"
-		ant.java(
-			classname: 'cuchaz.enigma.Main',
-			classpath: configurations.enigmaRuntime.asPath,
-			fork: true,
-			spawn: true
-		) {
-			jvmarg(value: "-Xmx2048m")
-			arg(value: '-jar')
-			arg(value: mergedJar.getAbsolutePath())
-			arg(value: '-mappings')
-			arg(value: mappingsDir.getAbsolutePath())
-			//arg(value: '-profile')
-			//arg(value: 'enigma_profile.json')
-		}
-	}
+task yarn(dependsOn: setupYarn, type: JavaExec) {
+	classpath = configurations.enigmaRuntime
+	mainClass = 'cuchaz.enigma.gui.Main'
+
+	args '-jar'
+	args mergedJar.getAbsolutePath()
+	args '-mappings'
+	args mappingsDir.getAbsolutePath()
+	args '-profile'
+	args 'enigma_profile.json'
+
+	jvmArgs "-Xmx2048m"
 }
 
 task buildEnigma(type: Zip) {
@@ -473,6 +468,15 @@ task mapNamedJar(dependsOn: [mergeJars, mergeTiny]) {
 
 		mapJar(namedJar, mergedJar, mergeTiny.fileOutput, libraries, "intermediary", "named")
 	}
+}
+
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.encoding = "UTF-8"
+	it.options.release = 17
 }
 
 publishing {

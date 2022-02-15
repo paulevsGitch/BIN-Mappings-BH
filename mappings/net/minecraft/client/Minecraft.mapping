@@ -1,9 +1,4 @@
 CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
-	CLASS class_636 TimerHackThread
-		FIELD field_2825 minecraft Lnet/minecraft/client/Minecraft;
-	CLASS class_638 MinecraftWindowAdapter
-	CLASS class_639 LoginThread
-		FIELD field_2829 minecraft Lnet/minecraft/client/Minecraft;
 	FIELD field_2765 mcApplet Lnet/minecraft/client/MinecraftApplet;
 	FIELD field_2766 soundHelper Lnet/minecraft/class_617;
 	FIELD field_2768 texturePackManager Lnet/minecraft/class_303;
@@ -87,9 +82,12 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD method_2118 loadSoundFromDir (Ljava/lang/String;Ljava/io/File;)V
 	METHOD method_2119 start (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 0 playerName
+		ARG 1 playerSession
 	METHOD method_2120 createOrLoadWorld (Ljava/lang/String;Ljava/lang/String;J)V
 	METHOD method_2121 start (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 0 playerName
+		ARG 1 playerSession
+		ARG 2 serverToConnect
 	METHOD method_2123 getGameDirectory ()Ljava/io/File;
 	METHOD method_2124 isCommand (Ljava/lang/String;)Z
 		ARG 1 message
@@ -120,3 +118,8 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD method_2149 isDebugHudEnabled ()Z
 	METHOD method_2151 getOperatingSystem ()Lnet/minecraft/class_531;
 	METHOD method_2152 checkTakingScreenshot ()V
+	CLASS class_636 TimerHackThread
+		FIELD field_2825 minecraft Lnet/minecraft/client/Minecraft;
+	CLASS class_638 MinecraftWindowAdapter
+	CLASS class_639 LoginThread
+		FIELD field_2829 minecraft Lnet/minecraft/client/Minecraft;

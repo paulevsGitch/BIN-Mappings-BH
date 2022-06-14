@@ -130,7 +130,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
 	METHOD method_442 getTranslationKey (Lnet/minecraft/class_31;)Ljava/lang/String;
 		ARG 1 item
 	METHOD method_443 getTranslationKey ()Ljava/lang/String;
-	METHOD method_444 useOnTile (Lnet/minecraft/class_31;Lnet/minecraft/class_54;Lnet/minecraft/class_18;IIII)Z
+	METHOD method_444 useOnBlock (Lnet/minecraft/class_31;Lnet/minecraft/class_54;Lnet/minecraft/class_18;IIII)Z
 		ARG 1 item
 		ARG 2 player
 		ARG 3 level

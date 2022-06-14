@@ -14,8 +14,8 @@ CLASS net/minecraft/class_153 net/minecraft/level/biome/Biome
 	FIELD field_887 SKY Lnet/minecraft/class_153;
 	FIELD field_888 biomeName Ljava/lang/String;
 	FIELD field_889 grassColour I
-	FIELD field_890 topTileId B
-	FIELD field_891 underTileId B
+	FIELD field_890 topBlockId B
+	FIELD field_891 underBlockId B
 	FIELD field_892 foliageColour I
 	FIELD field_893 monsters Ljava/util/List;
 	FIELD field_894 creatures Ljava/util/List;

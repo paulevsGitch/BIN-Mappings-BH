@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_283 net/minecraft/tileentity/TileEntityPiston
+CLASS net/minecraft/class_283 net/minecraft/tileentity/BlockEntityPiston
 	FIELD field_1761 xPos I
 	FIELD field_1762 yPos I
 	FIELD field_1763 zPos I

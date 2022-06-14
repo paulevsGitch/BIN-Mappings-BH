@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_138 net/minecraft/tileentity/TileEntityFurnace
+CLASS net/minecraft/class_138 net/minecraft/tileentity/BlockEntityFurnace
 	FIELD field_1566 burnTime I
 	FIELD field_1567 fuelTime I
 	FIELD field_1568 cookTime I

@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_43 net/minecraft/level/chunk/Chunk
 	FIELD field_953 hasSkyLight Z
 	FIELD field_954 blocks [B
-	FIELD field_955 canHaveTileEntities Z
+	FIELD field_955 canHaveBlockEntities Z
 	FIELD field_956 level Lnet/minecraft/class_18;
 	FIELD field_957 meta Lnet/minecraft/class_257;
 	FIELD field_958 skyLight Lnet/minecraft/class_257;
@@ -30,16 +30,16 @@ CLASS net/minecraft/class_43 net/minecraft/level/chunk/Chunk
 	METHOD method_858 equalPosition (II)Z
 		ARG 1 x
 		ARG 2 z
-	METHOD method_859 getTileId (III)I
+	METHOD method_859 getBlockId (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_861 setTileWithMetadata (IIIII)Z
+	METHOD method_861 setBlockWithMetadata (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-	METHOD method_862 setTileEntity (IIILnet/minecraft/class_55;)V
+	METHOD method_862 setBlockEntity (IIILnet/minecraft/class_55;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

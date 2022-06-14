@@ -13,7 +13,7 @@ CLASS net/minecraft/class_55 net/minecraft/tileentity/BlockEntityBase
 	METHOD method_1071 isInvalid ()Z
 	METHOD method_1072 invalidate ()V
 	METHOD method_1073 validate ()V
-	METHOD method_1075 getTile ()Lnet/minecraft/class_17;
+	METHOD method_1075 getBlock ()Lnet/minecraft/class_17;
 	METHOD method_1076 tick ()V
 	METHOD method_1077 readIdentifyingData (Lnet/minecraft/class_8;)V
 		ARG 1 tag

@@ -1,9 +1,9 @@
 CLASS net/minecraft/class_135 net/minecraft/entity/FishHook
 	FIELD field_1066 shake I
-	FIELD field_1069 xTile I
-	FIELD field_1070 yTile I
-	FIELD field_1071 zTile I
-	FIELD field_1072 inTile I
+	FIELD field_1069 xBlock I
+	FIELD field_1070 yBlock I
+	FIELD field_1071 zBlock I
+	FIELD field_1072 inBlock I
 	FIELD field_1073 inGround Z
 	METHOD <init> (Lnet/minecraft/class_18;DDD)V
 		ARG 2 x

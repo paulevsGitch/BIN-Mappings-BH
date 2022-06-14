@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_330 net/minecraft/client/render/tileentity/TileEntityRenderer
+CLASS net/minecraft/class_330 net/minecraft/client/render/tileentity/BlockEntityRenderer
 	FIELD field_1235 renderDispatcher Lnet/minecraft/class_331;
 	METHOD method_1065 setRenderDispatcher (Lnet/minecraft/class_331;)V
 		ARG 1 renderDispatcher

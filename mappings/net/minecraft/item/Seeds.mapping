@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_380 net/minecraft/item/Seeds
-	FIELD field_1430 cropTileId I
+	FIELD field_1430 cropBlockId I
 	METHOD <init> (II)V
 		ARG 1 id
-		ARG 2 cropTileId
+		ARG 2 cropBlockId

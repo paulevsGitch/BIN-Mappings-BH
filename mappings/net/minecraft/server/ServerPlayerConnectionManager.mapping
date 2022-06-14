@@ -15,7 +15,7 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 	FIELD field_591 whitelisted Z
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
-	METHOD method_549 getViewRadiusInTiles ()I
+	METHOD method_549 getViewRadiusInBlocks ()I
 	METHOD method_550 (DDDDILnet/minecraft/class_169;)V
 		ARG 1 x
 		ARG 3 y

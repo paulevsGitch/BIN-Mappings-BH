@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_301 net/minecraft/block/CropsBlock
+	METHOD method_996 growCropInstantly (Lnet/minecraft/class_18;III)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_997 growCropStage (Lnet/minecraft/class_18;III)F
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

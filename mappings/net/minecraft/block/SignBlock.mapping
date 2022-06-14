@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_460 net/minecraft/block/SignBlock
+	METHOD <init> (ILjava/lang/Class;Z)V
+		ARG 1 id

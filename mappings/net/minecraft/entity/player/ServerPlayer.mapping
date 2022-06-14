@@ -5,7 +5,7 @@ CLASS net/minecraft/class_69 net/minecraft/entity/player/ServerPlayer
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_18;Ljava/lang/String;Lnet/minecraft/class_70;)V
 		ARG 1 server
 		ARG 3 name
-	METHOD method_312 sendTileEntity (Lnet/minecraft/class_55;)V
+	METHOD method_312 sendBlockEntity (Lnet/minecraft/class_55;)V
 	METHOD method_313 tick (Z)V
 	METHOD method_316 getShownItem (I)Lnet/minecraft/class_31;
 		ARG 1 index

@@ -17,6 +17,6 @@ CLASS net/minecraft/class_167 net/minecraft/server/ServerPlayerView
 		ARG 1 serverPlayer
 	METHOD method_1748 addPlayer (Lnet/minecraft/class_69;)V
 		ARG 1 serverPlayer
-	METHOD method_1750 getViewRadiusInTiles ()I
+	METHOD method_1750 getViewRadiusInBlocks ()I
 	METHOD method_1751 (Lnet/minecraft/class_69;)V
 		ARG 1 serverPlayer

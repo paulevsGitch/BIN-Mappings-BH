@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_140 net/minecraft/tileentity/TileEntitySign
+CLASS net/minecraft/class_140 net/minecraft/tileentity/BlockEntitySign
 	FIELD field_2269 lines [Ljava/lang/String;
 	FIELD field_2270 selectedLine I
 	FIELD field_2271 needsInitializing Z

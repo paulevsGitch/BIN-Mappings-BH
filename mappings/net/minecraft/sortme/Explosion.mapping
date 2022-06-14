@@ -5,7 +5,7 @@ CLASS net/minecraft/class_60 net/minecraft/sortme/Explosion
 	FIELD field_1394 z D
 	FIELD field_1395 cause Lnet/minecraft/class_57;
 	FIELD field_1396 power F
-	FIELD field_1397 damagedTiles Ljava/util/Set;
+	FIELD field_1397 damagedBlocks Ljava/util/Set;
 	FIELD field_1398 random Ljava/util/Random;
 	FIELD field_1399 level Lnet/minecraft/class_18;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_57;DDDF)V

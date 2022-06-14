@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_104 net/minecraft/tileentity/TileEntityMobSpawner
+CLASS net/minecraft/class_104 net/minecraft/tileentity/BlockEntityMobSpawner
 	FIELD field_2681 delay I
 	FIELD field_2682 entityRotation D
 	FIELD field_2683 lastEntityRotation D

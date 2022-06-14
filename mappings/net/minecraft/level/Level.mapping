@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_18 net/minecraft/level/Level
-	FIELD field_180 isServerSide Z
+	FIELD field_180 isClientSide Z
 	FIELD field_181 lightingUpdates Ljava/util/List;
 	FIELD field_183 treeSet Ljava/util/TreeSet;
 	FIELD field_187 time J

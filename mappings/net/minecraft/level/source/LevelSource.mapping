@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_51 net/minecraft/level/source/LevelSource
+	METHOD method_1801 validateEmpty ()Z
 	METHOD method_1802 isChunkLoaded (II)Z
 		ARG 1 chunkX
 		ARG 2 chunkZ
@@ -6,8 +7,8 @@ CLASS net/minecraft/class_51 net/minecraft/level/source/LevelSource
 		ARG 1 levelSource
 		ARG 2 chunkX
 		ARG 3 chunkZ
-	METHOD method_1804 deleteCacheCauseClientCantHandleThis (ZLnet/minecraft/class_62;)Z
-		ARG 1 iDontKnowWhy
+	METHOD method_1804 deleteCache (ZLnet/minecraft/class_62;)Z
+		ARG 1 flag
 		ARG 2 listener
 	METHOD method_1806 getChunk (II)Lnet/minecraft/class_43;
 		ARG 1 chunkX

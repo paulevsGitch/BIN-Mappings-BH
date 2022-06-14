@@ -7,6 +7,10 @@ CLASS net/minecraft/class_326 net/minecraft/level/chunk/ServerChunkCache
 	FIELD field_1231 level Lnet/minecraft/class_18;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_243;Lnet/minecraft/class_51;)V
 		ARG 1 level
-	METHOD method_1051 (II)Lnet/minecraft/class_43;
+	METHOD method_1049 updateChunk (Lnet/minecraft/class_43;)V
+		ARG 1 chunk
+	METHOD method_1050 saveChunk (Lnet/minecraft/class_43;)V
+		ARG 1 chunk
+	METHOD method_1051 getChunkOrNull (II)Lnet/minecraft/class_43;
 		ARG 1 x
 		ARG 2 z

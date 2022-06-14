@@ -1,4 +1,22 @@
 CLASS net/minecraft/class_390 net/minecraft/level/chunk/ChunkCache
+	FIELD field_1509 lastX I
+	FIELD field_1510 lastZ I
+	FIELD field_1511 emptyChunk Lnet/minecraft/class_43;
 	FIELD field_1512 levelSource Lnet/minecraft/class_51;
+	FIELD field_1513 chunkIO Lnet/minecraft/class_243;
 	FIELD field_1514 chunkCache [Lnet/minecraft/class_43;
 	FIELD field_1515 level Lnet/minecraft/class_18;
+	FIELD field_1516 lastChunk Lnet/minecraft/class_43;
+	FIELD field_1517 centerX I
+	FIELD field_1518 centerZ I
+	METHOD method_1240 (Lnet/minecraft/class_43;)V
+		ARG 1 chunk
+	METHOD method_1242 setCenter (II)V
+		ARG 1 centerX
+		ARG 2 centerZ
+	METHOD method_1243 isInBounds (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1244 getChunkOrEmpty (II)Lnet/minecraft/class_43;
+		ARG 1 x
+		ARG 2 z

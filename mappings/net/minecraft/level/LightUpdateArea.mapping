@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_417 net/minecraft/level/LightUpdateArea
+	FIELD field_1673 lightType Lnet/minecraft/class_56;
+	FIELD field_1674 x1 I
+	FIELD field_1675 y1 I
+	FIELD field_1676 z1 I
+	FIELD field_1677 x2 I
+	FIELD field_1678 y2 I
+	FIELD field_1679 z2 I
+	METHOD <init> (Lnet/minecraft/class_56;IIIIII)V
+		ARG 1 type
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 z1
+		ARG 5 x2
+		ARG 6 y2
+		ARG 7 z2
+	METHOD method_1402 process (Lnet/minecraft/class_18;)V
+		ARG 1 level

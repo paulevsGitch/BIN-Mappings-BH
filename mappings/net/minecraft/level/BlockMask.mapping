@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_490 net/minecraft/level/BlockMask
+	FIELD field_2009 mask [B
+	METHOD method_1671 setData ([B)V
+		ARG 0 blocks

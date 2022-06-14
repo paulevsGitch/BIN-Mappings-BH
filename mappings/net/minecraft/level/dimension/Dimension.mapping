@@ -3,7 +3,7 @@ CLASS net/minecraft/class_50 net/minecraft/level/dimension/Dimension
 	FIELD field_2174 biomeSource Lnet/minecraft/class_519;
 	FIELD field_2175 blocksCompassAndClock Z
 	FIELD field_2176 evaporatesWater Z
-	FIELD field_2177 halvesMapping Z
+	FIELD field_2177 noSkyLight Z
 	FIELD field_2178 lightTable [F
 	FIELD field_2179 id I
 	FIELD field_2180 colours [F

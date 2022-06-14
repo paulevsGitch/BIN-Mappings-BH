@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_17 net/minecraft/block/BlockBase
+CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 	FIELD field_1821 BEDROCK Lnet/minecraft/class_17;
 	FIELD field_1822 FLOWING_WATER Lnet/minecraft/class_17;
 	FIELD field_1823 STILL_WATER Lnet/minecraft/class_17;

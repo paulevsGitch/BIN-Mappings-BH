@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_55 net/minecraft/tileentity/TileEntityBase
+CLASS net/minecraft/class_55 net/minecraft/tileentity/BlockEntityBase
 	FIELD field_1236 ID_TO_CLASS Ljava/util/Map;
 	FIELD field_1237 CLASS_TO_ID Ljava/util/Map;
 	FIELD field_1238 level Lnet/minecraft/class_18;

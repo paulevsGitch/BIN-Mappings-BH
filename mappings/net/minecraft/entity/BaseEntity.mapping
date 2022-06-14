@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_57 net/minecraft/entity/EntityBase
+CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	FIELD field_1591 entityId I
 	FIELD field_1592 renderDistanceMultiplier D
 	FIELD field_1594 passenger Lnet/minecraft/class_57;
@@ -85,6 +85,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/EntityBase
 		ARG 7 yaw
 		ARG 8 pitch
 	METHOD method_1342 setRotation (FF)V
+	METHOD method_1343 checkAndSave (Lnet/minecraft/class_8;)Z
+		ARG 1 tag
 	METHOD method_1346 toTag (Lnet/minecraft/class_8;)V
 	METHOD method_1347 squaredDistanceTo (DDD)D
 		ARG 1 x

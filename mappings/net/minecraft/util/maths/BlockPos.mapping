@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_339 net/minecraft/util/maths/TilePos
+CLASS net/minecraft/class_339 net/minecraft/util/maths/BlockPos
 	FIELD field_2100 x I
 	FIELD field_2101 y I
 	FIELD field_2102 z I

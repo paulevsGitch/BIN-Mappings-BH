@@ -3,6 +3,7 @@ CLASS net/minecraft/class_326 net/minecraft/level/chunk/ServerChunkCache
 	FIELD field_1227 levelSource Lnet/minecraft/class_51;
 	FIELD field_1228 chunkIO Lnet/minecraft/class_243;
 	FIELD field_1229 serverChunkCache Ljava/util/Map;
+	FIELD field_1230 loadedChunks Ljava/util/List;
 	FIELD field_1231 level Lnet/minecraft/class_18;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_243;Lnet/minecraft/class_51;)V
 		ARG 1 level

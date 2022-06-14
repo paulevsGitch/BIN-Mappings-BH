@@ -4,6 +4,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	FIELD field_183 treeSet Ljava/util/TreeSet;
 	FIELD field_187 time J
 	FIELD field_188 noPlayers Z
+	FIELD field_197 forceBlockUpdate Z
 	FIELD field_198 entities Ljava/util/List;
 	FIELD field_199 tileEntities Ljava/util/List;
 	FIELD field_200 players Ljava/util/List;
@@ -20,6 +21,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	FIELD field_218 cache Lnet/minecraft/class_51;
 	FIELD field_219 dimensionData Lnet/minecraft/class_52;
 	FIELD field_220 properties Lnet/minecraft/class_7;
+	FIELD field_222 dimDataHandler Lnet/minecraft/class_53;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_50;)V
 		ARG 1 level
 		ARG 2 dimension
@@ -41,10 +43,24 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	METHOD method_152 getTopBlockAboveSeaLevel (II)I
 		ARG 1 x
 		ARG 2 z
-	METHOD method_154 setTileWithMetadata (IIIII)Z
+	METHOD method_153 isAreaLoaded (IIII)Z
+		ARG 1 centerX
+		ARG 2 centerY
+		ARG 3 centerZ
+		ARG 4 distance
+	METHOD method_154 setBlock (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 id
+		ARG 5 meta
+	METHOD method_155 isAreaLoaded (IIIIII)Z
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 z1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 z2
 	METHOD method_156 canPlaceTile (IIIIZI)Z
 		ARG 1 id
 		ARG 2 x
@@ -104,12 +120,17 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	METHOD method_199 getChunk (II)Lnet/minecraft/class_43;
 		ARG 1 x
 		ARG 2 z
-	METHOD method_200 setTileInChunk (IIII)Z
+	METHOD method_200 setBlock (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tileId
-	METHOD method_201 placeBlockWithMetaData (IIIII)Z
+	METHOD method_201 setBlockAndUpdate (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
+		ARG 5 meta
 	METHOD method_203 (IIILnet/minecraft/class_55;)V
 		ARG 1 x
 		ARG 2 y
@@ -138,7 +159,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	METHOD method_222 getHeight (II)I
 		ARG 1 x
 		ARG 2 z
-	METHOD method_223 (IIII)Z
+	METHOD method_223 setMeta (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -150,7 +171,11 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	METHOD method_228 (II)I
 		ARG 1 x
 		ARG 2 z
-	METHOD method_229 setTile (IIII)Z
+	METHOD method_229 setBlockAndUpdate (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
 	METHOD method_230 playLevelEvent (IIIII)V
 	METHOD method_231 removeEntity (Lnet/minecraft/class_57;)V
 		ARG 1 entity
@@ -161,12 +186,17 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_235 updateBlock (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
 	METHOD method_236 removeEntityServer (Lnet/minecraft/class_57;)V
 		ARG 1 entity
 	METHOD method_238 isChunkLoaded (II)Z
 		ARG 1 chunkX
 		ARG 2 chunkY
-	METHOD method_239 isTileLoaded (III)Z
+	METHOD method_239 isBlockLoaded (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

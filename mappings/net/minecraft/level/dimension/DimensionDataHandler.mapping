@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_53 net/minecraft/level/dimension/DimensionDataHandler
+	FIELD field_550 dimensionData Lnet/minecraft/class_52;
+	FIELD field_551 pathCache Ljava/util/Map;
+	FIELD field_552 mapStorageCache Ljava/util/List;
+	FIELD field_553 idCache Ljava/util/Map;
+	METHOD <init> (Lnet/minecraft/class_52;)V
+		ARG 1 dimensionData
+	METHOD method_523 save ()V
+	METHOD method_524 saveData (Lnet/minecraft/class_58;)V
+		ARG 1 mapStorage
+	METHOD method_525 getData (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/class_58;
+		ARG 1 dataClass
+		ARG 2 path
+	METHOD method_526 getID (Ljava/lang/String;)I
+		ARG 1 name
+	METHOD method_527 setData (Ljava/lang/String;Lnet/minecraft/class_58;)V
+		ARG 1 path
+		ARG 2 mapStorage
+	METHOD method_528 loadData ()V

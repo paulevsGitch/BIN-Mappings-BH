@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_471 net/minecraft/client/render/WorldRenderer
+CLASS net/minecraft/class_471 net/minecraft/client/render/LevelRenderer
 	FIELD field_1805 level Lnet/minecraft/class_18;
 	FIELD field_1806 textureManager Lnet/minecraft/class_76;
 	FIELD field_1814 client Lnet/minecraft/client/Minecraft;

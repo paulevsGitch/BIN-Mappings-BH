@@ -12,8 +12,8 @@ CLASS net/minecraft/class_217 net/minecraft/stat/Stats
 	FIELD field_817 useStatList Ljava/util/List;
 	FIELD field_818 blocksMinedList Ljava/util/List;
 	FIELD field_819 startGame Lnet/minecraft/class_139;
-	FIELD field_820 createWorld Lnet/minecraft/class_139;
-	FIELD field_821 loadWorld Lnet/minecraft/class_139;
+	FIELD field_820 createLevel Lnet/minecraft/class_139;
+	FIELD field_821 loadLevel Lnet/minecraft/class_139;
 	FIELD field_822 joinMultiplayer Lnet/minecraft/class_139;
 	FIELD field_823 leaveGame Lnet/minecraft/class_139;
 	FIELD field_824 playOneMinute Lnet/minecraft/class_139;

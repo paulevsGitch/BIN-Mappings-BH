@@ -83,7 +83,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD method_2119 start (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 0 playerName
 		ARG 1 playerSession
-	METHOD method_2120 createOrLoadWorld (Ljava/lang/String;Ljava/lang/String;J)V
+	METHOD method_2120 createOrLoadLevel (Ljava/lang/String;Ljava/lang/String;J)V
 	METHOD method_2121 start (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 0 playerName
 		ARG 1 playerSession
@@ -91,7 +91,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD method_2123 getGameDirectory ()Ljava/io/File;
 	METHOD method_2124 isCommand (Ljava/lang/String;)Z
 		ARG 1 message
-	METHOD method_2125 convertWorldFormat (Ljava/lang/String;Ljava/lang/String;)V
+	METHOD method_2125 convertLevelFormat (Ljava/lang/String;Ljava/lang/String;)V
 	METHOD method_2126 onGameStartupFailure (Lnet/minecraft/class_447;)V
 	METHOD method_2127 getLevelStorage ()Lnet/minecraft/class_182;
 	METHOD method_2128 printOpenGLError (Ljava/lang/String;)V

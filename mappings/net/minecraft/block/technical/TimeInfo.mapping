@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_366 net/minecraft/block/technical/TimeInfo
+	FIELD field_1400 posX I
+	FIELD field_1401 posY I
+	FIELD field_1402 posZ I
+	FIELD field_1403 blockID I
+	FIELD field_1404 time J
+	FIELD field_1405 globalIndex J
+	FIELD field_1406 index J
+	METHOD <init> (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
+	METHOD compareTo (Ljava/lang/Object;)I
+		ARG 1 info
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 obj
+	METHOD method_1197 setTime (J)Lnet/minecraft/class_366;
+		ARG 1 time

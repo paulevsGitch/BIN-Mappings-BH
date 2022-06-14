@@ -131,7 +131,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 	FIELD field_1950 SAPLING Lnet/minecraft/class_17;
 	METHOD <init> (IILnet/minecraft/class_15;)V
 		ARG 1 id
-		ARG 2 tex
+		ARG 2 texture
 		ARG 3 material
 	METHOD <init> (ILnet/minecraft/class_15;)V
 		ARG 1 id
@@ -162,10 +162,13 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 4 z
 		ARG 5 blockMeta
 		ARG 6 extraInfo
-	METHOD method_1564 (Lnet/minecraft/class_18;IIILnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+	METHOD method_1564 getHitResult (Lnet/minecraft/class_18;IIILnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 start
+		ARG 6 end
 	METHOD method_1565 getTickrate ()I
 	METHOD method_1566 canGrow (Lnet/minecraft/class_18;III)Z
 		ARG 1 level
@@ -178,7 +181,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 3 y
 		ARG 4 z
 	METHOD method_1568 isPowered (Lnet/minecraft/class_14;IIII)Z
-		ARG 1 tileView
+		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -192,6 +195,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 5 meta
 	METHOD method_1571 isCollidable (IZ)Z
 		ARG 1 meta
+		ARG 2 collide
 	METHOD method_1572 onCollideWithEntity (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;Lnet/minecraft/class_26;)V
 		ARG 1 level
 		ARG 2 x
@@ -200,7 +204,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 5 entityBase
 		ARG 6 vec3f
 	METHOD method_1573 isSolid (Lnet/minecraft/class_14;IIII)Z
-		ARG 1 tileView
+		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -243,6 +247,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 	METHOD method_1588 isInsideXY (Lnet/minecraft/class_26;)Z
 		ARG 1 vec3f
 	METHOD method_1589 getBaseColour (I)I
+		ARG 1 meta
 	METHOD method_1590 setLightOpacity (I)Lnet/minecraft/class_17;
 		ARG 1 opacity
 	METHOD method_1591 disableNotifyOnMetaDataChange ()Lnet/minecraft/class_17;
@@ -260,7 +265,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 	METHOD method_1598 isStatEnabled ()Z
 	METHOD method_1599 disableStat ()Lnet/minecraft/class_17;
 	METHOD method_1600 getColourMultiplier (Lnet/minecraft/class_14;III)I
-		ARG 1 tileView
+		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -276,10 +281,11 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 	METHOD method_1603 getDropCount (Ljava/util/Random;)I
 		ARG 1 rand
 	METHOD method_1604 getBrightness (Lnet/minecraft/class_14;III)F
-		ARG 1 tileView
+		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_1605 updateRenderBounds ()V
 	METHOD method_1606 onBlockPlaced (Lnet/minecraft/class_18;IIII)V
 		ARG 1 level
 		ARG 2 x
@@ -335,7 +341,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 4 z
 		ARG 5 entityBase
 	METHOD method_1616 updateBoundingBox (Lnet/minecraft/class_14;III)V
-		ARG 1 tileView
+		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -346,7 +352,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 4 z
 		ARG 5 rand
 	METHOD method_1618 isSideRendered (Lnet/minecraft/class_14;IIII)Z
-		ARG 1 tileView
+		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -365,7 +371,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1625 beforeDestroyedByExplosion (Lnet/minecraft/class_18;IIIIF)V
+	METHOD method_1625 drop (Lnet/minecraft/class_18;IIIIF)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
@@ -373,11 +379,11 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 5 meta
 		ARG 6 dropChance
 	METHOD method_1626 getTextureForSide (Lnet/minecraft/class_14;IIII)I
-		ARG 1 tileView
+		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-		ARG 5 meta
+		ARG 5 side
 	METHOD method_1627 getTextureForSide (II)I
 		ARG 1 side
 		ARG 2 meta
@@ -388,7 +394,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 4 y
 		ARG 5 z
 		ARG 6 meta
-	METHOD method_1629 droppedMeta (I)I
+	METHOD method_1629 getDropMeta (I)I
 		ARG 1 meta
 	METHOD method_1630 onBlockRemoved (Lnet/minecraft/class_18;III)V
 		ARG 1 level

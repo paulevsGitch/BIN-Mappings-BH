@@ -34,11 +34,17 @@ CLASS net/minecraft/class_43 net/minecraft/level/chunk/Chunk
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_861 setBlockWithMetadata (IIIII)Z
+	METHOD method_860 setBlock (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 blockId
+		ARG 4 id
+	METHOD method_861 setBlock (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
+		ARG 5 meta
 	METHOD method_862 setBlockEntity (IIILnet/minecraft/class_55;)V
 		ARG 1 x
 		ARG 2 y
@@ -113,7 +119,8 @@ CLASS net/minecraft/class_43 net/minecraft/level/chunk/Chunk
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_884 (III)V
+	METHOD method_883 removeEntitiesFromLevel ()V
+	METHOD method_884 removeBlockEntity (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

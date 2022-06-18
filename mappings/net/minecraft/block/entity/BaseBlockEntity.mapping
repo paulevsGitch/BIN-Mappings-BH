@@ -26,4 +26,4 @@ CLASS net/minecraft/class_55 net/minecraft/block/entity/BaseBlockEntity
 		ARG 1 tag
 	METHOD method_1078 writeIdentifyingData (Lnet/minecraft/class_8;)V
 		ARG 1 tag
-	METHOD method_947 update ()V
+	METHOD method_947 markDirty ()V

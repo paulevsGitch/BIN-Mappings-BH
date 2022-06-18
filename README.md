@@ -20,7 +20,7 @@ The goal of this fork is to make mappins as complete as possible, fix errors in 
 - TypeName -> NameType conversion (example BaseBlock -> BlockBase)
 - Name -> NameType conversion (example Block -> BlockItem)
 
-### To use this as a part of your gragle project:
+### Usage in gragle project:
 
 1. Add jitpack to you repositories:
 

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_31 net/minecraft/item/ItemInstance
+CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 	FIELD field_751 count I
 	FIELD field_752 cooldown I
 	FIELD field_753 itemId I
@@ -8,21 +8,21 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemInstance
 		ARG 2 count
 		ARG 3 damage
 	METHOD <init> (Lnet/minecraft/class_124;)V
-		ARG 1 itemType
+		ARG 1 item
 	METHOD <init> (Lnet/minecraft/class_124;I)V
-		ARG 1 itemType
+		ARG 1 item
 		ARG 2 count
 	METHOD <init> (Lnet/minecraft/class_124;II)V
-		ARG 1 itemType
+		ARG 1 item
 		ARG 2 count
 		ARG 3 damage
 	METHOD <init> (Lnet/minecraft/class_17;)V
-		ARG 1 tile
+		ARG 1 block
 	METHOD <init> (Lnet/minecraft/class_17;I)V
-		ARG 1 tile
+		ARG 1 block
 		ARG 2 count
 	METHOD <init> (Lnet/minecraft/class_17;II)V
-		ARG 1 tile
+		ARG 1 block
 		ARG 2 count
 		ARG 3 damage
 	METHOD <init> (Lnet/minecraft/class_8;)V
@@ -31,35 +31,62 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemInstance
 	METHOD method_695 split (I)Lnet/minecraft/class_31;
 		ARG 1 countToTake
 	METHOD method_696 postMine (IIIILnet/minecraft/class_54;)V
+		ARG 1 blockID
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player
 	METHOD method_697 applyDamage (ILnet/minecraft/class_57;)V
 		ARG 1 moreDamage
+		ARG 2 entity
 	METHOD method_698 use (Lnet/minecraft/class_18;Lnet/minecraft/class_54;)Lnet/minecraft/class_31;
+		ARG 1 level
+		ARG 2 player
 	METHOD method_699 inventoryTick (Lnet/minecraft/class_18;Lnet/minecraft/class_57;IZ)V
+		ARG 1 level
+		ARG 2 entity
+		ARG 3 inventorySlot
+		ARG 4 isActiveSlot
 	METHOD method_700 unusedEmptyMethod1 (Lnet/minecraft/class_54;)V
+		ARG 1 player
 	METHOD method_701 useOnBlock (Lnet/minecraft/class_54;Lnet/minecraft/class_18;IIII)Z
+		ARG 1 player
+		ARG 2 level
 		ARG 3 x
 		ARG 4 y
 		ARG 5 z
+		ARG 6 facing
 	METHOD method_702 isDamageAndIDIdentical (Lnet/minecraft/class_31;)Z
+		ARG 1 stack
 	METHOD method_703 areStacksIdentical (Lnet/minecraft/class_31;Lnet/minecraft/class_31;)Z
+		ARG 0 stackA
+		ARG 1 stackB
 	METHOD method_704 interactWithEntity (Lnet/minecraft/class_127;)V
+		ARG 1 entity
 	METHOD method_705 postHit (Lnet/minecraft/class_127;Lnet/minecraft/class_54;)V
+		ARG 1 entity
+		ARG 2 player
 	METHOD method_706 toTag (Lnet/minecraft/class_8;)Lnet/minecraft/class_8;
 		ARG 1 tag
 	METHOD method_707 getAttack (Lnet/minecraft/class_57;)I
+		ARG 1 entity
 	METHOD method_708 getStrengthOnBlock (Lnet/minecraft/class_17;)F
+		ARG 1 block
 	METHOD method_709 getMaxStackSize ()I
 	METHOD method_710 setDamage (I)V
 		ARG 1 newDamage
 	METHOD method_711 onCrafted (Lnet/minecraft/class_18;Lnet/minecraft/class_54;)V
 	METHOD method_712 copy (Lnet/minecraft/class_31;)Lnet/minecraft/class_31;
+		ARG 0 stack
 	METHOD method_713 fromTag (Lnet/minecraft/class_8;)V
 		ARG 1 tag
 	METHOD method_714 isEffectiveOn (Lnet/minecraft/class_17;)Z
+		ARG 1 block
 	METHOD method_715 isStackable ()Z
 	METHOD method_716 isStackIdentical2 (Lnet/minecraft/class_31;)Z
 	METHOD method_717 hasDurability ()Z
 	METHOD method_718 isStackIdentical (Lnet/minecraft/class_31;)Z
+		ARG 1 stack
 	METHOD method_719 usesMeta ()Z
 	METHOD method_720 isDamaged ()Z
 	METHOD method_721 getDamage2 ()I

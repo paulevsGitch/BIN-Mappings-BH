@@ -1,7 +1,13 @@
 CLASS net/minecraft/class_299 net/minecraft/block/LeavesBlock
+	FIELD field_1171 neighbourBlocks [I
+	FIELD field_1172 blockTexture I
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 texture
 	METHOD method_990 dropAndRemove (Lnet/minecraft/class_18;III)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_991 (Z)V
+	METHOD method_991 updateGraphics (Z)V
 		ARG 1 isSolid

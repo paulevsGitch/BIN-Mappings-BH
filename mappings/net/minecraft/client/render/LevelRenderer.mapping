@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_471 net/minecraft/client/render/LevelRenderer
+	FIELD field_1782 viewDistance I
+	FIELD field_1805 level Lnet/minecraft/class_18;
+	FIELD field_1806 textureManager Lnet/minecraft/class_76;
+	FIELD field_1814 client Lnet/minecraft/client/Minecraft;
+	FIELD field_1815 tileRenderer Lnet/minecraft/class_13;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_76;)V
+		ARG 1 minecraft
+		ARG 2 textureManager
+	METHOD method_1537 updateFromOptions ()V
+	METHOD method_1539 renderSky (F)V
+	METHOD method_1546 (Lnet/minecraft/class_18;)V
+		ARG 1 level
+	METHOD method_1551 getDebugFirstLine ()Ljava/lang/String;
+	METHOD method_1555 getDebugSecondLine ()Ljava/lang/String;
+	METHOD method_1556 renderClouds (F)V
+	METHOD method_1559 renderStars ()V

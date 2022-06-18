@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_55 net/minecraft/tileentity/BlockEntityBase
+CLASS net/minecraft/class_55 net/minecraft/block/entity/BaseBlockEntity
 	FIELD field_1236 ID_TO_CLASS Ljava/util/Map;
 	FIELD field_1237 CLASS_TO_ID Ljava/util/Map;
 	FIELD field_1238 level Lnet/minecraft/class_18;
@@ -7,16 +7,23 @@ CLASS net/minecraft/class_55 net/minecraft/tileentity/BlockEntityBase
 	FIELD field_1241 z I
 	FIELD field_1242 invalid Z
 	METHOD method_1067 register (Ljava/lang/Class;Ljava/lang/String;)V
+		ARG 0 tileEntityClass
+		ARG 1 name
 	METHOD method_1068 tileEntityFromNBT (Lnet/minecraft/class_8;)Lnet/minecraft/class_55;
-	METHOD method_1069 getCachedId ()I
+		ARG 0 tag
+	METHOD method_1069 getBlockMeta ()I
 	METHOD method_1070 getPacketContents ()Lnet/minecraft/class_169;
 	METHOD method_1071 isInvalid ()Z
 	METHOD method_1072 invalidate ()V
 	METHOD method_1073 validate ()V
+	METHOD method_1074 distance (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1075 getBlock ()Lnet/minecraft/class_17;
 	METHOD method_1076 tick ()V
 	METHOD method_1077 readIdentifyingData (Lnet/minecraft/class_8;)V
 		ARG 1 tag
 	METHOD method_1078 writeIdentifyingData (Lnet/minecraft/class_8;)V
 		ARG 1 tag
-	METHOD method_947 markDirty ()V
+	METHOD method_947 update ()V

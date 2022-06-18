@@ -3,6 +3,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	FIELD field_181 lightingUpdates Ljava/util/List;
 	FIELD field_182 entityToRemove Ljava/util/List;
 	FIELD field_183 treeSet Ljava/util/TreeSet;
+	FIELD field_184 tickNextTick Ljava/util/Set;
 	FIELD field_186 skyColor J
 	FIELD field_187 time J
 	FIELD field_188 noPlayers Z
@@ -116,6 +117,8 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 5 z
 		ARG 6 id
 	METHOD method_175 getEntities (Ljava/lang/Class;Lnet/minecraft/class_25;)Ljava/util/List;
+		ARG 1 entityClass
+		ARG 2 area
 	METHOD method_176 getData (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/class_58;
 		ARG 1 dataType
 		ARG 2 path
@@ -153,6 +156,8 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	METHOD method_192 (Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)Lnet/minecraft/class_61;
 		ARG 1 entityA
 		ARG 2 entityB
+	METHOD method_194 processBlockTicks (Z)Z
+		ARG 1 ignoreTime
 	METHOD method_195 saveLevel (ZLnet/minecraft/class_62;)V
 		ARG 2 listener
 	METHOD method_197 getChunkCache ()Lnet/minecraft/class_51;
@@ -179,10 +184,11 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 4 x2
 		ARG 5 y2
 		ARG 6 z2
-	METHOD method_203 (IIILnet/minecraft/class_55;)V
+	METHOD method_203 updateTileEntity (IIILnet/minecraft/class_55;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 entity
 	METHOD method_205 updateLight (Lnet/minecraft/class_56;IIII)V
 		ARG 1 type
 		ARG 2 x
@@ -364,3 +370,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	METHOD method_291 getEntities ()Ljava/util/List;
 	METHOD method_292 clearCache ()V
 	METHOD method_293 disconnect ()V
+	METHOD method_294 randomDisplayTick (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

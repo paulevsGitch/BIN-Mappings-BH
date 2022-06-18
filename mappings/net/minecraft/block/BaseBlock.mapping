@@ -160,8 +160,8 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-		ARG 5 blockMeta
-		ARG 6 extraInfo
+		ARG 5 actionType
+		ARG 6 actionInfo
 	METHOD method_1564 getHitResult (Lnet/minecraft/class_18;IIILnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
 		ARG 1 level
 		ARG 2 x

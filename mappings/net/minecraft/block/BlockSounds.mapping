@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_475 net/minecraft/block/sounds/BlockSounds
+CLASS net/minecraft/class_475 net/minecraft/block/BlockSounds
 	FIELD field_2598 sound Ljava/lang/String;
 	FIELD field_2599 volume F
 	FIELD field_2600 pitch F

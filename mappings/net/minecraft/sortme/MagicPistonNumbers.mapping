@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_505 net/minecraft/sortme/MagicPistonNumbers
+	FIELD field_2107 OFFSET_X [I
+	FIELD field_2108 OFFSET_Y [I
+	FIELD field_2109 OFFSET_Z [I

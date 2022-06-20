@@ -4,7 +4,7 @@ CLASS net/minecraft/class_77 net/minecraft/entity/BaseParticle
 	FIELD field_2637 deltaV F
 	FIELD field_2638 age I
 	FIELD field_2639 maxAge I
-	FIELD field_2640 side F
+	FIELD field_2640 size F
 	FIELD field_2641 fallSpeed F
 	FIELD field_2642 colorR F
 	FIELD field_2643 colorG F
@@ -22,8 +22,8 @@ CLASS net/minecraft/class_77 net/minecraft/entity/BaseParticle
 		ARG 12 velocityZ
 	METHOD method_2000 scaleVelocity (F)Lnet/minecraft/class_77;
 		ARG 1 delta
-	METHOD method_2001 setSize (F)Lnet/minecraft/class_77;
-		ARG 1 size
+	METHOD method_2001 scaleSize (F)Lnet/minecraft/class_77;
+		ARG 1 scale
 	METHOD method_2002 render (Lnet/minecraft/class_67;FFFFFF)V
 		ARG 1 tessellator
 		ARG 2 delta

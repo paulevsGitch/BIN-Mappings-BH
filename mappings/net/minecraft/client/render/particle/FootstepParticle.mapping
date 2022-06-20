@@ -1,1 +1,10 @@
 CLASS net/minecraft/class_227 net/minecraft/client/render/particle/FootstepParticle
+	FIELD field_849 particleAge I
+	FIELD field_850 maxParticleAge I
+	FIELD field_851 manager Lnet/minecraft/class_76;
+	METHOD <init> (Lnet/minecraft/class_76;Lnet/minecraft/class_18;DDD)V
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z

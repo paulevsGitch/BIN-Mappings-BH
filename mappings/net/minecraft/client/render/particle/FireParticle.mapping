@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_566 net/minecraft/client/render/particle/FireParticle
+	FIELD field_2400 startSize F

@@ -13,3 +13,10 @@ CLASS net/minecraft/class_578 net/minecraft/client/render/entity/EntityRenderDis
 		ARG 1 entityClass
 	METHOD method_1919 get (Lnet/minecraft/class_57;)Lnet/minecraft/class_579;
 		ARG 1 entity
+	METHOD method_1920 render (Lnet/minecraft/class_57;DDDFF)V
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 yaw
+		ARG 9 pitch

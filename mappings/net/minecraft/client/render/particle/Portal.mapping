@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_518 net/minecraft/client/render/particle/Portal
+	FIELD field_2149 startSize F
+	FIELD field_2150 startX D
+	FIELD field_2151 startY D
+	FIELD field_2152 startZ D

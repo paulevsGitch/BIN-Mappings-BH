@@ -1,3 +1,11 @@
 CLASS net/minecraft/class_20 net/minecraft/client/render/particle/NoteParticle
+	FIELD field_106 startSize F
 	METHOD <init> (Lnet/minecraft/class_18;DDDDDDF)V
 		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 color
+		ARG 10 unusedA
+		ARG 12 unusedB
+		ARG 14 scale

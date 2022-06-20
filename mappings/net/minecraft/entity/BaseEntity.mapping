@@ -35,6 +35,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	FIELD field_1637 prevRenderX D
 	FIELD field_1638 prevRenderY D
 	FIELD field_1639 prevRenderZ D
+	FIELD field_1642 updateFromBB Z
 	FIELD field_1644 rand Ljava/util/Random;
 	FIELD field_1647 fire I
 	FIELD field_1652 skinUrl Ljava/lang/String;
@@ -150,3 +151,4 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	METHOD method_1392 damageByFire (I)V
 		ARG 1 amount
 	METHOD method_1394 getBrightnessAtEyes (F)F
+		ARG 1 delta

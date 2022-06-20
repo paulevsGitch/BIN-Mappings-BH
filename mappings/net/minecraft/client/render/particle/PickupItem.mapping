@@ -1,1 +1,11 @@
 CLASS net/minecraft/class_143 net/minecraft/client/render/particle/PickupItem
+	FIELD field_537 itemEntity Lnet/minecraft/class_57;
+	FIELD field_538 magnetTarget Lnet/minecraft/class_57;
+	FIELD field_539 particleAge I
+	FIELD field_540 maxParticleAge I
+	FIELD field_541 yOffset F
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)V
+		ARG 1 level
+		ARG 2 itemEntity
+		ARG 3 magnetTarget
+		ARG 4 yOffset

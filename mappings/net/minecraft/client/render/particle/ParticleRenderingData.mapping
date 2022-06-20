@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_388 net/minecraft/client/render/particle/ParticleRenderingData
+	FIELD field_1486 nextX D
+	FIELD field_1487 nextY D
+	FIELD field_1488 posX D
+	FIELD field_1489 posY D
+	FIELD field_1490 deltaX D
+	FIELD field_1491 deltaY D
+	FIELD field_1492 speed D
+	FIELD field_1493 removed Z
+	FIELD field_1494 age I
+	FIELD field_1495 maxAge I
+	FIELD field_1496 nextColorR D
+	FIELD field_1497 nextColorG D
+	FIELD field_1498 nextColorB D
+	FIELD field_1499 nextColorA D
+	FIELD field_1500 colorR D
+	FIELD field_1501 colorG D
+	FIELD field_1502 colorB D
+	FIELD field_1503 colorA D
+	FIELD field_1504 random Ljava/util/Random;
+	METHOD method_1237 beforeUpdate ()V
+	METHOD method_1238 update (Lnet/minecraft/class_35;)V
+		ARG 1 renderer
+	METHOD method_1239 remove ()V

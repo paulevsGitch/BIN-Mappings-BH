@@ -1,11 +1,31 @@
 CLASS net/minecraft/class_75 net/minecraft/client/particle/ParticleManager
 	FIELD field_269 level Lnet/minecraft/class_18;
+	FIELD field_270 renderLayers [Ljava/util/List;
 	FIELD field_271 textureManager Lnet/minecraft/class_76;
 	FIELD field_272 rand Ljava/util/Random;
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_76;)V
+		ARG 1 level
+		ARG 2 manager
+	METHOD method_320 tick ()V
 	METHOD method_321 addBlockClickParticle (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 facing
 	METHOD method_322 addBlockBreakParticles (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockID
+		ARG 5 meta
+	METHOD method_323 setLevel (Lnet/minecraft/class_18;)V
+		ARG 1 level
+	METHOD method_324 renderAll (Lnet/minecraft/class_57;F)V
+		ARG 1 entity
+		ARG 2 delta
 	METHOD method_325 addParticle (Lnet/minecraft/class_77;)V
+		ARG 1 particle
+	METHOD method_326 asString ()Ljava/lang/String;
+	METHOD method_327 render (Lnet/minecraft/class_57;F)V
+		ARG 1 entity
+		ARG 2 delta

@@ -79,6 +79,9 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 1 id
 		ARG 2 amount
 	METHOD method_1340 setPosition (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1341 setPositionAndAngles (DDDFF)V
 		ARG 1 x
 		ARG 3 y
@@ -86,6 +89,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 7 yaw
 		ARG 8 pitch
 	METHOD method_1342 setRotation (FF)V
+		ARG 1 yaw
+		ARG 2 pitch
 	METHOD method_1343 checkAndSave (Lnet/minecraft/class_8;)Z
 		ARG 1 tag
 	METHOD method_1346 toTag (Lnet/minecraft/class_8;)V
@@ -105,6 +110,9 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 2 amount
 	METHOD method_1357 getMountedHeightOffset ()D
 	METHOD method_1358 canClimb ()Z
+	METHOD method_1362 updateRotation (FF)V
+		ARG 1 yaw
+		ARG 2 pitch
 	METHOD method_1363 readCustomDataFromTag (Lnet/minecraft/class_8;)V
 		ARG 1 tag
 	METHOD method_1364 shouldRenderAtDistance (D)Z

@@ -5,10 +5,81 @@ CLASS net/minecraft/class_25 net/minecraft/util/maths/Box
 	FIELD field_132 maxX D
 	FIELD field_133 maxY D
 	FIELD field_134 maxZ D
-	FIELD field_135 uselessWasteOfMemory Ljava/util/List;
-	FIELD field_136 thisIsAlwaysZero I
+	FIELD field_135 boxCache Ljava/util/List;
+	FIELD field_136 cacheIndex I
+	METHOD <init> (DDDDDD)V
+		ARG 1 x1
+		ARG 3 y1
+		ARG 5 z1
+		ARG 7 x2
+		ARG 9 y2
+		ARG 11 z2
+	METHOD method_100 isInsideXZ (Lnet/minecraft/class_26;)Z
+		ARG 1 vec
+	METHOD method_101 getDistanceZ (Lnet/minecraft/class_25;D)D
+		ARG 1 box
+		ARG 2 distance
+	METHOD method_102 move (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_103 isInsideXY (Lnet/minecraft/class_26;)Z
+		ARG 1 vec
+	METHOD method_104 createAndCache (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_105 clearCache ()V
 	METHOD method_106 averageDimension ()D
+	METHOD method_85 resetCache ()V
+	METHOD method_86 expanded (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_87 create (DDDDDD)Lnet/minecraft/class_25;
+		ARG 0 x1
+		ARG 2 y1
+		ARG 4 z1
+		ARG 6 x2
+		ARG 8 y2
+		ARG 10 z2
+	METHOD method_88 isInside (Lnet/minecraft/class_26;)Z
+		ARG 1 vec
+	METHOD method_89 getHitResult (Lnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+		ARG 1 start
+		ARG 2 end
 	METHOD method_90 boxIntersects (Lnet/minecraft/class_25;)Z
-	METHOD method_93 expand (DDD)Lnet/minecraft/class_25;
-	METHOD method_94 createButWasteMemory (DDDDDD)Lnet/minecraft/class_25;
+		ARG 1 box
+	METHOD method_91 getDistanceX (Lnet/minecraft/class_25;D)D
+		ARG 1 box
+		ARG 2 distance
+	METHOD method_92 copy ()Lnet/minecraft/class_25;
+	METHOD method_93 expandNegative (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_94 createAndCache (DDDDDD)Lnet/minecraft/class_25;
+		ARG 0 x1
+		ARG 2 y1
+		ARG 4 z1
+		ARG 6 x2
+		ARG 8 y2
+		ARG 10 z2
+	METHOD method_95 isInsideYZ (Lnet/minecraft/class_26;)Z
+		ARG 1 vec
+	METHOD method_96 set (Lnet/minecraft/class_25;)V
+		ARG 1 box
+	METHOD method_97 getDistanceY (Lnet/minecraft/class_25;D)D
+		ARG 1 box
+		ARG 2 distance
+	METHOD method_98 expandPositive (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_99 set (DDDDDD)Lnet/minecraft/class_25;
+		ARG 1 x1
+		ARG 3 y1
+		ARG 5 z1
+		ARG 7 x2
+		ARG 9 y2
+		ARG 11 z2

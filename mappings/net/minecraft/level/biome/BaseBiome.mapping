@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_153 net/minecraft/level/biome/Biome
+CLASS net/minecraft/class_153 net/minecraft/level/biome/BaseBiome
 	FIELD field_875 RAINFOREST Lnet/minecraft/class_153;
 	FIELD field_876 SWAMPLAND Lnet/minecraft/class_153;
 	FIELD field_877 SEASONAL_FOREST Lnet/minecraft/class_153;
@@ -12,7 +12,7 @@ CLASS net/minecraft/class_153 net/minecraft/level/biome/Biome
 	FIELD field_885 TUNDRA Lnet/minecraft/class_153;
 	FIELD field_886 NETHER Lnet/minecraft/class_153;
 	FIELD field_887 SKY Lnet/minecraft/class_153;
-	FIELD field_888 biomeName Ljava/lang/String;
+	FIELD field_888 name Ljava/lang/String;
 	FIELD field_889 grassColour I
 	FIELD field_890 topBlockId B
 	FIELD field_891 underBlockId B
@@ -20,16 +20,17 @@ CLASS net/minecraft/class_153 net/minecraft/level/biome/Biome
 	FIELD field_893 monsters Ljava/util/List;
 	FIELD field_894 creatures Ljava/util/List;
 	FIELD field_895 waterCreatures Ljava/util/List;
-	FIELD field_896 snows Z
+	FIELD field_896 hasSnow Z
 	FIELD field_897 precipitates Z
 	FIELD field_898 biomes [Lnet/minecraft/class_153;
 	METHOD method_785 createBiomeArray ()V
 	METHOD method_786 getBiome (DD)Lnet/minecraft/class_153;
 		ARG 0 temperature
 		ARG 1 rainfall
+		ARG 2 wetness
 	METHOD method_787 getClimateBiome (FF)Lnet/minecraft/class_153;
 		ARG 0 temperature
-		ARG 1 rainfall
+		ARG 1 wetness
 	METHOD method_788 setFoliageColour (I)Lnet/minecraft/class_153;
 		ARG 1 colour
 	METHOD method_789 getSpawnList (Lnet/minecraft/class_238;)Ljava/util/List;
@@ -45,4 +46,4 @@ CLASS net/minecraft/class_153 net/minecraft/level/biome/Biome
 	METHOD method_796 getSkyColour (F)I
 		ARG 1 temperature
 	METHOD method_797 getTree (Ljava/util/Random;)Lnet/minecraft/class_239;
-		ARG 1 rand
+		ARG 1 random

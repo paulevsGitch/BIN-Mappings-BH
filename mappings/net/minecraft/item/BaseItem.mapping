@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
+CLASS net/minecraft/class_124 net/minecraft/item/BaseItem
 	FIELD field_376 diamondAxe Lnet/minecraft/class_124;
 	FIELD field_377 stick Lnet/minecraft/class_124;
 	FIELD field_378 bowl Lnet/minecraft/class_124;

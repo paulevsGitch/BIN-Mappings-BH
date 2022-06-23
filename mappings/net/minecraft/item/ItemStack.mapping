@@ -37,7 +37,7 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 		ARG 4 z
 		ARG 5 player
 	METHOD method_697 applyDamage (ILnet/minecraft/class_57;)V
-		ARG 1 moreDamage
+		ARG 1 damage
 		ARG 2 entity
 	METHOD method_698 use (Lnet/minecraft/class_18;Lnet/minecraft/class_54;)Lnet/minecraft/class_31;
 		ARG 1 level

@@ -149,7 +149,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/ItemBase
 		ARG 1 stack
 		ARG 2 damageSource
 		ARG 3 damageTarget
-	METHOD method_447 getAttack (Lnet/minecraft/class_57;)I
+	METHOD method_447 getAttackDamage (Lnet/minecraft/class_57;)I
 		ARG 1 entity
 	METHOD method_448 isRendered3d ()Z
 	METHOD method_449 shouldSpinWhenRendering ()Z

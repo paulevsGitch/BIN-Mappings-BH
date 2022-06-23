@@ -141,6 +141,11 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 8 cascadeUpdate
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
 		ARG 1 box
+	METHOD method_171 canChangeBlocks (Lnet/minecraft/class_54;III)Z
+		ARG 1 palyer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_172 firePlayer (Lnet/minecraft/class_54;IIII)V
 		ARG 1 player
 		ARG 2 x

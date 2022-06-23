@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_428 net/minecraft/item/tool/ToolMaterial
+	FIELD field_1688 WOOD Lnet/minecraft/class_428;
+	FIELD field_1689 STONE Lnet/minecraft/class_428;
+	FIELD field_1690 IRON Lnet/minecraft/class_428;
+	FIELD field_1691 DIAMOND Lnet/minecraft/class_428;
+	FIELD field_1692 GOLD Lnet/minecraft/class_428;
 	FIELD field_1693 miningLevel I
 	FIELD field_1694 durability I
 	FIELD field_1695 miningSpeed F

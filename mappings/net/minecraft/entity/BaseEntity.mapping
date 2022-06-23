@@ -117,6 +117,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	METHOD method_1363 readCustomDataFromTag (Lnet/minecraft/class_8;)V
 		ARG 1 tag
 	METHOD method_1364 shouldRenderAtDistance (D)Z
+		ARG 1 distance
 	METHOD method_1365 setVelocity (DDD)V
 		ARG 1 velocityX
 		ARG 3 velocityY

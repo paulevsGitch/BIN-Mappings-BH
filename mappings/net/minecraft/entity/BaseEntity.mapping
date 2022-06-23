@@ -36,7 +36,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	FIELD field_1638 prevRenderY D
 	FIELD field_1639 prevRenderZ D
 	FIELD field_1642 updateFromBB Z
-	FIELD field_1644 rand Ljava/util/Random;
+	FIELD field_1644 random Ljava/util/Random;
 	FIELD field_1647 fire I
 	FIELD field_1652 skinUrl Ljava/lang/String;
 	FIELD field_1653 cloakUrl Ljava/lang/String;
@@ -69,6 +69,9 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 1 id
 		ARG 2 amount
 		ARG 3 damage
+	METHOD method_1326 setBoolean (IZ)V
+		ARG 1 index
+		ARG 2 value
 	METHOD method_1327 dropItem (Lnet/minecraft/class_31;F)Lnet/minecraft/class_142;
 		ARG 1 item
 		ARG 2 height
@@ -94,6 +97,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 2 pitch
 	METHOD method_1343 checkAndSave (Lnet/minecraft/class_8;)Z
 		ARG 1 tag
+	METHOD method_1345 getBoolean (I)Z
+		ARG 1 index
 	METHOD method_1346 toTag (Lnet/minecraft/class_8;)V
 	METHOD method_1347 squaredDistanceTo (DDD)D
 		ARG 1 x
@@ -111,6 +116,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 2 amount
 	METHOD method_1357 getMountedHeightOffset ()D
 	METHOD method_1358 canClimb ()Z
+	METHOD method_1359 isOnFire ()Z
 	METHOD method_1362 updateRotation (FF)V
 		ARG 1 yaw
 		ARG 2 pitch
@@ -140,6 +146,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	METHOD method_1378 getStandingEyeHeight ()F
 	METHOD method_1379 getBoundingBox (Lnet/minecraft/class_57;)Lnet/minecraft/class_25;
 	METHOD method_1383 onStruckByLightning (Lnet/minecraft/class_411;)V
+		ARG 1 lightning
 	METHOD method_1384 tickRiding ()V
 	METHOD method_1385 getHeightOffset ()D
 	METHOD method_1386 remove ()V
@@ -147,6 +154,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	METHOD method_1389 handleFallDamage (F)V
 		ARG 1 height
 	METHOD method_1390 handleKilledEntity (Lnet/minecraft/class_127;)V
+		ARG 1 entity
 	METHOD method_1391 onKilledOther (Lnet/minecraft/class_57;I)V
 		ARG 2 score
 	METHOD method_1392 damageByFire (I)V

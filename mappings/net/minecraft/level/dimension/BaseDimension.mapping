@@ -1,12 +1,12 @@
-CLASS net/minecraft/class_50 net/minecraft/level/dimension/Dimension
+CLASS net/minecraft/class_50 net/minecraft/level/dimension/BaseDimension
 	FIELD field_2173 level Lnet/minecraft/class_18;
 	FIELD field_2174 biomeSource Lnet/minecraft/class_519;
 	FIELD field_2175 blocksCompassAndClock Z
 	FIELD field_2176 evaporatesWater Z
 	FIELD field_2177 noSkyLight Z
-	FIELD field_2178 lightTable [F
+	FIELD field_2178 lightCurve [F
 	FIELD field_2179 id I
-	FIELD field_2180 colours [F
+	FIELD field_2180 dawnColors [F
 	METHOD method_1761 getSunsetDawnColour (FF)[F
 		ARG 1 time
 		ARG 2 delta

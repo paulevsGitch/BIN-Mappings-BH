@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
 	FIELD field_1246 textures Ljava/util/HashMap;
 	FIELD field_1247 colorMaps Ljava/util/HashMap;
+	FIELD field_1248 textureCache Ljava/util/HashMap;
+	FIELD field_1249 dataBuffer Ljava/nio/IntBuffer;
 	FIELD field_1250 currentImageBuffer Ljava/nio/ByteBuffer;
 	FIELD field_1251 textureBinders Ljava/util/List;
 	FIELD field_1252 downloadThreads Ljava/util/Map;
@@ -10,8 +12,13 @@ CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
 	FIELD field_1256 texturePackManager Lnet/minecraft/class_303;
 	FIELD field_1257 missingTexImage Ljava/awt/image/BufferedImage;
 	METHOD method_1084 tick ()V
+	METHOD method_1085 remove (I)V
+		ARG 1 targetID
 	METHOD method_1087 addTextureBinder (Lnet/minecraft/class_336;)V
-	METHOD method_1089 bindImageToId (Ljava/awt/image/BufferedImage;I)V
+		ARG 1 binder
+	METHOD method_1088 bindImage (Ljava/awt/image/BufferedImage;)I
+		ARG 1 image
+	METHOD method_1089 bindImage (Ljava/awt/image/BufferedImage;I)V
 		COMMENT Binds the given buffered image to the given texture ID.
 		COMMENT @param imageToBind the buffered image instance.
 		COMMENT @param textureId the texture ID to bind the image to.
@@ -35,7 +42,7 @@ CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
 	METHOD method_1094 getOrCreateImageDownloadThreadFor (Ljava/lang/String;Lnet/minecraft/class_131;)Lnet/minecraft/class_130;
 		ARG 1 imageUrl
 		ARG 2 processor
-	METHOD method_1095 bindImageToId ([IIII)V
+	METHOD method_1095 bindImage ([IIII)V
 		COMMENT Binds the given int array of pixels as an image to the given texture ID.
 		COMMENT @param pixels the image pixels in little endian byte order.
 		COMMENT @param width the image's width.

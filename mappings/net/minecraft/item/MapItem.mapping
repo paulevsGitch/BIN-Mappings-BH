@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_125 net/minecraft/item/MapItem
+	METHOD method_1730 getMapStorage (Lnet/minecraft/class_31;Lnet/minecraft/class_18;)Lnet/minecraft/class_198;
+		ARG 1 stack
+		ARG 2 level

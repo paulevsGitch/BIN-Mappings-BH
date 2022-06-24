@@ -1,45 +1,61 @@
-# BIN Mappings BH
-Less cursed Plasma Mappings, refactored for Beta Horizons project.
+# BIN Mappings
+## Less cursed Plasma Mappings
 
-[![Jitpack](https://jitpack.io/v/paulevsGitch/BIN-Mappings-BH.svg)](https://jitpack.io/#paulevsGitch/BIN-Mappings-BH)
+BIN (Boring Instructive Names) is a set of less cursed Plasma Mappings for beta 1.7.3.
 
-Project based on a BIN (Boring Instructive Names) mappings that are based on Plasma Mappings for Minecraft Beta 1.7.3.
-The goal of this fork is to make mappins as complete as possible, fix errors in original mappings and change some names.
+The Gradle used for this is mostly still based of Yarn's, so improvements to the Gradle tasks are welcome.
 
-[Contributors and maintainers of original mappings](MAINTAINERS.md)
+[Maintainers](MAINTAINERS.md)
 
-[Original Description](https://github.com/calmilamsy/BIN-Mappings/blob/master/README.md)
+## Usage
+To use yarn-deobfuscated Minecraft for Minecraft modding or as a dependency in a Java project, you can use [loom](https://github.com/fabricmc/fabric-loom) Gradle plugin. See [fabric wiki tutorial](https://fabricmc.net/wiki/tutorial:setup) for more information.
 
-### Differences from original mappings:
-- More mapped classes, fields and methods
-- Changes in some packages
-- Fixes for wrong names
-- World -> Level name convertion
-- Tile -> Block name convertion
-- TileEntity -> BlockEntity name convertion
-- TypeName -> NameType conversion (example BaseBlock -> BlockBase)
-- Name -> NameType conversion (example Block -> BlockItem)
+To obtain a deobfuscated Minecraft jar, [`./gradlew mapNamedJar`](#mapNamedJar) will generate a jar named like `<minecraft version>-named.jar`, which can be sent to a decompiler for deobfuscated code.
+Alternatively, use the functions provided by enigma to decompile
 
-### Usage in gragle project:
+### Making a Mod
 
-1. Add jitpack to you repositories:
+You will want to use [BIN Example Mod](https://github.com/calmilamsy/BIN-fabric-example-mod).
 
-```
-maven {
-	name = 'Jitpack'
-	url = 'https://jitpack.io'
-}
-```
+### Using a Mod
 
-2. Add this into dependencies (or replace existing mappings entry):
+You will want to use the [Cursed Fabric MultiMC Instance](https://github.com/calmilamsy/Cursed-Fabric-MultiMC)
 
-```
-mappings "com.github.paulevsGitch:BIN-Mappings-BH:${project.mappings}"
-```
+## Contributing
 
-3. Add version to your gradle.properties:
+Please remember that copying and pasting mappings from alternate projects under more restrictive licenses (such as the real MCP) is **completely forbidden** without explicit permission from the 
+owners of said mappings.
 
-```
-mappings = a504591
-```
-You can use any commit version here.
+When contributing remember to [read the conventions](CONVENTIONS.md).
+
+To contribute, fork the project and clone it locally, and use  Enigma to map the jar. Then push to your fork and submit a pull request.
+
+**Anyone** can comment and suggest changes on pull requests. We want to make sure the mappings are the best quality, so make your voice known!
+
+# Getting Started
+
+MCPomf (now Plasma) started as a yarn fork, so tasks currently still reference yarn.
+
+1. Fork and clone the repo
+2. Run `./gradlew yarn` (Linux, macOS) or `.\gradlew yarn` (Windows)
+3. Profit
+
+## Gradle
+This uses Gradle to provide a number of utility tasks for working with the mappings.
+
+### `yarn`
+Runs [`setupYarn`](#setupYarn) and downloads and launches the latest version of Fabric's fork of [Enigma](https://github.com/FabricMC/Enigma) with the mappings and jars pre-loaded for editing.
+
+Compared to launching Enigma externally, the gradle task adds a name guesser plugin that automatically map enums and a few constant field names.
+
+### `build`
+Build a GZip'd archive containing a tiny mapping between official (obfuscated), [intermediary](https://github.com/FabricMC/intermediary), and MCPomf names ("named") and packages enigma mappings into a zip archive..
+
+### `mapNamedJar`
+Builds a deobfuscated jar with yarn mappings and automapped fields (enums, etc.).
+
+### `download`
+Downloads the client and server Minecraft jars for the current Minecraft version to `.gradle/minecraft`
+
+### `setupYarn`
+Runs [`download`](#download) and does some things to make yarn work.

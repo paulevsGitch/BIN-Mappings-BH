@@ -5,6 +5,15 @@ CLASS net/minecraft/class_579 net/minecraft/client/render/entity/EntityRenderer
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
+	METHOD method_2024 renderBox (Lnet/minecraft/class_25;)V
+		ARG 0 box
+	METHOD method_2025 renderBox (Lnet/minecraft/class_25;DDD)V
+		ARG 0 box
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_2026 bindTexture (Ljava/lang/String;)V
 	METHOD method_2029 setDispatcher (Lnet/minecraft/class_578;)V
 		ARG 1 dispatcher
+	METHOD method_2032 (Lnet/minecraft/class_57;DDDFF)V
+		ARG 1 entity

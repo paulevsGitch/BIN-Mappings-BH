@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_555 net/minecraft/sortme/GameRenderer
+CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 	FIELD field_2334 timeInMillis J
 	FIELD field_2336 random Ljava/util/Random;
 	FIELD field_2340 anaglyph3d Z

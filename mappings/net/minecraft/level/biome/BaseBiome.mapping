@@ -13,10 +13,10 @@ CLASS net/minecraft/class_153 net/minecraft/level/biome/BaseBiome
 	FIELD field_886 NETHER Lnet/minecraft/class_153;
 	FIELD field_887 SKY Lnet/minecraft/class_153;
 	FIELD field_888 name Ljava/lang/String;
-	FIELD field_889 grassColour I
+	FIELD field_889 grassColor I
 	FIELD field_890 topBlockId B
 	FIELD field_891 underBlockId B
-	FIELD field_892 foliageColour I
+	FIELD field_892 foliageColor I
 	FIELD field_893 monsters Ljava/util/List;
 	FIELD field_894 creatures Ljava/util/List;
 	FIELD field_895 waterCreatures Ljava/util/List;
@@ -31,19 +31,19 @@ CLASS net/minecraft/class_153 net/minecraft/level/biome/BaseBiome
 	METHOD method_787 getClimateBiome (FF)Lnet/minecraft/class_153;
 		ARG 0 temperature
 		ARG 1 wetness
-	METHOD method_788 setFoliageColour (I)Lnet/minecraft/class_153;
-		ARG 1 colour
+	METHOD method_788 setFoliageColor (I)Lnet/minecraft/class_153;
+		ARG 1 color
 	METHOD method_789 getSpawnList (Lnet/minecraft/class_238;)Ljava/util/List;
 		ARG 1 type
 	METHOD method_790 setName (Ljava/lang/String;)Lnet/minecraft/class_153;
 		ARG 1 name
 	METHOD method_791 setSnowy ()Lnet/minecraft/class_153;
-	METHOD method_792 setGrassColour (I)Lnet/minecraft/class_153;
-		ARG 1 colour
+	METHOD method_792 setGrassColor (I)Lnet/minecraft/class_153;
+		ARG 1 color
 	METHOD method_793 canSnow ()Z
 	METHOD method_794 canRain ()Z
 	METHOD method_795 setRainless ()Lnet/minecraft/class_153;
-	METHOD method_796 getSkyColour (F)I
+	METHOD method_796 getSkyColor (F)I
 		ARG 1 temperature
 	METHOD method_797 getTree (Ljava/util/Random;)Lnet/minecraft/class_239;
 		ARG 1 random

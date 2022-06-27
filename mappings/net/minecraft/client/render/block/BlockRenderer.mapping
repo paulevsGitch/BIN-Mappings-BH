@@ -20,19 +20,19 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 	FIELD field_53 brightnessNorthWest F
 	FIELD field_54 brightnessSouthWest F
 	FIELD field_55 one I
-	FIELD field_56 colourRed00 F
-	FIELD field_57 colourRed01 F
+	FIELD field_56 colorRed00 F
+	FIELD field_57 colorRed01 F
 	FIELD field_58 colurRed11 F
-	FIELD field_59 colourRed10 F
-	FIELD field_60 colourGreen00 F
-	FIELD field_61 colourGreen01 F
-	FIELD field_62 colourGreen11 F
-	FIELD field_63 colourGreen10 F
-	FIELD field_64 colourBlue00 F
-	FIELD field_65 colourBlue01 F
-	FIELD field_66 colourBlue11 F
+	FIELD field_59 colorRed10 F
+	FIELD field_60 colorGreen00 F
+	FIELD field_61 colorGreen01 F
+	FIELD field_62 colorGreen11 F
+	FIELD field_63 colorGreen10 F
+	FIELD field_64 colorBlue00 F
+	FIELD field_65 colorBlue01 F
+	FIELD field_66 colorBlue11 F
 	FIELD field_67 fancyGraphics Z
-	FIELD field_68 colourBlue10 F
+	FIELD field_68 colorBlue10 F
 	FIELD field_69 allowsGrassUnderTopEast Z
 	FIELD field_70 allowsGrassUnderTopSouth Z
 	FIELD field_71 allowsGrassUnderTopNorth Z
@@ -45,7 +45,7 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 	FIELD field_78 allowsGrassUnderBottomSouth Z
 	FIELD field_79 allowsGrassUnderBottomNorth Z
 	FIELD field_80 allowsGrassUnderBottomWest Z
-	FIELD field_81 itemColourEnabled Z
+	FIELD field_81 itemColorEnabled Z
 	FIELD field_82 blockView Lnet/minecraft/class_14;
 	FIELD field_83 textureOverride I
 	FIELD field_84 mirrorTexture Z
@@ -68,10 +68,25 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 1 blockView
 	METHOD method_42 isSpecificRenderType (I)Z
 		ARG 0 type
+	METHOD method_43 getFluidHeight (IIILnet/minecraft/class_15;)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 material
 	METHOD method_44 renderRails (Lnet/minecraft/class_16;III)Z
-	METHOD method_45 renderTorchTilted (Lnet/minecraft/class_17;DDDDD)V
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_45 renderTorchSkewed (Lnet/minecraft/class_17;DDDDD)V
+		ARG 1 block
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 skewX
+		ARG 10 skewZ
 	METHOD method_46 renderBottomFace (Lnet/minecraft/class_17;DDDI)V
-	METHOD method_47 (Lnet/minecraft/class_17;IDDD)V
+	METHOD method_47 renderCross (Lnet/minecraft/class_17;IDDD)V
 		ARG 1 block
 		ARG 2 meta
 		ARG 3 x
@@ -91,21 +106,27 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-		ARG 5 colourMultiplierRed
-		ARG 6 colourMultiplierGreen
-		ARG 7 colourMultiplierBlue
+		ARG 5 colorMultiplierRed
+		ARG 6 colorMultiplierGreen
+		ARG 7 colorMultiplierBlue
 	METHOD method_51 renderWithOverride (Lnet/minecraft/class_17;IIII)V
 		ARG 1 block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 textureOverride
+	METHOD method_52 renderPistonHeadAllSides (Lnet/minecraft/class_17;IIIZ)V
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 extended
 	METHOD method_53 (Lnet/minecraft/class_17;Lnet/minecraft/class_18;III)V
 		ARG 1 block
 	METHOD method_55 renderTopFace (Lnet/minecraft/class_17;DDDI)V
-	METHOD method_56 (Lnet/minecraft/class_17;IDDD)V
+	METHOD method_56 renderCrop (Lnet/minecraft/class_17;IDDD)V
 		ARG 1 block
-		ARG 2 side
+		ARG 2 meta
 		ARG 3 x
 		ARG 5 y
 		ARG 7 z
@@ -121,6 +142,15 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 3 blockY
 		ARG 4 blockZ
 		ARG 5 forceExtended
+	METHOD method_60 (DDDDDDFD)V
+		ARG 1 x1
+		ARG 3 x2
+		ARG 5 y1
+		ARG 7 y2
+		ARG 9 z1
+		ARG 11 z2
+		ARG 13 light
+		ARG 14 textureOffset
 	METHOD method_61 renderEastFace (Lnet/minecraft/class_17;DDDI)V
 	METHOD method_62 renderTorch (Lnet/minecraft/class_17;III)Z
 		ARG 1 block
@@ -128,6 +158,11 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 3 blockY
 		ARG 4 blockZ
 	METHOD method_64 renderPistonHead (Lnet/minecraft/class_17;IIIZ)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 extended
 	METHOD method_65 renderWestFace (Lnet/minecraft/class_17;DDDI)V
 	METHOD method_66 renderPistonExtended (Lnet/minecraft/class_17;III)V
 		ARG 1 block
@@ -145,9 +180,25 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 	METHOD method_70 renderFire (Lnet/minecraft/class_17;III)Z
 	METHOD method_71 renderRedstoneDust (Lnet/minecraft/class_17;III)Z
 	METHOD method_72 renderLadder (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_73 renderCross (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_74 renderCrops (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_75 renderFluid (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_76 renderFullCube (Lnet/minecraft/class_17;III)Z
 		ARG 1 block
 		ARG 2 x

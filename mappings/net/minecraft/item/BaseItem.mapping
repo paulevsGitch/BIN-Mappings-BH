@@ -129,7 +129,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/BaseItem
 		ARG 2 tile
 	METHOD method_439 getTexturePosition (Lnet/minecraft/class_31;)I
 		ARG 1 item
-	METHOD method_440 getColourMultiplier (I)I
+	METHOD method_440 getColorMultiplier (I)I
 		ARG 1 color
 	METHOD method_441 getTexturePosition (I)I
 		ARG 1 damage

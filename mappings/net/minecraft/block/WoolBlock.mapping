@@ -1,2 +1,2 @@
 CLASS net/minecraft/class_3 net/minecraft/block/WoolBlock
-	METHOD method_1 getColour (I)I
+	METHOD method_1 getColor (I)I

@@ -246,7 +246,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 		ARG 1 hardness
 	METHOD method_1588 isInsideXY (Lnet/minecraft/class_26;)Z
 		ARG 1 vec3f
-	METHOD method_1589 getBaseColour (I)I
+	METHOD method_1589 getBaseColor (I)I
 		ARG 1 meta
 	METHOD method_1590 setLightOpacity (I)Lnet/minecraft/class_17;
 		ARG 1 opacity
@@ -264,7 +264,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 	METHOD method_1597 getTranslationKey ()Ljava/lang/String;
 	METHOD method_1598 isStatEnabled ()Z
 	METHOD method_1599 disableStat ()Lnet/minecraft/class_17;
-	METHOD method_1600 getColourMultiplier (Lnet/minecraft/class_14;III)I
+	METHOD method_1600 getColorMultiplier (Lnet/minecraft/class_14;III)I
 		ARG 1 blockView
 		ARG 2 x
 		ARG 3 y

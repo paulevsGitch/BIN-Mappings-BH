@@ -1,10 +1,10 @@
-CLASS net/minecraft/class_334 net/minecraft/client/render/block/FoliageColour
+CLASS net/minecraft/class_334 net/minecraft/client/render/block/FoliageColor
 	FIELD field_1243 map [I
-	METHOD method_1079 getBirchColor ()I
-	METHOD method_1080 getGrassColor (DD)I
+	METHOD method_1079 getSpruceColor ()I
+	METHOD method_1080 getFoliageColor (DD)I
 		ARG 0 temperature
 		ARG 2 wetness
 	METHOD method_1081 setColors ([I)V
 		ARG 0 map
-	METHOD method_1082 getSpruceColor ()I
+	METHOD method_1082 getBirchColor ()I
 	METHOD method_1083 getOakColor ()I

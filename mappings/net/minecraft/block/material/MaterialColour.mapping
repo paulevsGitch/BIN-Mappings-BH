@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_259 net/minecraft/block/material/MaterialColour
+CLASS net/minecraft/class_259 net/minecraft/block/material/MaterialColor
 	FIELD field_2737 BY_ID [Lnet/minecraft/class_259;
 	FIELD field_2738 AIR Lnet/minecraft/class_259;
 	FIELD field_2739 GRASS Lnet/minecraft/class_259;
@@ -14,8 +14,8 @@ CLASS net/minecraft/class_259 net/minecraft/block/material/MaterialColour
 	FIELD field_2749 STONE Lnet/minecraft/class_259;
 	FIELD field_2750 WATER Lnet/minecraft/class_259;
 	FIELD field_2751 WOOD Lnet/minecraft/class_259;
-	FIELD field_2752 colour I
+	FIELD field_2752 color I
 	FIELD field_2753 id I
 	METHOD <init> (II)V
 		ARG 1 id
-		ARG 2 colour
+		ARG 2 color

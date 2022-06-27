@@ -6,14 +6,14 @@ CLASS net/minecraft/class_34 net/minecraft/client/render/TextRenderer
 		ARG 1 text
 		ARG 2 x
 		ARG 3 y
-		ARG 4 colour
+		ARG 4 color
 	METHOD method_1905 drawText (Ljava/lang/String;IIIZ)V
 		ARG 1 text
 		ARG 2 x
 		ARG 3 y
-		ARG 4 colour
+		ARG 4 color
 	METHOD method_1906 drawText (Ljava/lang/String;III)V
 		ARG 1 text
 		ARG 2 x
 		ARG 3 y
-		ARG 4 colour
+		ARG 4 color

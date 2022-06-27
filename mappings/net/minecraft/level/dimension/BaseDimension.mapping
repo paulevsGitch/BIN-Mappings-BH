@@ -7,10 +7,10 @@ CLASS net/minecraft/class_50 net/minecraft/level/dimension/BaseDimension
 	FIELD field_2178 lightCurve [F
 	FIELD field_2179 id I
 	FIELD field_2180 dawnColors [F
-	METHOD method_1761 getSunsetDawnColour (FF)[F
+	METHOD method_1761 getSunsetDawnColor (FF)[F
 		ARG 1 time
 		ARG 2 delta
-	METHOD method_1762 getSkyColour (FF)Lnet/minecraft/class_26;
+	METHOD method_1762 getSkyColor (FF)Lnet/minecraft/class_26;
 		ARG 1 time
 		ARG 2 delta
 	METHOD method_1763 hasPaleSky ()Z

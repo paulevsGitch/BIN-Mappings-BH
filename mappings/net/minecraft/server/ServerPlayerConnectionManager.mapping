@@ -31,6 +31,9 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 		ARG 4 dimension
 	METHOD method_554 (Lnet/minecraft/class_69;)V
 		ARG 1 player
+	METHOD method_555 teleportToDimension (Lnet/minecraft/class_69;I)Lnet/minecraft/class_69;
+		ARG 1 player
+		ARG 2 dimensionID
 	METHOD method_556 sendPlayerTime (Lnet/minecraft/class_69;Lnet/minecraft/class_73;)V
 		ARG 1 serverPlayer
 		ARG 2 serverLevel

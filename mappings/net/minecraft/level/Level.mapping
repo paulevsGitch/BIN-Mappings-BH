@@ -192,13 +192,20 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 6 z
 		ARG 8 power
 		ARG 9 causeFires
+	METHOD method_189 getPath (Lnet/minecraft/class_57;IIIF)Lnet/minecraft/class_61;
+		ARG 1 entity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 distance
 	METHOD method_190 getCollidingEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
 		ARG 1 centerEntity
 		ARG 2 area
 	METHOD method_191 playSound (Lnet/minecraft/class_57;Ljava/lang/String;FF)V
-	METHOD method_192 (Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)Lnet/minecraft/class_61;
+	METHOD method_192 getPath (Lnet/minecraft/class_57;Lnet/minecraft/class_57;F)Lnet/minecraft/class_61;
 		ARG 1 entityA
 		ARG 2 entityB
+		ARG 3 distance
 	METHOD method_194 processBlockTicks (Z)Z
 		ARG 1 ignoreTime
 	METHOD method_195 saveLevel (ZLnet/minecraft/class_62;)V

@@ -5,3 +5,5 @@ CLASS net/minecraft/class_252 net/minecraft/block/DoorBlock
 		ARG 4 z
 	METHOD method_838 rotateDoor (I)V
 		ARG 1 meta
+	METHOD method_840 canWalk (I)Z
+		ARG 0 meta

@@ -138,7 +138,7 @@ CLASS net/minecraft/class_43 net/minecraft/level/chunk/Chunk
 		ARG 2 y
 		ARG 3 z
 	METHOD method_890 setBlockMask ()V
-	METHOD method_891 getClientBlockData ([BIIIIIII)I
+	METHOD method_891 setClientBlockData ([BIIIIIII)I
 		ARG 1 blocks
 		ARG 2 x1
 		ARG 3 y1

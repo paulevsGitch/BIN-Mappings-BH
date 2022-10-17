@@ -64,6 +64,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 3 y
 		ARG 5 z
 	METHOD method_1323 interact (Lnet/minecraft/class_54;)Z
+		ARG 1 palyer
 	METHOD method_1324 movementInputToVelocity (FFF)V
 	METHOD method_1325 dropItem (IIF)Lnet/minecraft/class_142;
 		ARG 1 id

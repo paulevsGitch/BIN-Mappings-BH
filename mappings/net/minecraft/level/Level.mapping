@@ -11,6 +11,10 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	FIELD field_188 noPlayers Z
 	FIELD field_189 collidingEntitySearchCache Ljava/util/ArrayList;
 	FIELD field_190 invalidateBlockEntity Z
+	FIELD field_192 spawnHostiles Z
+	FIELD field_193 spawnNeutral Z
+	FIELD field_194 loadedChunkPositions Ljava/util/Set;
+	FIELD field_195 caveSoundTicks I
 	FIELD field_196 entitySearchCache Ljava/util/List;
 	FIELD field_197 forceBlockUpdate Z
 	FIELD field_198 entities Ljava/util/List;
@@ -18,14 +22,18 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	FIELD field_200 players Ljava/util/List;
 	FIELD field_201 entitiesList Ljava/util/List;
 	FIELD field_202 correctLightValue I
+	FIELD field_203 randomIndex I
 	FIELD field_204 unusedIncrement I
 	FIELD field_205 prevRainGradient F
 	FIELD field_206 rainGradient F
 	FIELD field_207 prevThunderGradient F
 	FIELD field_208 thunderGradient F
+	FIELD field_209 lightingTicks I
+	FIELD field_210 brightnessTicks I
 	FIELD field_211 stopPhysics Z
+	FIELD field_212 saveTicks I
 	FIELD field_213 difficulty I
-	FIELD field_214 rand Ljava/util/Random;
+	FIELD field_214 random Ljava/util/Random;
 	FIELD field_215 hasProperties Z
 	FIELD field_216 dimension Lnet/minecraft/class_50;
 	FIELD field_217 levelListeners Ljava/util/List;
@@ -61,6 +69,8 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 3 y
 		ARG 5 z
 		ARG 7 name
+		ARG 8 volume
+		ARG 9 pitch
 	METHOD method_151 getEnvironmentLight (F)I
 		ARG 1 angle
 	METHOD method_152 getTopBlockAboveSeaLevel (II)I
@@ -182,6 +192,11 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 8 dx
 		ARG 10 dy
 		ARG 12 dz
+	METHOD method_179 playDisc (Ljava/lang/String;III)V
+		ARG 1 name
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_180 setData (Ljava/lang/String;Lnet/minecraft/class_58;)V
 		ARG 1 path
 		ARG 2 data
@@ -193,6 +208,9 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 1 levelListener
 	METHOD method_184 addEntity (Lnet/minecraft/class_57;)Z
 		ARG 1 entity
+	METHOD method_185 updateEntityStatus (Lnet/minecraft/class_57;B)V
+		ARG 1 entity
+		ARG 2 status
 	METHOD method_186 getClosestPlayerTo (Lnet/minecraft/class_57;D)Lnet/minecraft/class_54;
 		ARG 1 entity
 		ARG 2 maxDistance
@@ -235,6 +253,9 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	METHOD method_195 saveLevel (ZLnet/minecraft/class_62;)V
 		ARG 1 flag
 		ARG 2 listener
+	METHOD method_196 setSpawnOptions (ZZ)V
+		ARG 1 spawnHostiles
+		ARG 2 spawnNeutral
 	METHOD method_197 getChunkCache ()Lnet/minecraft/class_51;
 	METHOD method_198 getSunAngle (F)F
 		ARG 1 delta
@@ -264,6 +285,8 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 entity
+	METHOD method_204 setServerLevelTime (J)V
+		ARG 1 time
 	METHOD method_205 setLight (Lnet/minecraft/class_56;IIII)V
 		ARG 1 type
 		ARG 2 x
@@ -296,6 +319,13 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 3 z
 		ARG 4 id
 		ARG 5 delay
+	METHOD method_217 getServerBlockData (IIIIII)[B
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 sideX
+		ARG 5 sideY
+		ARG 6 sideZ
 	METHOD method_219 drawEntityCape (Lnet/minecraft/class_57;)V
 		ARG 1 entity
 	METHOD method_220 isDaylight ()Z
@@ -363,6 +393,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 4 yMax
 	METHOD method_241 addEntityWithChecks (Lnet/minecraft/class_57;)V
 		ARG 1 entity
+	METHOD method_242 processLevel ()V
 	METHOD method_243 updateListenersLight (III)V
 		ARG 1 x
 		ARG 2 y
@@ -372,6 +403,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
+	METHOD method_245 processEnvironmentLight ()V
 	METHOD method_246 callAreaEvents (III)V
 		ARG 1 x
 		ARG 2 y
@@ -381,6 +413,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 meta
+	METHOD method_248 processLoadedChunks ()V
 	METHOD method_249 isAboveGroundCached (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -440,7 +473,16 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	METHOD method_273 resetWeather ()V
 	METHOD method_274 saveAndDeleteCache (I)Z
 		ARG 1 flag
+	METHOD method_275 setClientBlockData (IIIIII[B)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 sizeX
+		ARG 5 sizeY
+		ARG 6 sizeZ
+		ARG 7 data
 	METHOD method_276 setSpawnPosition (Lnet/minecraft/class_63;)V
+		ARG 1 pos
 	METHOD method_277 addPlayer (Lnet/minecraft/class_54;)V
 		ARG 1 player
 	METHOD method_278 getNullEntityByClass (Ljava/lang/Class;)Lnet/minecraft/class_57;
@@ -456,8 +498,11 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	METHOD method_283 shuffleSpawnPoint ()V
 	METHOD method_284 getSkyColor (F)Lnet/minecraft/class_26;
 		ARG 1 delta
+	METHOD method_285 unusedMethod ()V
 	METHOD method_286 getSunAngleClamped (F)F
 		ARG 1 delta
+	METHOD method_287 addEntityToChunk (Lnet/minecraft/class_57;)V
+		ARG 1 entity
 	METHOD method_288 getEntitiesCount ()Ljava/lang/String;
 	METHOD method_289 setRainGradient (F)V
 		ARG 1 gradient

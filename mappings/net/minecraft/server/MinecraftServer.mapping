@@ -24,6 +24,7 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_2158 addPlayerList (Lnet/minecraft/class_46;)V
 		ARG 1 list
 	METHOD method_2159 prepareLevel (Lnet/minecraft/class_182;Ljava/lang/String;J)V
+		ARG 1 storage
 		ARG 2 levelName
 		ARG 3 seed
 	METHOD method_2160 getFile (Ljava/lang/String;)Ljava/io/File;
@@ -49,7 +50,6 @@ CLASS net/minecraft/server/MinecraftServer
 	CLASS class_643 ServerThread
 		METHOD <init> (Ljava/lang/String;Lnet/minecraft/server/MinecraftServer;)V
 			ARG 1 string
-		METHOD run ()V
 	CLASS class_644 LevelConverter
 		FIELD field_2858 time J
 	CLASS class_645 ConsoleInputThread

@@ -14,3 +14,4 @@ CLASS net/minecraft/class_174 net/minecraft/server/network/TrackedEntity
 		ARG 1 serverPlayer
 	METHOD method_601 sync (Lnet/minecraft/class_69;)V
 		ARG 1 serverPlayer
+	METHOD method_602 sendStatusPacket (Lnet/minecraft/class_169;)V

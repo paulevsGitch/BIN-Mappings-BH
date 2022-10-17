@@ -61,6 +61,8 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 3 y
 		ARG 5 z
 		ARG 7 name
+	METHOD method_151 getEnvironmentLight (F)I
+		ARG 1 angle
 	METHOD method_152 getTopBlockAboveSeaLevel (II)I
 		ARG 1 x
 		ARG 2 z
@@ -225,7 +227,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 1 entityA
 		ARG 2 entityB
 		ARG 3 distance
-	METHOD method_193 (Lnet/minecraft/class_57;Z)V
+	METHOD method_193 addEntityWithChecks (Lnet/minecraft/class_57;Z)V
 		ARG 1 entity
 		ARG 2 applyChecks
 	METHOD method_194 processBlockTicks (Z)Z
@@ -346,6 +348,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 4 id
 	METHOD method_236 removeEntityServer (Lnet/minecraft/class_57;)V
 		ARG 1 entity
+	METHOD method_237 fixEnvironmentLight ()V
 	METHOD method_238 isChunkLoaded (II)Z
 		ARG 1 chunkX
 		ARG 2 chunkY
@@ -358,7 +361,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 2 z
 		ARG 3 yMin
 		ARG 4 yMax
-	METHOD method_241 (Lnet/minecraft/class_57;)V
+	METHOD method_241 addEntityWithChecks (Lnet/minecraft/class_57;)V
 		ARG 1 entity
 	METHOD method_243 updateListenersLight (III)V
 		ARG 1 x

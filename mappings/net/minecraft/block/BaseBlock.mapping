@@ -106,11 +106,11 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 	FIELD field_1925 maxZ D
 	FIELD field_1926 sounds Lnet/minecraft/class_475;
 	FIELD field_1927 particalSpeed F
-	FIELD field_1928 STONE_SOUNDS Lnet/minecraft/class_475;
+	FIELD field_1928 DEFAULT_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1929 WOOD_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1930 GRAVEL_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1931 GRASS_SOUNDS Lnet/minecraft/class_475;
-	FIELD field_1932 PISTON_SOUNDS Lnet/minecraft/class_475;
+	FIELD field_1932 STONE_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1933 METAL_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1934 GLASS_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1935 WOOL_SOUNDS Lnet/minecraft/class_475;

@@ -24,6 +24,7 @@ CLASS net/minecraft/class_617 net/minecraft/client/sound/SoundHelper
 		ARG 2 positionScale
 	METHOD method_2014 cleanup ()V
 	METHOD method_2015 playSound (Ljava/lang/String;FFFFF)V
+		ARG 1 name
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

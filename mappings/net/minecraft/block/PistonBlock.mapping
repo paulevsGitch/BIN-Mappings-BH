@@ -4,6 +4,7 @@ CLASS net/minecraft/class_223 net/minecraft/block/PistonBlock
 	METHOD <init> (IIZ)V
 		ARG 1 id
 		ARG 2 texture
+		ARG 3 actionByRotation
 	METHOD method_759 canMoveBlock (ILnet/minecraft/class_18;IIIZ)Z
 		ARG 0 blockID
 		ARG 1 level

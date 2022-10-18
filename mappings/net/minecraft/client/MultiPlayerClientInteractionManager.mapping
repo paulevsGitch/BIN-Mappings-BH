@@ -1,5 +1,13 @@
 CLASS net/minecraft/class_608 net/minecraft/client/MultiPlayerClientInteractionManager
+	FIELD field_2608 posX I
+	FIELD field_2609 posY I
+	FIELD field_2610 posZ I
+	FIELD field_2611 hardness F
+	FIELD field_2612 oldHardness F
+	FIELD field_2615 canBreakBlock Z
 	FIELD field_2616 networkHandler Lnet/minecraft/class_219;
+	FIELD field_2617 playerHotbarSlot I
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_219;)V
 		ARG 1 minecraft
 		ARG 2 networkHandler
+	METHOD method_1997 updateHotbarSlot ()V

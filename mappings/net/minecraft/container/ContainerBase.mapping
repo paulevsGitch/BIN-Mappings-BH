@@ -28,6 +28,8 @@ CLASS net/minecraft/class_71 net/minecraft/container/ContainerBase
 	METHOD method_2089 setStack (ILnet/minecraft/class_31;)V
 		ARG 1 slotIndex
 		ARG 2 stack
+	METHOD method_2090 getInventoryID (Lnet/minecraft/class_136;)S
+		ARG 1 inventory
 	METHOD method_2092 setStacks ([Lnet/minecraft/class_31;)V
 		ARG 1 stacks
 	METHOD method_2094 canUse (Lnet/minecraft/class_54;)Z

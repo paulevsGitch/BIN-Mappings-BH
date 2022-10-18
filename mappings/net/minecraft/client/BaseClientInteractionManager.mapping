@@ -3,7 +3,7 @@ CLASS net/minecraft/class_504 net/minecraft/client/BaseClientInteractionManager
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_1705 cancelBlockRemoving ()V
-	METHOD method_1707 firePlayer (IIII)V
+	METHOD method_1707 playerDigBlock (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -12,6 +12,7 @@ CLASS net/minecraft/class_504 net/minecraft/client/BaseClientInteractionManager
 		ARG 1 syncId
 		ARG 2 slotIndex
 		ARG 3 clickType
+		ARG 4 flag
 		ARG 5 player
 	METHOD method_1709 closeContainer (ILnet/minecraft/class_54;)V
 		ARG 1 syncId
@@ -49,7 +50,8 @@ CLASS net/minecraft/class_504 net/minecraft/client/BaseClientInteractionManager
 		ARG 1 player
 		ARG 2 entity
 	METHOD method_1720 tick ()V
-	METHOD method_1721 (IIII)V
+	METHOD method_1721 digBlock (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 facing

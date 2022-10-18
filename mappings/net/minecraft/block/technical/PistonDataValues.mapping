@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_505 net/minecraft/sortme/PistonDataValues
+CLASS net/minecraft/class_505 net/minecraft/block/technical/PistonDataValues
 	FIELD field_2106 SIDES_FOR_TEXTURE [I
 	FIELD field_2107 OFFSET_X [I
 	FIELD field_2108 OFFSET_Y [I

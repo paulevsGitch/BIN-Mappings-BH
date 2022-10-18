@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_59 net/minecraft/sortme/LevelListener
+CLASS net/minecraft/class_59 net/minecraft/level/LevelListener
 	METHOD method_1149 updateLight (III)V
 		ARG 1 x
 		ARG 2 y

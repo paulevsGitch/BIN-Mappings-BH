@@ -1,5 +1,18 @@
 CLASS net/minecraft/class_619 net/minecraft/block/RedstoneTorchBlock
-	METHOD method_2039 (Lnet/minecraft/class_18;III)Z
+	FIELD field_2685 updateOnPlace Z
+	FIELD field_2686 entities Ljava/util/List;
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 texture
+		ARG 3 updateOnPlace
+	METHOD method_2038 addEntity (Lnet/minecraft/class_18;IIIZ)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 makeEntity
+	METHOD method_2039 hasSignalNearby (Lnet/minecraft/class_18;III)Z
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

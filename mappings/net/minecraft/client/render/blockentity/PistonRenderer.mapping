@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_282 net/minecraft/client/render/blockentity/PistonRenderer
 	FIELD field_1131 blockRenderer Lnet/minecraft/class_13;
+	METHOD method_973 render (Lnet/minecraft/class_283;DDDF)V

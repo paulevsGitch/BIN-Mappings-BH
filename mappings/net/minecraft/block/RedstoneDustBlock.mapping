@@ -1,21 +1,36 @@
 CLASS net/minecraft/class_408 net/minecraft/block/RedstoneDustBlock
 	FIELD field_1570 emitsRedstonePower Z
+	FIELD field_1571 neighbours Ljava/util/Set;
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 texture
-	METHOD method_1286 (Lnet/minecraft/class_18;IIIIII)V
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-	METHOD method_1287 (Lnet/minecraft/class_14;IIII)Z
+	METHOD method_1286 updatePower (Lnet/minecraft/class_18;IIIIII)V
+		ARG 1 level
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 z1
+		ARG 5 x2
+		ARG 6 y2
+		ARG 7 z2
+	METHOD method_1287 canConnect (Lnet/minecraft/class_14;IIII)Z
+		ARG 0 view
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1288 (Lnet/minecraft/class_18;IIII)I
+		ARG 4 flag
+	METHOD method_1288 getBlockMeta (Lnet/minecraft/class_18;IIII)I
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1290 (Lnet/minecraft/class_18;III)V
+		ARG 5 meta
+	METHOD method_1289 updateNeighboursFromList (Lnet/minecraft/class_18;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1290 updateNeighbours (Lnet/minecraft/class_18;III)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

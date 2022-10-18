@@ -121,8 +121,12 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 3 y
 		ARG 4 z
 		ARG 5 extended
-	METHOD method_53 (Lnet/minecraft/class_17;Lnet/minecraft/class_18;III)V
+	METHOD method_53 renderBlock (Lnet/minecraft/class_17;Lnet/minecraft/class_18;III)V
 		ARG 1 block
+		ARG 2 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
 	METHOD method_55 renderTopFace (Lnet/minecraft/class_17;DDDI)V
 	METHOD method_56 renderCrop (Lnet/minecraft/class_17;IDDD)V
 		ARG 1 block

@@ -1,6 +1,7 @@
-CLASS net/minecraft/class_226 net/minecraft/entity/FallingBlock
+CLASS net/minecraft/class_226 net/minecraft/entity/FallingBlockEntity
 	FIELD field_847 tile I
 	METHOD <init> (Lnet/minecraft/class_18;DDDI)V
+		ARG 1 level
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_135 net/minecraft/entity/FishHook
+CLASS net/minecraft/class_135 net/minecraft/entity/FishHookEntity
 	FIELD field_1066 shake I
 	FIELD field_1069 xBlock I
 	FIELD field_1070 yBlock I

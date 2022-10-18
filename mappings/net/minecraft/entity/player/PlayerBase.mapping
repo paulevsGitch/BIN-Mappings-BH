@@ -13,6 +13,12 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerBase
 	FIELD field_527 handSwingTicks I
 	FIELD field_528 name Ljava/lang/String;
 	FIELD field_529 dimensionId I
+	FIELD field_530 preX D
+	FIELD field_531 preY D
+	FIELD field_532 preZ D
+	FIELD field_533 newX D
+	FIELD field_534 newY D
+	FIELD field_535 newZ D
 	FIELD field_536 sleeping Z
 	METHOD method_481 getScore ()I
 	METHOD method_483 getSleepTimer ()I

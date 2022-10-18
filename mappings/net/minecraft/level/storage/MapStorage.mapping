@@ -4,6 +4,7 @@ CLASS net/minecraft/class_198 net/minecraft/level/storage/MapStorage
 	FIELD field_722 dimensionId B
 	FIELD field_723 scale B
 	FIELD field_724 colors [B
+	FIELD field_725 updateTicks I
 	CLASS class_199
 		FIELD field_733 mapStorage Lnet/minecraft/class_198;
 		METHOD <init> (Lnet/minecraft/class_198;BBBB)V

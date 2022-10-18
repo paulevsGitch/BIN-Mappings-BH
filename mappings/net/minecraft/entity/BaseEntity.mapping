@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
+	FIELD field_1590 globalEntityID I
 	FIELD field_1591 entityId I
 	FIELD field_1592 renderDistanceMultiplier D
 	FIELD field_1594 passenger Lnet/minecraft/class_57;
@@ -35,9 +36,12 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	FIELD field_1637 prevRenderX D
 	FIELD field_1638 prevRenderY D
 	FIELD field_1639 prevRenderZ D
+	FIELD field_1640 offsetY F
 	FIELD field_1642 updateFromBB Z
 	FIELD field_1644 random Ljava/util/Random;
 	FIELD field_1647 fire I
+	FIELD field_1650 pitchAngle D
+	FIELD field_1651 yawAngle D
 	FIELD field_1652 skinUrl Ljava/lang/String;
 	FIELD field_1653 cloakUrl Ljava/lang/String;
 	FIELD field_1654 clientX I
@@ -48,6 +52,13 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 object
 	METHOD method_1310 initDataTracker ()V
+	METHOD method_1311 setPositionAndRotation (DDDFFI)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
+		ARG 9 flag
 	METHOD method_1313 handleStatus (B)V
 		ARG 1 status
 	METHOD method_1314 getTextured ()Ljava/lang/String;
@@ -56,6 +67,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	METHOD method_1317 baseTick ()V
 	METHOD method_1318 isAlive ()Z
 	METHOD method_1319 destroy ()V
+	METHOD method_1320 getRotation ()Lnet/minecraft/class_26;
 	METHOD method_1321 setSize (FF)V
 		ARG 1 width
 		ARG 2 height
@@ -77,6 +89,10 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 1 item
 		ARG 2 height
 	METHOD method_1328 isInFluid (Lnet/minecraft/class_15;)Z
+	METHOD method_1329 packDoubles ([D)Lnet/minecraft/class_202;
+		ARG 1 data
+	METHOD method_1330 packFloats ([F)Lnet/minecraft/class_202;
+		ARG 1 data
 	METHOD method_1331 getDataTracker ()Lnet/minecraft/class_216;
 	METHOD method_1333 isTouchingWater ()Z
 	METHOD method_1337 getStringId ()Ljava/lang/String;
@@ -101,23 +117,34 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	METHOD method_1345 getBoolean (I)Z
 		ARG 1 index
 	METHOD method_1346 toTag (Lnet/minecraft/class_8;)V
+		ARG 1 tag
 	METHOD method_1347 squaredDistanceTo (DDD)D
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD method_1348 fromTag (Lnet/minecraft/class_8;)V
+		ARG 1 tag
+	METHOD method_1349 setChild (Z)V
+		ARG 1 isChild
 	METHOD method_1350 distanceTo (DDD)D
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD method_1351 distanceTo (Lnet/minecraft/class_57;)F
+	METHOD method_1352 getDistanceSqr (Lnet/minecraft/class_57;)D
+		ARG 1 entity
+	METHOD method_1353 addPassenger (Lnet/minecraft/class_57;)V
+		ARG 1 entity
 	METHOD method_1354 onPlayerCollision (Lnet/minecraft/class_54;)V
+		ARG 1 player
 	METHOD method_1355 damage (Lnet/minecraft/class_57;I)Z
 		ARG 1 target
 		ARG 2 amount
+	METHOD method_1356 canInterractWithHook ()Z
 	METHOD method_1357 getMountedHeightOffset ()D
 	METHOD method_1358 canClimb ()Z
 	METHOD method_1359 isOnFire ()Z
+	METHOD method_1360 isPassenger ()Z
 	METHOD method_1362 updateRotation (FF)V
 		ARG 1 yaw
 		ARG 2 pitch
@@ -131,6 +158,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 5 velocityZ
 	METHOD method_1366 getEyeHeight ()F
 	METHOD method_1367 shouldRenderFrom (Lnet/minecraft/class_26;)Z
+		ARG 1 pos
 	METHOD method_1368 writeCustomDataToTag (Lnet/minecraft/class_8;)V
 		ARG 1 tag
 	METHOD method_1370 tick ()V
@@ -138,14 +166,19 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_1372 (DDD)Z
+	METHOD method_1372 solidBlockInteraction (DDD)Z
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD method_1373 isChild ()Z
 	METHOD method_1375 setLevel (Lnet/minecraft/class_18;)V
 	METHOD method_1376 startRiding (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_1377 getInventory ()[Lnet/minecraft/class_31;
 	METHOD method_1378 getStandingEyeHeight ()F
 	METHOD method_1379 getBoundingBox (Lnet/minecraft/class_57;)Lnet/minecraft/class_25;
+		ARG 1 entity
+	METHOD method_1382 updatePassenger ()V
 	METHOD method_1383 onStruckByLightning (Lnet/minecraft/class_411;)V
 		ARG 1 lightning
 	METHOD method_1384 tickRiding ()V
@@ -157,6 +190,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	METHOD method_1390 handleKilledEntity (Lnet/minecraft/class_127;)V
 		ARG 1 entity
 	METHOD method_1391 onKilledOther (Lnet/minecraft/class_57;I)V
+		ARG 1 entity
 		ARG 2 score
 	METHOD method_1392 damageByFire (I)V
 		ARG 1 amount

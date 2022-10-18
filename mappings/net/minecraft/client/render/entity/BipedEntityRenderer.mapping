@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_589 net/minecraft/client/render/entity/BipedEntityRenderer
+	FIELD field_2556 bipedModel Lnet/minecraft/class_87;
+	METHOD <init> (Lnet/minecraft/class_87;F)V
+		ARG 1 model
+		ARG 2 shadowSize

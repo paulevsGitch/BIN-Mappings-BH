@@ -14,6 +14,9 @@ CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
 	METHOD method_1084 tick ()V
 	METHOD method_1085 remove (I)V
 		ARG 1 targetID
+	METHOD method_1086 hashInts (II)I
+		ARG 1 a
+		ARG 2 b
 	METHOD method_1087 addTextureBinder (Lnet/minecraft/class_336;)V
 		ARG 1 binder
 	METHOD method_1088 bindImage (Ljava/awt/image/BufferedImage;)I
@@ -63,3 +66,5 @@ CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
 		ARG 1 image
 	METHOD method_1100 getTextureId (Ljava/lang/String;)I
 		ARG 1 texturePath
+	METHOD method_1102 removeDownloadedTexture (Ljava/lang/String;)V
+		ARG 1 name

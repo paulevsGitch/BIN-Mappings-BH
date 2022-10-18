@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_411 net/minecraft/entity/Lightning
+CLASS net/minecraft/class_411 net/minecraft/entity/LightningEntity
 	METHOD <init> (Lnet/minecraft/class_18;DDD)V
 		ARG 1 level
 		ARG 2 x

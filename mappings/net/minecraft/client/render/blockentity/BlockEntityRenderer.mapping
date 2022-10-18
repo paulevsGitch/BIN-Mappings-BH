@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_330 net/minecraft/client/render/tileentity/BlockEntityRenderer
+CLASS net/minecraft/class_330 net/minecraft/client/render/blockentity/BlockEntityRenderer
 	FIELD field_1235 renderDispatcher Lnet/minecraft/class_331;
 	METHOD method_1062 init (Lnet/minecraft/class_18;)V
 		ARG 1 level

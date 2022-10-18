@@ -1,25 +1,43 @@
 CLASS net/minecraft/class_327 net/minecraft/block/FlowingFluidBlock
-	METHOD method_1052 (Lnet/minecraft/class_18;IIIII)I
+	FIELD field_1232 possibleDirection I
+	FIELD field_1233 availableDirections [Z
+	FIELD field_1234 dirIntValues [I
+	METHOD method_1052 getValueAtDirection (Lnet/minecraft/class_18;IIIII)I
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1054 (Lnet/minecraft/class_18;IIII)V
+		ARG 5 value
+		ARG 6 direction
+	METHOD method_1053 getWrappedMeta (Lnet/minecraft/class_18;IIII)I
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1055 (Lnet/minecraft/class_18;III)V
+		ARG 5 meta
+	METHOD method_1054 placeBlockIfPossible (Lnet/minecraft/class_18;IIII)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1056 (Lnet/minecraft/class_18;III)[Z
+		ARG 5 meta
+	METHOD method_1055 setBlockWithUpdate (Lnet/minecraft/class_18;III)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1057 (Lnet/minecraft/class_18;III)Z
+	METHOD method_1056 getAvailableDirections (Lnet/minecraft/class_18;III)[Z
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1058 (Lnet/minecraft/class_18;III)Z
+	METHOD method_1057 blocksFluid (Lnet/minecraft/class_18;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1058 canReplace (Lnet/minecraft/class_18;III)Z
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

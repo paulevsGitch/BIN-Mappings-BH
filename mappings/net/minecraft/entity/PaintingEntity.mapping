@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_107 net/minecraft/entity/Painting
+CLASS net/minecraft/class_107 net/minecraft/entity/PaintingEntity
 	FIELD field_1384 direction I
 	FIELD field_1385 tileX I
 	FIELD field_1386 tileY I

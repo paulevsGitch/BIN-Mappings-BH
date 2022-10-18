@@ -1,5 +1,38 @@
 CLASS net/minecraft/class_92 net/minecraft/client/render/entity/ItemRenderer
+	FIELD field_1707 coloriseItem Z
+	FIELD field_1708 internalBlockRenderer Lnet/minecraft/class_13;
 	FIELD field_1709 rand Ljava/util/Random;
-	METHOD method_1486 renderItemOnGui (Lnet/minecraft/class_34;Lnet/minecraft/class_76;IIIII)V
-	METHOD method_1488 (Lnet/minecraft/class_34;Lnet/minecraft/class_76;Lnet/minecraft/class_31;II)V
+	METHOD method_1483 renderRectangle (IIIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 u
+		ARG 4 v
+		ARG 5 width
+		ARG 6 height
+	METHOD method_1485 renderRectangle (Lnet/minecraft/class_67;IIIII)V
+		ARG 1 tesselator
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
+		ARG 6 color
+	METHOD method_1486 renderItemInGUI (Lnet/minecraft/class_34;Lnet/minecraft/class_76;IIIII)V
+		ARG 1 textRenderer
+		ARG 2 manager
+		ARG 3 itemID
+		ARG 4 meta
+		ARG 5 texture
+		ARG 6 x
+		ARG 7 y
+	METHOD method_1487 renderStackInGUI (Lnet/minecraft/class_34;Lnet/minecraft/class_76;Lnet/minecraft/class_31;II)V
+		ARG 1 textRenderer
+		ARG 2 manager
+		ARG 3 stack
+		ARG 4 x
+		ARG 5 y
+	METHOD method_1488 renderStackInGUIWithDamage (Lnet/minecraft/class_34;Lnet/minecraft/class_76;Lnet/minecraft/class_31;II)V
+		ARG 1 textRenderer
+		ARG 2 manager
 		ARG 3 item
+		ARG 4 x
+		ARG 5 y

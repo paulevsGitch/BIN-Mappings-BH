@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_86 net/minecraft/client/render/entity/PlayerRenderer
+	FIELD field_297 armorTextures [Ljava/lang/String;

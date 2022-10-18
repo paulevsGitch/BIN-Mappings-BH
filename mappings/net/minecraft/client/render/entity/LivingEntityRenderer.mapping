@@ -1,4 +1,20 @@
 CLASS net/minecraft/class_245 net/minecraft/client/render/entity/LivingEntityRenderer
-	FIELD field_910 model Lnet/minecraft/class_173;
+	FIELD field_909 entityModel Lnet/minecraft/class_173;
+	FIELD field_910 additionalModel Lnet/minecraft/class_173;
+	METHOD <init> (Lnet/minecraft/class_173;F)V
+		ARG 1 model
+		ARG 2 shadowSize
 	METHOD method_815 setModel (Lnet/minecraft/class_173;)V
+		ARG 1 model
+	METHOD method_820 getHandSwing (Lnet/minecraft/class_127;F)F
+		ARG 1 entity
+		ARG 2 delta
+	METHOD method_821 (Lnet/minecraft/class_127;DDD)V
+		ARG 1 player
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
 	METHOD method_825 render (Lnet/minecraft/class_127;IF)Z
+	METHOD method_827 renderPlayerEffects (Lnet/minecraft/class_127;F)V
+		ARG 1 player
+		ARG 2 delta

@@ -4,6 +4,7 @@ CLASS net/minecraft/class_549 net/minecraft/entity/MinecartEntity
 	FIELD field_2277 pushX D
 	FIELD field_2278 pushZ D
 	FIELD field_2279 storedItems [Lnet/minecraft/class_31;
+	FIELD field_2281 possibleDirections [[[I
 	FIELD field_2282 flag I
 	FIELD field_2283 posX D
 	FIELD field_2284 posY D
@@ -18,11 +19,12 @@ CLASS net/minecraft/class_549 net/minecraft/entity/MinecartEntity
 		ARG 4 y
 		ARG 6 z
 		ARG 8 type
-	METHOD method_1813 (DDD)Lnet/minecraft/class_26;
+	METHOD method_1813 getDirection (DDD)Lnet/minecraft/class_26;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_1814 (DDDD)Lnet/minecraft/class_26;
+	METHOD method_1814 checkRails (DDDD)Lnet/minecraft/class_26;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+		ARG 7 delta

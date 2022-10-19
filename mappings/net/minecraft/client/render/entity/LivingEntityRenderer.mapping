@@ -6,6 +6,8 @@ CLASS net/minecraft/class_245 net/minecraft/client/render/entity/LivingEntityRen
 		ARG 2 shadowSize
 	METHOD method_815 setModel (Lnet/minecraft/class_173;)V
 		ARG 1 model
+	METHOD method_816 (Lnet/minecraft/class_127;)F
+		ARG 1 spider
 	METHOD method_820 getHandSwing (Lnet/minecraft/class_127;F)F
 		ARG 1 entity
 		ARG 2 delta
@@ -14,7 +16,10 @@ CLASS net/minecraft/class_245 net/minecraft/client/render/entity/LivingEntityRen
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
-	METHOD method_825 render (Lnet/minecraft/class_127;IF)Z
+	METHOD method_825 renderOuterLayers (Lnet/minecraft/class_127;IF)Z
+		ARG 1 player
+		ARG 2 layer
+		ARG 3 delta
 	METHOD method_827 renderPlayerEffects (Lnet/minecraft/class_127;F)V
 		ARG 1 player
 		ARG 2 delta

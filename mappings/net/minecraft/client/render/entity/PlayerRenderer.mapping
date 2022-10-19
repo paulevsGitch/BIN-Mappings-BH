@@ -1,2 +1,6 @@
 CLASS net/minecraft/class_86 net/minecraft/client/render/entity/PlayerRenderer
+	FIELD field_294 playerModel Lnet/minecraft/class_87;
+	FIELD field_295 innerLayer Lnet/minecraft/class_87;
+	FIELD field_296 outerLayer Lnet/minecraft/class_87;
 	FIELD field_297 armorTextures [Ljava/lang/String;
+	METHOD method_344 renderOuterLayers (Lnet/minecraft/class_54;IF)V

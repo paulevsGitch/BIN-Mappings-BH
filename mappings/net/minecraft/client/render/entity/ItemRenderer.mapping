@@ -2,6 +2,7 @@ CLASS net/minecraft/class_92 net/minecraft/client/render/entity/ItemRenderer
 	FIELD field_1707 coloriseItem Z
 	FIELD field_1708 internalBlockRenderer Lnet/minecraft/class_13;
 	FIELD field_1709 rand Ljava/util/Random;
+	METHOD method_1484 render (Lnet/minecraft/class_142;DDDFF)V
 	METHOD method_1483 renderRectangle (IIIIII)V
 		ARG 1 x
 		ARG 2 y

@@ -17,4 +17,3 @@ CLASS net/minecraft/class_568 net/minecraft/client/gui/screen/menu/SelectLevel
 	METHOD method_1896 addButtons ()V
 	METHOD method_1897 sortLevels ()V
 	CLASS class_569 LevelList
-

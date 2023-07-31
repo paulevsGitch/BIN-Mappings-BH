@@ -21,15 +21,6 @@ CLASS net/minecraft/client/MinecraftApplet net/minecraft/client/MinecraftApplet
 			ARG 2 component
 			ARG 3 canvas
 			ARG 4 applet2
-
-	CLASS class_641 AppletMinecraft
-		FIELD field_2834 applet Lnet/minecraft/client/MinecraftApplet;
-		METHOD <init> (Lnet/minecraft/client/MinecraftApplet;Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
-			ARG 1 applet
-			ARG 2 component
-			ARG 3 canvas
-			ARG 4 applet2
 			ARG 5 width
 			ARG 6 height
 			ARG 7 flag
-

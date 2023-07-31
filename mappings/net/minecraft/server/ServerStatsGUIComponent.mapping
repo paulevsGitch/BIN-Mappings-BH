@@ -6,4 +6,3 @@ CLASS net/minecraft/class_247 net/minecraft/server/ServerStatsGUIComponent
 	CLASS 1 1
 		METHOD actionPerformed (Ljava/awt/event/ActionEvent;)V
 			ARG 1 event
-

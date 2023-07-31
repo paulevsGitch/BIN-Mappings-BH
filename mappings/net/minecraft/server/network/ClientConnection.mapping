@@ -45,4 +45,3 @@ CLASS net/minecraft/class_117 net/minecraft/server/network/ClientConnection
 	METHOD run ()V
 	CLASS 1 1
 		METHOD run ()V
-

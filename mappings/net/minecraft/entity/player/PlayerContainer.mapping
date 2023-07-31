@@ -10,8 +10,3 @@ CLASS net/minecraft/class_277 net/minecraft/entity/player/PlayerContainer
 	CLASS 1 1
 		FIELD field_1127 armorSlot I
 		FIELD field_1128 playerContainer Lnet/minecraft/class_277;
-
-	CLASS 1 1
-		FIELD field_1127 armorSlot I
-		FIELD field_1128 playerContainer Lnet/minecraft/class_277;
-

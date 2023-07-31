@@ -11,4 +11,3 @@ CLASS net/minecraft/class_130 net/minecraft/util/ImageDownloadThread
 		FIELD field_497 processor Lnet/minecraft/class_131;
 		FIELD field_498 data Lnet/minecraft/class_130;
 		METHOD run run ()V
-

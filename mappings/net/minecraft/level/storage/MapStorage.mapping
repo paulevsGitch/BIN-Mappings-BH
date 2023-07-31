@@ -9,9 +9,3 @@ CLASS net/minecraft/class_198 net/minecraft/level/storage/MapStorage
 		FIELD field_733 mapStorage Lnet/minecraft/class_198;
 		METHOD <init> (Lnet/minecraft/class_198;BBBB)V
 			ARG 1 storage
-
-	CLASS class_199
-		FIELD field_733 mapStorage Lnet/minecraft/class_198;
-		METHOD <init> (Lnet/minecraft/class_198;BBBB)V
-			ARG 1 storage
-

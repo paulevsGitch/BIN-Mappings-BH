@@ -48,13 +48,3 @@ CLASS net/minecraft/class_167 net/minecraft/server/ServerPlayerView
 			ARG 1 blockEntity
 		METHOD method_1757 stopTracking (Lnet/minecraft/class_69;)V
 			ARG 1 player
-
-	CLASS class_514
-		FIELD field_2137 serverPlayers Ljava/util/List;
-		METHOD method_1754 addServerPlayer (Lnet/minecraft/class_69;)V
-			ARG 1 serverPlayer
-		METHOD method_1755 (Lnet/minecraft/class_169;)V
-			ARG 1 packet
-		METHOD method_1757 removeServerPlayer (Lnet/minecraft/class_69;)V
-			ARG 1 serverPlayer
-

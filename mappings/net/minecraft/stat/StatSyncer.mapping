@@ -19,7 +19,3 @@ CLASS net/minecraft/class_605 net/minecraft/stat/StatSyncer
 	METHOD method_2064 sync (Ljava/util/Map;)V
 	CLASS 1 1
 		FIELD field_2729 syncher Lnet/minecraft/class_605;
-
-	CLASS 1 1
-		FIELD field_2729 syncher Lnet/minecraft/class_605;
-

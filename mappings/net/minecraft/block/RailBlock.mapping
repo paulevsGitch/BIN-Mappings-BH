@@ -73,9 +73,3 @@ CLASS net/minecraft/class_16 net/minecraft/block/RailBlock
 			ARG 1 data
 		METHOD method_1121 updateMeta (Lnet/minecraft/class_16$class_338;)V
 			ARG 1 data
-
-	CLASS class_338 RailMagicStuff
-		FIELD field_1265 x I
-		FIELD field_1266 y I
-		FIELD field_1267 z I
-

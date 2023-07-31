@@ -12,4 +12,3 @@ CLASS net/minecraft/class_148 net/minecraft/recipe/RecipeRegistry
 		ARG 2 recipeArray
 	CLASS 1 1
 		METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
-

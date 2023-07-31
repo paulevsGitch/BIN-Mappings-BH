@@ -22,4 +22,3 @@ CLASS net/minecraft/class_10 net/minecraft/server/network/ServerPacketHandler
 		FIELD field_362 loginPacket Lnet/minecraft/class_118;
 		FIELD field_363 networkHandler Lnet/minecraft/class_10;
 		METHOD run run ()V
-

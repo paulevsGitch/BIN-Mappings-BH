@@ -1,0 +1,49 @@
+CLASS net/minecraft/class_59 net/minecraft/level/LevelListener
+	METHOD method_1148 updateAllAreas ()V
+	METHOD method_1149 updateBlock (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1150 updateArea (IIIIII)V
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 z1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 z2
+	METHOD method_1151 updateTileEntity (IIILnet/minecraft/class_55;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 entity
+	METHOD method_1152 playLevelEvent (Lnet/minecraft/class_54;IIIII)V
+		ARG 1 player
+		ARG 2 type
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 flag
+	METHOD method_1153 addParticle (Ljava/lang/String;DDDDDD)V
+		ARG 1 name
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 dx
+		ARG 10 dy
+		ARG 12 dz
+	METHOD method_1154 playSound (Ljava/lang/String;DDDFF)V
+		ARG 1 name
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 volume
+		ARG 9 pitch
+	METHOD method_1155 playDisc (Ljava/lang/String;III)V
+		ARG 1 name
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1156 drawCape (Lnet/minecraft/class_57;)V
+		ARG 1 entity
+	METHOD method_1157 remove (Lnet/minecraft/class_57;)V
+		ARG 1 entity

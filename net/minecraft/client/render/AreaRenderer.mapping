@@ -1,0 +1,54 @@
+CLASS net/minecraft/class_66 net/minecraft/client/render/AreaRenderer
+	FIELD field_223 hasSkyLight Z
+	FIELD field_224 skipBlockEntities Ljava/util/List;
+	FIELD field_225 glListID I
+	FIELD field_226 tesselator Lnet/minecraft/class_67;
+	FIELD field_227 hasData Z
+	FIELD field_228 blockEntities Ljava/util/List;
+	FIELD field_229 level Lnet/minecraft/class_18;
+	FIELD field_230 globalID I
+	FIELD field_231 startX I
+	FIELD field_232 startY I
+	FIELD field_233 startZ I
+	FIELD field_234 sideX I
+	FIELD field_235 sideY I
+	FIELD field_236 sideZ I
+	FIELD field_237 deltaX I
+	FIELD field_238 deltaY I
+	FIELD field_239 deltaZ I
+	FIELD field_240 wrappedX I
+	FIELD field_241 wrappedY I
+	FIELD field_242 wrappedZ I
+	FIELD field_243 isVisible Z
+	FIELD field_244 layerIsEmpty [Z
+	FIELD field_245 centerX I
+	FIELD field_246 centerY I
+	FIELD field_247 centerZ I
+	FIELD field_248 distanceToCenter F
+	FIELD field_249 canUpdate Z
+	FIELD field_250 box Lnet/minecraft/class_25;
+	METHOD <init> (Lnet/minecraft/class_18;Ljava/util/List;IIIII)V
+		ARG 1 level
+		ARG 2 blockEntities
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 side
+		ARG 7 glTarget
+	METHOD method_296 update ()V
+	METHOD method_297 getLayerTarget (I)I
+		ARG 1 layer
+	METHOD method_298 setPosition (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_299 distance (Lnet/minecraft/class_57;)F
+		ARG 1 entity
+	METHOD method_300 checkVisibility (Lnet/minecraft/class_68;)V
+		ARG 1 collider
+	METHOD method_301 resetFlags ()V
+	METHOD method_302 reset ()V
+	METHOD method_303 renderTranslucent ()V
+	METHOD method_304 isOnlyTranslucent ()Z
+	METHOD method_305 markToUpdate ()V
+	METHOD method_306 offset ()V

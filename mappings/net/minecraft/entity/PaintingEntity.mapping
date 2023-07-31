@@ -1,8 +1,8 @@
 CLASS net/minecraft/class_107 net/minecraft/entity/PaintingEntity
 	FIELD field_1384 direction I
-	FIELD field_1385 tileX I
-	FIELD field_1386 tileY I
-	FIELD field_1387 tileZ I
+	FIELD field_1385 blockX I
+	FIELD field_1386 blockY I
+	FIELD field_1387 blockZ I
 	FIELD field_1388 motive Lnet/minecraft/class_191;
 	METHOD <init> (Lnet/minecraft/class_18;IIII)V
 		ARG 2 x

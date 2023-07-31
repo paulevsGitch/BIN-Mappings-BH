@@ -1,6 +1,6 @@
-CLASS net/minecraft/class_500 net/minecraft/item/armour/ArmourItem
+CLASS net/minecraft/class_500 net/minecraft/item/armor/ArmorItem
 	FIELD field_2082 tier I
-	FIELD field_2083 armourSlot I
+	FIELD field_2083 armorSlot I
 	FIELD field_2084 maximumDamage I
 	FIELD field_2085 texture I
 	FIELD field_2086 MAXIMUM_DAMAGE [I

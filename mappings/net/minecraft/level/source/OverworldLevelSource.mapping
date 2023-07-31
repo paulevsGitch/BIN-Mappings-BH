@@ -28,12 +28,12 @@ CLASS net/minecraft/class_538 net/minecraft/level/source/OverworldLevelSource
 	METHOD method_1797 buildSurface (II[B[Lnet/minecraft/class_153;)V
 		ARG 1 chunkX
 		ARG 2 chunkZ
-		ARG 3 tiles
+		ARG 3 blocks
 		ARG 4 biomes
 	METHOD method_1798 shapeChunk (II[B[Lnet/minecraft/class_153;[D)V
 		ARG 1 chunkX
 		ARG 2 chunkZ
-		ARG 3 tiles
+		ARG 3 blocks
 		ARG 4 biomes
 		ARG 5 temperatures
 	METHOD method_1799 calculateNoise ([DIIIIII)[D

@@ -126,7 +126,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/BaseItem
 		ARG 6 damageTarget
 	METHOD method_438 getStrengthOnBlock (Lnet/minecraft/class_31;Lnet/minecraft/class_17;)F
 		ARG 1 item
-		ARG 2 tile
+		ARG 2 block
 	METHOD method_439 getTexturePosition (Lnet/minecraft/class_31;)I
 		ARG 1 item
 	METHOD method_440 getColorMultiplier (I)I
@@ -154,7 +154,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/BaseItem
 	METHOD method_448 isRendered3d ()Z
 	METHOD method_449 shouldSpinWhenRendering ()Z
 	METHOD method_450 isEffectiveOn (Lnet/minecraft/class_17;)Z
-		ARG 1 tile
+		ARG 1 block
 	METHOD method_451 use (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_54;)Lnet/minecraft/class_31;
 		ARG 1 item
 		ARG 2 level

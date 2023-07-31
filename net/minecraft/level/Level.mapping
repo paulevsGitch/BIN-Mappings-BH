@@ -19,7 +19,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	FIELD field_196 entitySearchCache Ljava/util/List;
 	FIELD field_197 forceBlockUpdate Z
 	FIELD field_198 entities Ljava/util/List;
-	FIELD field_199 tileEntities Ljava/util/List;
+	FIELD field_199 blockEntities Ljava/util/List;
 	FIELD field_200 players Ljava/util/List;
 	FIELD field_201 entitiesList Ljava/util/List;
 	FIELD field_202 correctLightValue I
@@ -106,7 +106,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 tileEntity
+		ARG 4 blockEntity
 	METHOD method_158 getLight (IIIZ)I
 		ARG 1 x
 		ARG 2 y
@@ -288,7 +288,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 4 x2
 		ARG 5 y2
 		ARG 6 z2
-	METHOD method_203 updateTileEntity (IIILnet/minecraft/class_55;)V
+	METHOD method_203 updateBlockEntity (IIILnet/minecraft/class_55;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

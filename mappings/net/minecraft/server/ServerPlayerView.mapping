@@ -45,7 +45,7 @@ CLASS net/minecraft/class_167 net/minecraft/server/ServerPlayerView
 		METHOD method_1755 sendToTrackers (Lnet/minecraft/class_169;)V
 			ARG 1 packet
 		METHOD method_1756 sendInitialChunkDataPacket (Lnet/minecraft/class_55;)V
-			ARG 1 tileEntity
+			ARG 1 blockEntity
 		METHOD method_1757 stopTracking (Lnet/minecraft/class_69;)V
 			ARG 1 player
 

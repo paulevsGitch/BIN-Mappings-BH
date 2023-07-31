@@ -1,4 +1,4 @@
 CLASS net/minecraft/class_246 net/minecraft/level/structure/Deadbush
-	FIELD field_911 tileId I
+	FIELD field_911 blockId I
 	METHOD <init> (I)V
-		ARG 1 tileId
+		ARG 1 blockId

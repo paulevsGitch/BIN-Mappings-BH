@@ -14,4 +14,4 @@ CLASS net/minecraft/class_40 net/minecraft/entity/player/AbstractClientPlayer
 		ARG 3 z
 	METHOD method_139 updateHealth (I)V
 	METHOD method_140 resetKeys ()V
-	METHOD method_141 getArmourValue ()I
+	METHOD method_141 getArmorValue ()I

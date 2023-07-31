@@ -6,11 +6,11 @@ CLASS net/minecraft/class_105 net/minecraft/level/gen/Cave
 		ARG 2 level
 		ARG 3 x
 		ARG 4 z
-		ARG 5 tileIdArray
+		ARG 5 blockIdArray
 	METHOD method_396 generate (Lnet/minecraft/class_18;IIII[B)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 z
 		ARG 4 centreX
 		ARG 5 centreZ
-		ARG 6 tileIdArray
+		ARG 6 blockIdArray

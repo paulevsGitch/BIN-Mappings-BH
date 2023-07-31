@@ -23,17 +23,17 @@ CLASS net/minecraft/class_331 net/minecraft/client/render/entity/BlockEntityRend
 		ARG 4 cameraEntity
 		ARG 5 tickDelta
 	METHOD method_1275 getCustomRendererOrAddDefault (Ljava/lang/Class;)Lnet/minecraft/class_330;
-		ARG 1 tileEntityClass
+		ARG 1 blockEntityClass
 	METHOD method_1276 hasCustomRenderer (Lnet/minecraft/class_55;)Z
-		ARG 1 tileEntity
+		ARG 1 blockEntity
 	METHOD method_1277 renderBlockEntity (Lnet/minecraft/class_55;DDDF)V
-		ARG 1 tileEntity
+		ARG 1 blockEntity
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
 		ARG 8 tickDelta
-	METHOD method_1278 renderTileEntity (Lnet/minecraft/class_55;F)V
-		ARG 1 tileEntity
+	METHOD method_1278 renderBlockEntity (Lnet/minecraft/class_55;F)V
+		ARG 1 blockEntity
 		ARG 2 tickDelta
 	METHOD method_1279 getCustomRenderer (Lnet/minecraft/class_55;)Lnet/minecraft/class_330;
-		ARG 1 tileEntity
+		ARG 1 blockEntity

@@ -23,7 +23,7 @@ CLASS net/minecraft/class_208 net/minecraft/level/source/SkylandsLevelSource
 	METHOD method_737 buildSurface (II[B[Lnet/minecraft/class_153;)V
 		ARG 1 chunkX
 		ARG 2 chunkZ
-		ARG 3 tiles
+		ARG 3 blocks
 		ARG 4 biomes
 	METHOD method_738 shapeChunk (II[B[Lnet/minecraft/class_153;[D)V
 		ARG 1 chunkX

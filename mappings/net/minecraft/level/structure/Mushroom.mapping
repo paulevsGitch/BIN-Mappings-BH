@@ -1,4 +1,4 @@
 CLASS net/minecraft/class_231 net/minecraft/level/structure/Mushroom
-	FIELD field_858 tileId I
+	FIELD field_858 blockId I
 	METHOD <init> (I)V
-		ARG 1 tileId
+		ARG 1 blockId

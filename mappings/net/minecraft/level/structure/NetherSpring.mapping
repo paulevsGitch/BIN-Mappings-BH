@@ -1,4 +1,4 @@
 CLASS net/minecraft/class_351 net/minecraft/level/structure/NetherSpring
-	FIELD field_1313 tileId I
+	FIELD field_1313 blockId I
 	METHOD <init> (I)V
-		ARG 1 tileId
+		ARG 1 blockId

@@ -51,5 +51,7 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	METHOD run ()V
 	CLASS class_643 ServerThread
 		METHOD <init> (Ljava/lang/String;Lnet/minecraft/server/MinecraftServer;)V
-			ARG 1 string	CLASS class_645 ConsoleInputThread
-		METHOD run ()V	CLASS class_646 MagicalTimingHelperThread
+			ARG 1 string
+	CLASS class_645 ConsoleInputThread
+		METHOD run ()V
+	CLASS class_646 MagicalTimingHelperThread

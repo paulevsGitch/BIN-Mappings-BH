@@ -148,8 +148,18 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD run run ()V
 	CLASS class_636 TimerHackThread
 		FIELD field_2825 minecraft Lnet/minecraft/client/Minecraft;
+		METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
+			ARG 2 name
+		METHOD run ()V
+	CLASS class_638 MinecraftWindowAdapter
 		FIELD field_2828 thread Ljava/lang/Thread;
-		FIELD field_2829 minecraft Lnet/minecraft/client/Minecraft;	CLASS class_640 MCApplet
+		METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/Thread;)V
+			ARG 2 thread
+		METHOD windowClosing (Ljava/awt/event/WindowEvent;)V
+			ARG 1 event
+	CLASS class_639 LoginThread
+		FIELD field_2829 minecraft Lnet/minecraft/client/Minecraft;
+	CLASS class_640 MCApplet
 		FIELD field_2830 frame Ljava/awt/Frame;
 		METHOD <init> (Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZLjava/awt/Frame;)V
 			ARG 1 component
@@ -159,10 +169,3 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 			ARG 5 height
 			ARG 6 flag
 			ARG 7 frame
-		METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
-			ARG 2 name
-		METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/Thread;)V
-			ARG 2 thread
-		METHOD run ()V	CLASS class_638 MinecraftWindowAdapter
-		METHOD windowClosing (Ljava/awt/event/WindowEvent;)V
-			ARG 1 event	CLASS class_639 LoginThread

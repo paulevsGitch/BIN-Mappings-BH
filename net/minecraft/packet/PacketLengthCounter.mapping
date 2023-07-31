@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_314 net/minecraft/packet/PacketLengthCounter
+	FIELD field_1200 count I
+	FIELD field_1201 length J
+	METHOD method_1036 addLength (I)V
+		ARG 1 length

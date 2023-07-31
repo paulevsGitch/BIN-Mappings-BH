@@ -27,6 +27,7 @@ CLASS net/minecraft/class_66 net/minecraft/client/render/AreaRenderer
 	FIELD field_248 distanceToCenter F
 	FIELD field_249 canUpdate Z
 	FIELD field_250 box Lnet/minecraft/class_25;
+	FIELD field_251 distance I
 	METHOD <init> (Lnet/minecraft/class_18;Ljava/util/List;IIIII)V
 		ARG 1 level
 		ARG 2 blockEntities

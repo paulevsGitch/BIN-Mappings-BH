@@ -1,0 +1,36 @@
+CLASS net/minecraft/class_169 net/minecraft/packet/AbstractPacket
+	FIELD field_899 idToClass Ljava/util/Map;
+	FIELD field_900 classToId Ljava/util/Map;
+	FIELD field_901 serverToClientPackets Ljava/util/Set;
+	FIELD field_902 clientToServerPackets Ljava/util/Set;
+	FIELD field_903 counters Ljava/util/HashMap;
+	FIELD field_904 readPackets I
+	FIELD field_905 createdTimestamp J
+	FIELD field_906 levelPacket Z
+	METHOD method_798 length ()I
+	METHOD method_799 create (I)Lnet/minecraft/class_169;
+		ARG 0 id
+	METHOD method_800 register (IZZLjava/lang/Class;)V
+		ARG 0 id
+		ARG 1 serverToClient
+		ARG 2 clientToServer
+		ARG 3 packetClass
+	METHOD method_801 writeToStream (Lnet/minecraft/class_169;Ljava/io/DataOutputStream;)V
+		ARG 0 packet
+		ARG 1 stream
+	METHOD method_802 readString (Ljava/io/DataInputStream;I)Ljava/lang/String;
+		ARG 0 stream
+		ARG 1 maxLength
+	METHOD method_803 readFromStream (Ljava/io/DataInputStream;Z)Lnet/minecraft/class_169;
+		ARG 0 stream
+		ARG 1 serverSide
+	METHOD method_804 writeString (Ljava/lang/String;Ljava/io/DataOutputStream;)V
+		ARG 0 string
+		ARG 1 stream
+	METHOD method_805 getPacketID ()I
+	METHOD method_806 read (Ljava/io/DataInputStream;)V
+		ARG 1 in
+	METHOD method_807 write (Ljava/io/DataOutputStream;)V
+		ARG 1 out
+	METHOD method_808 apply (Lnet/minecraft/class_240;)V
+		ARG 1 handler

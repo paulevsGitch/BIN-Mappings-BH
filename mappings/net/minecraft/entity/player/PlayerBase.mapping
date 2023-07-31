@@ -63,6 +63,7 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerBase
 		ARG 1 target
 	METHOD method_511 getStrengh (Lnet/minecraft/class_17;)F
 	METHOD method_512 incrementStat (Lnet/minecraft/class_139;)V
+		ARG 1 stat
 	METHOD method_513 dropItem (Lnet/minecraft/class_31;)V
 	METHOD method_514 canRemoveBlock (Lnet/minecraft/class_17;)Z
 	METHOD method_515 interactWith (Lnet/minecraft/class_57;)V

@@ -7,6 +7,7 @@ CLASS net/minecraft/class_10 net/minecraft/server/network/ServerPacketHandler
 	FIELD field_358 timeElapsed I
 	FIELD field_359 username Ljava/lang/String;
 	FIELD field_360 handshakePacket Lnet/minecraft/class_118;
+	FIELD field_361 serverId Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/net/Socket;Ljava/lang/String;)V
 		ARG 1 srver
 		ARG 2 socket
@@ -16,3 +17,9 @@ CLASS net/minecraft/class_10 net/minecraft/server/network/ServerPacketHandler
 		ARG 1 reason
 	METHOD method_418 getUsernameAndIp ()Ljava/lang/String;
 	METHOD method_419 complete (Lnet/minecraft/class_118;)V
+		ARG 1 packet
+	CLASS 1 AuthThread
+		FIELD field_362 loginPacket Lnet/minecraft/class_118;
+		FIELD field_363 networkHandler Lnet/minecraft/class_10;
+		METHOD run run ()V
+

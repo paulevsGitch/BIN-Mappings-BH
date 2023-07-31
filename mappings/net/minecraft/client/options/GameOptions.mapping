@@ -35,17 +35,29 @@ CLASS net/minecraft/class_322 net/minecraft/client/options/GameOptions
 	FIELD field_1479 minecraft Lnet/minecraft/client/Minecraft;
 	FIELD field_1480 difficulty I
 	FIELD field_1481 hideHud Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/io/File;)V
+		ARG 1 minecraft
+		ARG 2 file
 	METHOD method_1224 load ()V
 	METHOD method_1225 getKeybindName (I)Ljava/lang/String;
 		ARG 1 index
 	METHOD method_1226 setControl (II)V
+		ARG 1 index
+		ARG 2 keyCode
 	METHOD method_1227 getFloatValue (Lnet/minecraft/class_271;)F
+		ARG 1 option
+	METHOD method_1228 setFloat (Lnet/minecraft/class_271;F)V
+		ARG 1 option
+		ARG 2 value
 	METHOD method_1229 changeOption (Lnet/minecraft/class_271;I)V
 		ARG 1 option
+		ARG 2 value
 	METHOD method_1230 parseFloat (Ljava/lang/String;)F
 		ARG 1 str
 	METHOD method_1231 saveOptions ()V
 	METHOD method_1232 getKeybindKey (I)Ljava/lang/String;
 		ARG 1 index
 	METHOD method_1233 getBooleanValue (Lnet/minecraft/class_271;)Z
+		ARG 1 option
 	METHOD method_1234 getTranslatedValue (Lnet/minecraft/class_271;)Ljava/lang/String;
+		ARG 1 option

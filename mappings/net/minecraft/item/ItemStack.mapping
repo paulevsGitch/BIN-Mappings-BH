@@ -76,6 +76,8 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 	METHOD method_710 setDamage (I)V
 		ARG 1 newDamage
 	METHOD method_711 onCrafted (Lnet/minecraft/class_18;Lnet/minecraft/class_54;)V
+		ARG 1 level
+		ARG 2 player
 	METHOD method_712 copy (Lnet/minecraft/class_31;)Lnet/minecraft/class_31;
 		ARG 0 stack
 	METHOD method_713 fromTag (Lnet/minecraft/class_8;)V
@@ -84,6 +86,7 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 		ARG 1 block
 	METHOD method_715 isStackable ()Z
 	METHOD method_716 isStackIdentical2 (Lnet/minecraft/class_31;)Z
+		ARG 1 stack
 	METHOD method_717 hasDurability ()Z
 	METHOD method_718 isStackIdentical (Lnet/minecraft/class_31;)Z
 		ARG 1 stack

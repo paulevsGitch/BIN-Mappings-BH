@@ -14,3 +14,4 @@ CLASS net/minecraft/class_6 net/minecraft/packet/play/MapChunkPacket
 		ARG 4 sizeX
 		ARG 5 sizeY
 		ARG 6 sizeZ
+		ARG 7 level

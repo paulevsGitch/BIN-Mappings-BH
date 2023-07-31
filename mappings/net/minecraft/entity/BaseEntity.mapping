@@ -41,6 +41,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	FIELD field_1642 updateFromBB Z
 	FIELD field_1644 random Ljava/util/Random;
 	FIELD field_1647 fire I
+	FIELD field_1648 maxAir I
 	FIELD field_1650 pitchAngle D
 	FIELD field_1651 yawAngle D
 	FIELD field_1652 skinUrl Ljava/lang/String;

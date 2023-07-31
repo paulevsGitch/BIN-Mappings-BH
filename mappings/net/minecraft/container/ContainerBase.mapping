@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_71 net/minecraft/container/ContainerBase
+	FIELD field_2731 revision S
 	FIELD field_2733 items Ljava/util/List;
 	FIELD field_2734 slots Ljava/util/List;
 	FIELD field_2735 currentContainerId I
@@ -12,6 +13,7 @@ CLASS net/minecraft/class_71 net/minecraft/container/ContainerBase
 	METHOD method_2078 clickSlot (IIZLnet/minecraft/class_54;)Lnet/minecraft/class_31;
 		ARG 1 slotIndex
 		ARG 2 clickType
+		ARG 3 shift
 		ARG 4 player
 	METHOD method_2079 addSlot (Lnet/minecraft/class_133;)V
 		ARG 1 slot

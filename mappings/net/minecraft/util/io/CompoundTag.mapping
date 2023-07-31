@@ -57,3 +57,4 @@ CLASS net/minecraft/class_8 net/minecraft/util/io/CompoundTag
 	METHOD method_1034 getListTag (Ljava/lang/String;)Lnet/minecraft/class_202;
 		ARG 1 key
 	METHOD method_1035 getBoolean (Ljava/lang/String;)Z
+		ARG 1 key

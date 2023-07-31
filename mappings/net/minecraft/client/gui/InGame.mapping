@@ -16,9 +16,14 @@ CLASS net/minecraft/class_588 net/minecraft/client/gui/InGame
 	METHOD method_1946 renderHud (FZII)V
 	METHOD method_1947 renderPumpkinOverlay (II)V
 	METHOD method_1948 renderHotbarSlot (IIIF)V
+		ARG 1 slot
+		ARG 2 x
+		ARG 3 y
 	METHOD method_1949 addChatMessage (Ljava/lang/String;)V
+		ARG 1 message
 	METHOD method_1950 clearChat ()V
 	METHOD method_1951 renderPortalOverlay (FII)V
 	METHOD method_1952 showJukeboxMessage (Ljava/lang/String;)V
 		ARG 1 recordName
 	METHOD method_1953 translateAndSendMessage (Ljava/lang/String;)V
+		ARG 1 text

@@ -40,6 +40,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 		ARG 1 delta
 	METHOD method_932 isOnLadder ()Z
 	METHOD method_933 getDrops ()V
+	METHOD method_934 canBreatheInWater ()Z
 	METHOD method_935 canSpawn ()Z
 	METHOD method_936 getAmbientChance ()I
 	METHOD method_937 updateDespawnCounter ()V

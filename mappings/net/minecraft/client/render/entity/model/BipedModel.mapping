@@ -11,5 +11,12 @@ CLASS net/minecraft/class_87 net/minecraft/client/render/entity/model/BipedModel
 	FIELD field_628 holdingItem Z
 	FIELD field_629 sneaking Z
 	FIELD field_630 aiming Z
+	METHOD <init> (F)V
+		ARG 1 dilation
+	METHOD <init> (FF)V
+		ARG 1 dilation
+		ARG 2 pivotOffsetY
 	METHOD method_605 renderDeadMau5Ears (F)V
+		ARG 1 scale
 	METHOD method_606 renderCloak (F)V
+		ARG 1 scale

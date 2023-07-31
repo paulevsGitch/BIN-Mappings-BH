@@ -3,12 +3,16 @@ CLASS net/minecraft/class_97 net/minecraft/client/gui/widgets/ScrollableBase
 	FIELD field_1529 x I
 	FIELD field_1530 y I
 	FIELD field_1531 alsoX I
+	FIELD field_1532 left I
+	FIELD field_1533 scrollUpButtonId I
+	FIELD field_1534 scrollDownButtonId I
 	FIELD field_1535 width I
 	FIELD field_1536 height I
 	FIELD field_1537 entryHeight I
 	FIELD field_1540 scrollAmount F
 	FIELD field_1543 isDrawingSelectionBackground Z
 	METHOD <init> (Lnet/minecraft/client/Minecraft;IIIII)V
+		ARG 1 minecraft
 		ARG 2 x
 		ARG 3 y
 		ARG 4 width
@@ -21,13 +25,17 @@ CLASS net/minecraft/class_97 net/minecraft/client/gui/widgets/ScrollableBase
 		ARG 3 delta
 	METHOD method_1257 renderBackground (IIII)V
 	METHOD method_1258 registerButtons (Ljava/util/List;II)V
+		ARG 2 scrollUp
+		ARG 3 scrollDown
 	METHOD method_1259 buttonClicked (Lnet/minecraft/class_33;)V
+		ARG 1 button
 	METHOD method_1260 setDrawingSelectionBackground (Z)V
 		ARG 1 value
 	METHOD method_1264 renderEntry (IIIILnet/minecraft/class_67;)V
 		ARG 1 entryID
 		ARG 2 x
 		ARG 3 y
+		ARG 5 tesselator
 	METHOD method_1265 renderStatItemSlot (IILnet/minecraft/class_67;)V
 		ARG 1 x
 		ARG 2 y

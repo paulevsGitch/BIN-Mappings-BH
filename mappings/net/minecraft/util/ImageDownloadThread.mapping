@@ -6,3 +6,9 @@ CLASS net/minecraft/class_130 net/minecraft/util/ImageDownloadThread
 	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_131;)V
 		ARG 1 url
 		ARG 2 imageProcessor
+	CLASS 1 Thread
+		FIELD field_496 url Ljava/lang/String;
+		FIELD field_497 processor Lnet/minecraft/class_131;
+		FIELD field_498 data Lnet/minecraft/class_130;
+		METHOD run run ()V
+

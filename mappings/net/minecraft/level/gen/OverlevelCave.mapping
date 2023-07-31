@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_415 net/minecraft/level/gen/OverlevelCave
+	METHOD method_1399 generate (II[BDDD)V
+		ARG 1 centreX
+		ARG 2 centreZ
+		ARG 3 blockIdArray
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+	METHOD method_1400 generate (II[BDDDFFFIID)V
+		ARG 1 centreX
+		ARG 2 centreZ
+		ARG 3 blockIdArray
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 randFloat

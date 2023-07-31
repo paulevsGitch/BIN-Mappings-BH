@@ -15,6 +15,7 @@ CLASS net/minecraft/class_136 net/minecraft/entity/player/PlayerInventory
 	METHOD method_675 getHeldItem ()Lnet/minecraft/class_31;
 	METHOD method_676 decreaseAmountOfItem (I)Z
 	METHOD method_677 setCursorItem (Lnet/minecraft/class_31;)V
+		ARG 1 cursorStack
 	METHOD method_678 fromTag (Lnet/minecraft/class_202;)V
 	METHOD method_679 isUsingEffectiveTool (Lnet/minecraft/class_17;)Z
 	METHOD method_680 damageArmor (I)V

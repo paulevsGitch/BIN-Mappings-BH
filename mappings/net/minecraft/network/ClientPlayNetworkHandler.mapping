@@ -8,6 +8,8 @@ CLASS net/minecraft/class_219 net/minecraft/network/ClientPlayNetworkHandler
 	FIELD field_1974 isDone Z
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V
 		ARG 1 minecraft
+		ARG 2 address
+		ARG 3 port
 	METHOD method_1644 processPackets ()V
 	METHOD method_1645 (I)Lnet/minecraft/class_57;
 		ARG 1 id

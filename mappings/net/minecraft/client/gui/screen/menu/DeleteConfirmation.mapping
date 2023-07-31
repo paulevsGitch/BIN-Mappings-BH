@@ -4,8 +4,11 @@ CLASS net/minecraft/class_565 net/minecraft/client/gui/screen/menu/DeleteConfirm
 	FIELD field_2396 levelName Ljava/lang/String;
 	FIELD field_2397 deleteButton Ljava/lang/String;
 	FIELD field_2398 cancelButton Ljava/lang/String;
+	FIELD field_2399 id I
 	METHOD <init> (Lnet/minecraft/class_32;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+		ARG 1 parent
 		ARG 2 deleteText
 		ARG 3 levelName
 		ARG 4 deleteButton
 		ARG 5 cancelButton
+		ARG 6 id

@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_568 net/minecraft/client/gui/screen/menu/SelectLevel
-	FIELD field_2431 parent Lnet/minecraft/class_32;
 	FIELD field_2432 title Ljava/lang/String;
 	FIELD field_2433 dateFormat Ljava/text/DateFormat;
 	FIELD field_2434 isLoading Z

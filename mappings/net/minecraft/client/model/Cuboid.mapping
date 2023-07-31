@@ -20,8 +20,24 @@ CLASS net/minecraft/class_163 net/minecraft/client/model/Cuboid
 	METHOD method_1815 render (F)V
 		ARG 1 delta
 	METHOD method_1816 setRotationPoint (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_1817 addCuboid (FFFIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 sizeX
+		ARG 5 sizeY
+		ARG 6 sizeZ
 	METHOD method_1818 addCuboid (FFFIIIF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 sizeX
+		ARG 5 sizeY
+		ARG 6 sizeZ
+		ARG 7 dilation
 	METHOD method_1819 (F)V
 		ARG 1 delta
 	METHOD method_1820 (F)V

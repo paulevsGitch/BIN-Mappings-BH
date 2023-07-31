@@ -33,16 +33,16 @@ CLASS net/minecraft/class_91 net/minecraft/client/gui/screen/ingame/Stats
 		ARG 1 columnToSort
 	METHOD method_381 getStat (I)Ljava/lang/String;
 		ARG 1 statId
+	CLASS 1 1
+		METHOD compare sort (Ljava/lang/Object;Ljava/lang/Object;)I
+
+	CLASS class_93 GeneralTab
+
 	CLASS class_99
 		METHOD <init> (Lnet/minecraft/class_91;)V
 			ARG 1 statsScreen
 		METHOD method_381 getStat (I)Ljava/lang/String;
 			ARG 1 statId
-
-	CLASS class_93 GeneralTab
-
-	CLASS 1 1
-		METHOD compare sort (Ljava/lang/Object;Ljava/lang/Object;)I
 
 	CLASS 1 1
 		METHOD compare sort (Ljava/lang/Object;Ljava/lang/Object;)I

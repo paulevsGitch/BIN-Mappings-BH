@@ -4,6 +4,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	FIELD field_1022 type Ljava/lang/String;
 	FIELD field_1027 lastHandSwingProgress F
 	FIELD field_1028 ambientTick I
+	FIELD field_1029 parallelMovement F
 	FIELD field_1031 jumping Z
 	FIELD field_1033 movementSpeed F
 	FIELD field_1035 handSwingProgress F
@@ -13,6 +14,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	FIELD field_1042 attackTime I
 	FIELD field_1049 limbDistance F
 	FIELD field_1059 despawnCounter I
+	FIELD field_1060 perpendicularMovement F
 	METHOD method_909 getMonsterHeldItem ()Lnet/minecraft/class_31;
 	METHOD method_910 tickHandSwing ()V
 	METHOD method_911 getAmbientSound ()Ljava/lang/String;
@@ -27,6 +29,8 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	METHOD method_919 onSpawnedFromSpawner ()V
 	METHOD method_926 getInterpolatedRotation (F)Lnet/minecraft/class_26;
 		ARG 1 delta
+	METHOD method_928 (Lnet/minecraft/class_57;)Z
+		ARG 1 entity
 	METHOD method_929 getHitResult (DF)Lnet/minecraft/class_27;
 		ARG 1 distance
 		ARG 3 delta
@@ -34,6 +38,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 		ARG 1 delta
 	METHOD method_931 getInterpolatedPosition (F)Lnet/minecraft/class_26;
 		ARG 1 delta
+	METHOD method_932 isOnLadder ()Z
 	METHOD method_933 getDrops ()V
 	METHOD method_935 canSpawn ()Z
 	METHOD method_936 getAmbientChance ()I

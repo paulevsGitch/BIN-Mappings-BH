@@ -7,6 +7,9 @@ CLASS net/minecraft/class_488 net/minecraft/server/network/ServerEntityTracker
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;I)V
 		ARG 1 minecraftServer
 		ARG 2 dimensionId
+	METHOD method_1663 tick ()V
+	METHOD method_1664 remove (Lnet/minecraft/class_69;)V
+		ARG 1 player
 	METHOD method_1665 syncEntity (Lnet/minecraft/class_57;)V
 		ARG 1 entityToSync
 	METHOD method_1666 trackEntity (Lnet/minecraft/class_57;II)V
@@ -18,6 +21,9 @@ CLASS net/minecraft/class_488 net/minecraft/server/network/ServerEntityTracker
 		ARG 2 entityDistance
 		ARG 3 updateSpeed
 		ARG 4 sendVelocity
+	METHOD method_1668 sendPacketToTrackers (Lnet/minecraft/class_57;Lnet/minecraft/class_169;)V
+		ARG 1 entity
+		ARG 2 packet
 	METHOD method_1669 (Lnet/minecraft/class_57;)V
 		ARG 1 entity
 	METHOD method_1670 updateStatus (Lnet/minecraft/class_57;Lnet/minecraft/class_169;)V

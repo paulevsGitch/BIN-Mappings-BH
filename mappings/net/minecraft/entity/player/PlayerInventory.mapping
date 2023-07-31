@@ -5,7 +5,10 @@ CLASS net/minecraft/class_136 net/minecraft/entity/player/PlayerInventory
 	FIELD field_748 player Lnet/minecraft/class_54;
 	FIELD field_749 dirty Z
 	FIELD field_750 cursorStack Lnet/minecraft/class_31;
+	METHOD <init> (Lnet/minecraft/class_54;)V
+		ARG 1 player
 	METHOD method_671 addStack (Lnet/minecraft/class_31;)Z
+		ARG 1 item
 	METHOD method_672 getAttack (Lnet/minecraft/class_57;)I
 	METHOD method_673 toTag (Lnet/minecraft/class_202;)Lnet/minecraft/class_202;
 	METHOD method_674 getStrengthOnBlock (Lnet/minecraft/class_17;)F
@@ -19,6 +22,7 @@ CLASS net/minecraft/class_136 net/minecraft/entity/player/PlayerInventory
 	METHOD method_682 getSlotWithItem (I)I
 		ARG 1 id
 	METHOD method_683 getIdenticalStackSlot (Lnet/minecraft/class_31;)I
+		ARG 1 item
 	METHOD method_684 inventorySize ()I
 	METHOD method_685 mergeStacks (Lnet/minecraft/class_31;)I
 	METHOD method_686 tickInventory ()V

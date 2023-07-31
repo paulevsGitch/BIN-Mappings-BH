@@ -8,7 +8,11 @@ CLASS net/minecraft/class_594 net/minecraft/client/gui/Achievement
 	FIELD field_2577 timeSet J
 	FIELD field_2578 itemRenderer Lnet/minecraft/class_92;
 	FIELD field_2579 notAchievementGet Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
 	METHOD method_1963 renderBannerAndLicenseText ()V
 	METHOD method_1964 setAchievementGet (Lnet/minecraft/class_24;)V
+		ARG 1 achievement
 	METHOD method_1965 updateScale ()V
 	METHOD method_1966 setAchievement (Lnet/minecraft/class_24;)V
+		ARG 1 achievement

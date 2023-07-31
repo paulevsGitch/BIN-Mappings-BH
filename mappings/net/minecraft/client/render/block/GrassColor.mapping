@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_287 net/minecraft/client/render/block/GrassColor
+	FIELD field_1141 map [I
+	METHOD method_981 getGrassColor (DD)I
+		ARG 0 temperature
+		ARG 2 wetness
+	METHOD method_982 setColors ([I)V
+		ARG 0 map

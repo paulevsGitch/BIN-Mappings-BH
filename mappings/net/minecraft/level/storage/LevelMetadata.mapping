@@ -10,10 +10,10 @@ CLASS net/minecraft/class_591 net/minecraft/level/storage/LevelMetadata
 		ARG 3 lastPlayedTime
 		ARG 5 filesize
 		ARG 7 version
+	METHOD compareTo (Ljava/lang/Object;)I
+		ARG 1 other
 	METHOD method_1956 getFileName ()Ljava/lang/String;
 	METHOD method_1958 getLevelName ()Ljava/lang/String;
 	METHOD method_1959 getFileSize ()J
-	METHOD compareTo (Ljava/lang/Object;)I
-		ARG 1 other
 	METHOD method_1960 getVersion ()Z
 	METHOD method_1961 getLastPlayedTime ()J

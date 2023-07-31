@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_326 net/minecraft/level/chunk/ServerChunkCache
 	FIELD field_1225 dropSet Ljava/util/Set;
+	FIELD field_1226 dummyChunk Lnet/minecraft/class_43;
 	FIELD field_1227 levelSource Lnet/minecraft/class_51;
 	FIELD field_1228 chunkIO Lnet/minecraft/class_243;
 	FIELD field_1229 serverChunkCache Ljava/util/Map;
@@ -7,6 +8,8 @@ CLASS net/minecraft/class_326 net/minecraft/level/chunk/ServerChunkCache
 	FIELD field_1231 level Lnet/minecraft/class_18;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_243;Lnet/minecraft/class_51;)V
 		ARG 1 level
+		ARG 2 io
+		ARG 3 chunkGenerator
 	METHOD method_1049 updateChunk (Lnet/minecraft/class_43;)V
 		ARG 1 chunk
 	METHOD method_1050 saveChunk (Lnet/minecraft/class_43;)V

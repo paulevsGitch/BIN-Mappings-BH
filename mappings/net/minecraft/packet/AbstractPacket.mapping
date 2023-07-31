@@ -22,6 +22,7 @@ CLASS net/minecraft/class_169 net/minecraft/packet/AbstractPacket
 		ARG 1 maxLength
 	METHOD method_803 readFromStream (Ljava/io/DataInputStream;Z)Lnet/minecraft/class_169;
 		ARG 0 stream
+		ARG 1 serverSide
 	METHOD method_804 writeString (Ljava/lang/String;Ljava/io/DataOutputStream;)V
 		ARG 0 string
 		ARG 1 stream

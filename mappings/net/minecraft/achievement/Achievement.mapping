@@ -6,19 +6,19 @@ CLASS net/minecraft/class_24 net/minecraft/achievement/Achievement
 	FIELD field_1206 description Ljava/lang/String;
 	FIELD field_1207 isUnusual Z
 	FIELD field_1208 descriptonFormat Lnet/minecraft/class_241;
-	METHOD <init> (ILjava/lang/String;IILnet/minecraft/class_124;Lnet/minecraft/class_24;)V
-		ARG 1 ID
-		ARG 2 name
-		ARG 3 tableColumn
-		ARG 4 tableRow
-		ARG 5 displayItem
-		ARG 6 parent
 	METHOD <init> (ILjava/lang/String;IILnet/minecraft/class_17;Lnet/minecraft/class_24;)V
 		ARG 1 ID
 		ARG 2 name
 		ARG 3 tableColumn
 		ARG 4 tableRow
 		ARG 5 displayBlock
+		ARG 6 parent
+	METHOD <init> (ILjava/lang/String;IILnet/minecraft/class_124;Lnet/minecraft/class_24;)V
+		ARG 1 ID
+		ARG 2 name
+		ARG 3 tableColumn
+		ARG 4 tableRow
+		ARG 5 displayItem
 		ARG 6 parent
 	METHOD <init> (ILjava/lang/String;IILnet/minecraft/class_31;Lnet/minecraft/class_24;)V
 		ARG 1 ID

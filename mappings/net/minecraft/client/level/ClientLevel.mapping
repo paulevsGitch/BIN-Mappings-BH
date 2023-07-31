@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_454 net/minecraft/client/level/ClientLevel
 	FIELD field_1723 netHandler Lnet/minecraft/class_219;
 	FIELD field_1724 chunkCache Lnet/minecraft/class_455;
+	FIELD field_1725 entitiesById Lnet/minecraft/class_80;
 	METHOD <init> (Lnet/minecraft/class_219;JI)V
 		ARG 1 handler
 		ARG 2 seed
@@ -9,3 +10,4 @@ CLASS net/minecraft/class_454 net/minecraft/client/level/ClientLevel
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_1496 getEntityById (I)Lnet/minecraft/class_57;

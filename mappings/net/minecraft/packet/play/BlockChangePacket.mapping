@@ -8,3 +8,4 @@ CLASS net/minecraft/class_436 net/minecraft/packet/play/BlockChangePacket
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 level

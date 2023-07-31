@@ -3,12 +3,23 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 	FIELD field_752 cooldown I
 	FIELD field_753 itemId I
 	FIELD field_754 damage I
+	METHOD <init> (Lnet/minecraft/class_17;II)V
+		ARG 1 block
+		ARG 2 count
+		ARG 3 damage
+	METHOD <init> (Lnet/minecraft/class_8;)V
+		ARG 1 tag
+	METHOD <init> (Lnet/minecraft/class_124;)V
+		ARG 1 item
+	METHOD <init> (Lnet/minecraft/class_17;)V
+		ARG 1 block
 	METHOD <init> (III)V
 		ARG 1 id
 		ARG 2 count
 		ARG 3 damage
-	METHOD <init> (Lnet/minecraft/class_124;)V
-		ARG 1 item
+	METHOD <init> (Lnet/minecraft/class_17;I)V
+		ARG 1 block
+		ARG 2 count
 	METHOD <init> (Lnet/minecraft/class_124;I)V
 		ARG 1 item
 		ARG 2 count
@@ -16,17 +27,6 @@ CLASS net/minecraft/class_31 net/minecraft/item/ItemStack
 		ARG 1 item
 		ARG 2 count
 		ARG 3 damage
-	METHOD <init> (Lnet/minecraft/class_17;)V
-		ARG 1 block
-	METHOD <init> (Lnet/minecraft/class_17;I)V
-		ARG 1 block
-		ARG 2 count
-	METHOD <init> (Lnet/minecraft/class_17;II)V
-		ARG 1 block
-		ARG 2 count
-		ARG 3 damage
-	METHOD <init> (Lnet/minecraft/class_8;)V
-		ARG 1 tag
 	METHOD method_694 getType ()Lnet/minecraft/class_124;
 	METHOD method_695 split (I)Lnet/minecraft/class_31;
 		ARG 1 countToTake

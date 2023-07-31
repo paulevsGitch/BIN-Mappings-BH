@@ -103,4 +103,5 @@ CLASS net/minecraft/class_240 net/minecraft/network/PacketHandler
 		ARG 1 packet
 	METHOD method_1473 onClose (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 1 reason
+		ARG 2 args
 	METHOD method_1474 isServerSide ()Z

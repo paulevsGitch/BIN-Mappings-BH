@@ -14,13 +14,13 @@ CLASS net/minecraft/class_7 net/minecraft/level/LevelProperties
 	FIELD field_25 rainTime I
 	FIELD field_26 thundering Z
 	FIELD field_27 thunderTime I
+	METHOD <init> (Lnet/minecraft/class_8;)V
+		ARG 1 worldTag
+	METHOD <init> (Lnet/minecraft/class_7;)V
+		ARG 1 levelProperties
 	METHOD <init> (JLjava/lang/String;)V
 		ARG 1 seed
 		ARG 3 name
-	METHOD <init> (Lnet/minecraft/class_7;)V
-		ARG 1 levelProperties
-	METHOD <init> (Lnet/minecraft/class_8;)V
-		ARG 1 worldTag
 	METHOD method_10 setThundering (Z)V
 		ARG 1 newThundering
 	METHOD method_11 getSeed ()J

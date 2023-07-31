@@ -11,6 +11,9 @@ CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
 	FIELD field_1255 isBlurTexture Z
 	FIELD field_1256 texturePackManager Lnet/minecraft/class_303;
 	FIELD field_1257 missingTexImage Ljava/awt/image/BufferedImage;
+	METHOD <init> (Lnet/minecraft/class_303;Lnet/minecraft/class_322;)V
+		ARG 1 texturePackManager
+		ARG 2 gameOptions
 	METHOD method_1084 tick ()V
 	METHOD method_1085 remove (I)V
 		ARG 1 targetID
@@ -22,20 +25,12 @@ CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
 	METHOD method_1088 bindImage (Ljava/awt/image/BufferedImage;)I
 		ARG 1 image
 	METHOD method_1089 bindImage (Ljava/awt/image/BufferedImage;I)V
-		COMMENT Binds the given buffered image to the given texture ID.
-		COMMENT @param imageToBind the buffered image instance.
-		COMMENT @param textureId the texture ID to bind the image to.
 		ARG 1 imageToBind
 		ARG 2 targetId
 	METHOD method_1090 imageToPixelsArray (Ljava/awt/image/BufferedImage;[I)[I
-		COMMENT Stores image's pixels in the given int array.
-		COMMENT @param image the image to get pixels from.
-		COMMENT @param pixles the int array in which the pixels will be written.
-		COMMENT @return the pixels array.
 		ARG 1 image
 		ARG 2 pixels
 	METHOD method_1091 readImage (Ljava/io/InputStream;)Ljava/awt/image/BufferedImage;
-		COMMENT Reads the input stream as an image, closes the stream, and returns the image.
 		ARG 1 imageInputStream
 	METHOD method_1092 getColorMap (Ljava/lang/String;)[I
 		ARG 1 colorMapPath
@@ -46,25 +41,18 @@ CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
 		ARG 1 imageUrl
 		ARG 2 processor
 	METHOD method_1095 bindImage ([IIII)V
-		COMMENT Binds the given int array of pixels as an image to the given texture ID.
-		COMMENT @param pixels the image pixels in little endian byte order.
-		COMMENT @param width the image's width.
-		COMMENT @param height the image's height.
-		COMMENT @param targetId the texture ID to bind the image to.
 		ARG 1 pixels
 		ARG 2 width
 		ARG 3 height
 		ARG 4 targetId
 	METHOD method_1096 reloadTexturesFromTexturePack ()V
 	METHOD method_1097 bindTexture (I)V
-		COMMENT Binds the given texture ID if it's greater than 0.
 		ARG 1 textureID
 	METHOD method_1099 createPixelsArray (Ljava/awt/image/BufferedImage;)[I
-		COMMENT Creates a new int array using image's width and height, stores image's pixels into it, and returns.
-		COMMENT @param image the image to get pixels from.
-		COMMENT @return the pixels array.
 		ARG 1 image
 	METHOD method_1100 getTextureId (Ljava/lang/String;)I
 		ARG 1 texturePath
+	METHOD method_1101 (Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;
+		ARG 1 image
 	METHOD method_1102 removeDownloadedTexture (Ljava/lang/String;)V
 		ARG 1 name

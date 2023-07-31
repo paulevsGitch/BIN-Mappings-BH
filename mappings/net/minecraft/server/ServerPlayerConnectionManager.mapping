@@ -12,6 +12,7 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 	FIELD field_587 bannedIPsFile Ljava/io/File;
 	FIELD field_588 operatorsFile Ljava/io/File;
 	FIELD field_589 whiteListFile Ljava/io/File;
+	FIELD field_590 playerDataLoader Lnet/minecraft/class_168;
 	FIELD field_591 whitelisted Z
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
@@ -20,6 +21,7 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+		ARG 7 distance
 		ARG 9 dimensionId
 		ARG 10 packet
 	METHOD method_551 getPlayerView (I)Lnet/minecraft/class_167;
@@ -29,6 +31,11 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 		ARG 2 y
 		ARG 3 z
 		ARG 4 dimension
+	METHOD method_553 (IIILnet/minecraft/class_55;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 entity
 	METHOD method_554 (Lnet/minecraft/class_69;)V
 		ARG 1 player
 	METHOD method_555 teleportToDimension (Lnet/minecraft/class_69;I)Lnet/minecraft/class_69;
@@ -45,6 +52,7 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
+		ARG 8 distance
 		ARG 10 dimensionId
 		ARG 11 packet
 	METHOD method_559 sendToAll (Lnet/minecraft/class_169;)V
@@ -56,6 +64,7 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 		ARG 1 username
 	METHOD method_562 trySendPacket (Ljava/lang/String;Lnet/minecraft/class_169;)Z
 		ARG 1 username
+		ARG 2 packet
 	METHOD method_563 sendMessage (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 username
 		ARG 2 message

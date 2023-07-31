@@ -1,7 +1,4 @@
 CLASS net/minecraft/class_605 net/minecraft/stat/StatSyncer
-	CLASS 1
-		FIELD field_2729 syncher Lnet/minecraft/class_605;
-	FIELD field_2715 busy Z
 	FIELD field_2718 statsFileWriter Lnet/minecraft/class_96;
 	FIELD field_2719 statsUnsentFile Ljava/io/File;
 	FIELD field_2720 statsFile Ljava/io/File;
@@ -18,3 +15,11 @@ CLASS net/minecraft/class_605 net/minecraft/stat/StatSyncer
 		ARG 2 fileName
 		ARG 3 statsFile
 	METHOD method_2060 saveStats (Ljava/util/Map;)V
+	METHOD method_2061 sync (Ljava/util/Map;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V
+	METHOD method_2064 sync (Ljava/util/Map;)V
+	CLASS 1 1
+		FIELD field_2729 syncher Lnet/minecraft/class_605;
+
+	CLASS 1 1
+		FIELD field_2729 syncher Lnet/minecraft/class_605;
+

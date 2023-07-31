@@ -1,25 +1,4 @@
 CLASS net/minecraft/class_91 net/minecraft/client/gui/screen/ingame/Stats
-	CLASS class_93 GeneralTab
-	CLASS class_94 BlocksTab
-		CLASS 1
-			METHOD compare sort (Ljava/lang/Object;Ljava/lang/Object;)I
-	CLASS class_95 ItemsTab
-		CLASS 1
-			METHOD compare sort (Ljava/lang/Object;Ljava/lang/Object;)I
-	CLASS class_99 StatsItemTabBase
-		FIELD field_314 buttonClicked I
-		FIELD field_315 itemList Ljava/util/List;
-		FIELD field_316 sorter Ljava/util/Comparator;
-		FIELD field_317 currentSortedColumn I
-		FIELD field_318 sortDirection I
-		METHOD <init> (Lnet/minecraft/class_91;)V
-			ARG 1 statsScreen
-		METHOD method_378 drawStatName (Lnet/minecraft/class_98;IIZ)V
-		METHOD method_379 getItem (I)Lnet/minecraft/class_98;
-		METHOD method_380 sortColumn (I)V
-			ARG 1 columnToSort
-		METHOD method_381 getStat (I)Ljava/lang/String;
-			ARG 1 statId
 	FIELD field_303 parent Lnet/minecraft/class_32;
 	FIELD field_304 header Ljava/lang/String;
 	FIELD field_305 itemRenderer Lnet/minecraft/class_92;
@@ -28,6 +7,13 @@ CLASS net/minecraft/class_91 net/minecraft/client/gui/screen/ingame/Stats
 	FIELD field_308 itemsTab Lnet/minecraft/class_91$class_95;
 	FIELD field_309 statsFileWriter Lnet/minecraft/class_96;
 	FIELD field_310 generalTabBase Lnet/minecraft/class_97;
+	FIELD field_314 buttonClicked I
+	FIELD field_315 itemList Ljava/util/List;
+	FIELD field_316 sorter Ljava/util/Comparator;
+	FIELD field_317 currentSortedColumn I
+	FIELD field_318 sortDirection I
+	METHOD <init> (Lnet/minecraft/class_91;)V
+		ARG 1 statsScreen
 	METHOD method_353 renderSlot (II)V
 		ARG 1 x
 		ARG 2 y
@@ -41,3 +27,23 @@ CLASS net/minecraft/class_91 net/minecraft/client/gui/screen/ingame/Stats
 		ARG 3 extraWidth
 		ARG 4 extraHeight
 	METHOD method_370 addButtons ()V
+	METHOD method_378 drawStatName (Lnet/minecraft/class_98;IIZ)V
+	METHOD method_379 getItem (I)Lnet/minecraft/class_98;
+	METHOD method_380 sortColumn (I)V
+		ARG 1 columnToSort
+	METHOD method_381 getStat (I)Ljava/lang/String;
+		ARG 1 statId
+	CLASS class_99
+		METHOD <init> (Lnet/minecraft/class_91;)V
+			ARG 1 statsScreen
+		METHOD method_381 getStat (I)Ljava/lang/String;
+			ARG 1 statId
+
+	CLASS class_93 GeneralTab
+
+	CLASS 1 1
+		METHOD compare sort (Ljava/lang/Object;Ljava/lang/Object;)I
+
+	CLASS 1 1
+		METHOD compare sort (Ljava/lang/Object;Ljava/lang/Object;)I
+

@@ -5,3 +5,6 @@ CLASS net/minecraft/class_481 net/minecraft/server/ServerGUI
 	METHOD method_1651 createServerGUI (Lnet/minecraft/server/MinecraftServer;)V
 	METHOD method_1653 createPlayersPane ()Ljavax/swing/JComponent;
 	METHOD method_1654 createLogAndChatPane ()Ljavax/swing/JComponent;
+	CLASS 1 1
+		FIELD field_1979 server Lnet/minecraft/server/MinecraftServer;
+

@@ -10,7 +10,7 @@ CLASS net/minecraft/class_167 net/minecraft/server/ServerPlayerView
 		ARG 1 server
 		ARG 2 dimensionId
 		ARG 3 viewRadius
-	METHOD method_1741 getWorld ()Lnet/minecraft/class_73;
+	METHOD method_1741 getLevel ()Lnet/minecraft/class_73;
 	METHOD method_1742 (III)V
 		ARG 1 x
 		ARG 2 y

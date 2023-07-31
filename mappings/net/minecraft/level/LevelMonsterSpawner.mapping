@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_567 net/minecraft/level/LevelMonsterSpawner
-	FIELD field_2408 overworldMonsters [Ljava/lang/Class;
+	FIELD field_2408 overlevelMonsters [Ljava/lang/Class;
 	FIELD field_2409 chunkPositions Ljava/util/Set;
 	METHOD method_1868 getPositionWithOffset (Lnet/minecraft/class_18;II)Lnet/minecraft/class_339;
 		ARG 0 level

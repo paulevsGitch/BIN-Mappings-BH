@@ -11,7 +11,7 @@ CLASS net/minecraft/class_477 net/minecraft/client/gui/MinecraftCanvas
 	METHOD method_1638 getWorkingDirectory (Ljava/lang/String;)Ljava/io/File;
 		ARG 1 path
 	METHOD method_1640 loadLevel (Ljava/lang/String;)V
-		ARG 1 worldName
+		ARG 1 levelName
 	METHOD method_1643 getOperatingSystem ()Lnet/minecraft/class_343;
 	METHOD mouseClicked (Ljava/awt/event/MouseEvent;)V
 		ARG 1 mouseEvent

@@ -4,9 +4,9 @@ CLASS net/minecraft/class_568 net/minecraft/client/gui/screen/menu/SelectLevel
 	FIELD field_2433 dateFormat Ljava/text/DateFormat;
 	FIELD field_2434 isLoading Z
 	FIELD field_2435 selectedLevel I
-	FIELD field_2436 worlds Ljava/util/List;
-	FIELD field_2437 worldList Lnet/minecraft/class_568$class_569;
-	FIELD field_2438 worldString Ljava/lang/String;
+	FIELD field_2436 levels Ljava/util/List;
+	FIELD field_2437 levelList Lnet/minecraft/class_568$class_569;
+	FIELD field_2438 levelString Ljava/lang/String;
 	FIELD field_2439 convertString Ljava/lang/String;
 	FIELD field_2440 needsUpdating Z
 	FIELD field_2441 renameButton Lnet/minecraft/class_33;

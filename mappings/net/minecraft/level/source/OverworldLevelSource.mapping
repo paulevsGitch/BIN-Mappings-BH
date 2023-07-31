@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_538 net/minecraft/level/source/OverworldLevelSource
+CLASS net/minecraft/class_538 net/minecraft/level/source/OverlevelLevelSource
 	FIELD field_2245 biomeNoise Lnet/minecraft/class_209;
 	FIELD field_2246 depthNoise Lnet/minecraft/class_209;
 	FIELD field_2247 treeNoise Lnet/minecraft/class_209;

@@ -3,7 +3,7 @@ CLASS net/minecraft/class_80 net/minecraft/network/EntityHashSet
 	FIELD field_860 index I
 	FIELD field_863 trackedCount I
 	METHOD method_771 clear ()V
-	METHOD method_772 get (I)Ljava/lang/Object;
+	METHOD method_772 getByID (I)Ljava/lang/Object;
 		ARG 1 entityId
 	METHOD method_773 getEntityIndex (II)I
 		ARG 0 entityHash
@@ -22,7 +22,7 @@ CLASS net/minecraft/class_80 net/minecraft/network/EntityHashSet
 		ARG 1 entityId
 	METHOD method_778 getEntryByID (I)Lnet/minecraft/class_232;
 		ARG 1 entityId
-	METHOD method_779 get (I)Ljava/lang/Object;
+	METHOD method_779 getByIndex (I)Ljava/lang/Object;
 		ARG 1 index
 	METHOD method_780 getEntryByIndex (I)Lnet/minecraft/class_232;
 		ARG 1 index

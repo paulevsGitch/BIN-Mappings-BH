@@ -20,11 +20,11 @@ CLASS net/minecraft/class_80 net/minecraft/network/EntityHashSet
 		ARG 1 array
 	METHOD method_777 containsId (I)Z
 		ARG 1 entityId
-	METHOD method_778 getEntry (I)Lnet/minecraft/class_232;
+	METHOD method_778 getEntryByID (I)Lnet/minecraft/class_232;
 		ARG 1 entityId
 	METHOD method_779 get (I)Ljava/lang/Object;
 		ARG 1 index
-	METHOD method_780 getEntry (I)Lnet/minecraft/class_232;
+	METHOD method_780 getEntryByIndex (I)Lnet/minecraft/class_232;
 		ARG 1 index
 	METHOD method_782 getHash (I)I
 		ARG 0 entityId

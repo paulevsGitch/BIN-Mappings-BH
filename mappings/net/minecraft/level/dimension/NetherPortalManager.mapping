@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_467 net/minecraft/level/dimension/NetherPortalManager
+	FIELD field_1772 rand Ljava/util/Random;
+	METHOD method_1530 teleport (Lnet/minecraft/class_18;Lnet/minecraft/class_57;)V
+		ARG 1 level
+		ARG 2 entity
+	METHOD method_1531 setPositionToPortal (Lnet/minecraft/class_18;Lnet/minecraft/class_57;)Z
+		ARG 1 level
+		ARG 2 entity
+	METHOD method_1532 makePortal (Lnet/minecraft/class_18;Lnet/minecraft/class_57;)Z
+		ARG 1 level
+		ARG 2 entity

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_586 net/minecraft/client/gui/ChunkImageManager
+	FIELD field_2525 colorsRGB [F
+	FIELD field_2531 textures [I
+	METHOD method_1939 (Lnet/minecraft/class_478;)V
+		ARG 1 storage

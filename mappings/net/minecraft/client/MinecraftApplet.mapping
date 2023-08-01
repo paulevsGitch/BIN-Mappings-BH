@@ -5,16 +5,14 @@ CLASS net/minecraft/client/MinecraftApplet net/minecraft/client/MinecraftApplet
 	FIELD field_2835 applet Lnet/minecraft/client/MinecraftApplet;
 	METHOD <init> (Lnet/minecraft/client/MinecraftApplet;)V
 		ARG 1 applet
-	METHOD addNotify ()V
 	METHOD destroy ()V
 	METHOD init ()V
 	METHOD method_2153 onAddNotify ()V
 	METHOD method_2154 onRemoveNotify ()V
 	METHOD method_2155 dispose ()V
-	METHOD removeNotify ()V
 	METHOD start ()V
 	METHOD stop ()V
-	CLASS class_641 AppletMinecraft
+	CLASS class_641 ErrorApplet
 		FIELD field_2834 applet Lnet/minecraft/client/MinecraftApplet;
 		METHOD <init> (Lnet/minecraft/client/MinecraftApplet;Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
 			ARG 1 applet
@@ -24,3 +22,6 @@ CLASS net/minecraft/client/MinecraftApplet net/minecraft/client/MinecraftApplet
 			ARG 5 width
 			ARG 6 height
 			ARG 7 flag
+	CLASS class_642 MinecraftCanvas
+		METHOD addNotify ()V
+		METHOD removeNotify ()V

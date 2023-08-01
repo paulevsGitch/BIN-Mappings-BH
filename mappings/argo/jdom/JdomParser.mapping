@@ -1,2 +1,0 @@
-CLASS argo/jdom/JdomParser argo/jdom/JdomParser
-	METHOD parse (Ljava/lang/String;)Largo/jdom/JsonRootNode;

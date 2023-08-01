@@ -1,6 +1,9 @@
 CLASS net/minecraft/class_477 net/minecraft/client/gui/MinecraftCanvas
 	FIELD field_1960 level Lnet/minecraft/class_18;
 	FIELD field_1961 minecraftDirectory Ljava/io/File;
+	FIELD field_1962 running Z
+	FIELD field_1963 chunkImages Ljava/util/List;
+	FIELD field_1964 chunkImageCache [[Lnet/minecraft/class_478;
 	METHOD keyPressed (Ljava/awt/event/KeyEvent;)V
 		ARG 1 keyEvent
 	METHOD keyReleased (Ljava/awt/event/KeyEvent;)V
@@ -8,10 +11,16 @@ CLASS net/minecraft/class_477 net/minecraft/client/gui/MinecraftCanvas
 	METHOD keyTyped (Ljava/awt/event/KeyEvent;)V
 		ARG 1 keyEvent
 	METHOD method_1633 getMinecraftDirectory ()Ljava/io/File;
+	METHOD method_1635 getChunkImage (II)Lnet/minecraft/class_478;
+		ARG 1 x
+		ARG 2 z
 	METHOD method_1638 getWorkingDirectory (Ljava/lang/String;)Ljava/io/File;
 		ARG 1 path
+	METHOD method_1639 start ()V
 	METHOD method_1640 loadLevel (Ljava/lang/String;)V
 		ARG 1 levelName
+	METHOD method_1641 stop ()V
+	METHOD method_1642 update ()V
 	METHOD method_1643 getOperatingSystem ()Lnet/minecraft/class_343;
 	METHOD mouseClicked (Ljava/awt/event/MouseEvent;)V
 		ARG 1 mouseEvent

@@ -52,4 +52,10 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	CLASS class_643 ServerThread
 		METHOD <init> (Ljava/lang/String;Lnet/minecraft/server/MinecraftServer;)V
 			ARG 1 string
+		METHOD run ()V
+	CLASS class_644 ServerLevelConverter
+		FIELD field_2858 time J
+	CLASS class_645 ServerCommandThread
+		METHOD run ()V
 	CLASS class_646 MagicalTimingHelperThread
+		METHOD run ()V

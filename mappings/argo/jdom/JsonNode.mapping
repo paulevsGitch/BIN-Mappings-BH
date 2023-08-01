@@ -1,5 +1,0 @@
-CLASS argo/jdom/JsonNode argo/jdom/JsonNode
-	METHOD getArrayNode ([Ljava/lang/Object;)Ljava/util/List;
-	METHOD getFields ()Ljava/util/Map;
-	METHOD getStringValue ([Ljava/lang/Object;)Ljava/lang/String;
-	METHOD getText ()Ljava/lang/String;

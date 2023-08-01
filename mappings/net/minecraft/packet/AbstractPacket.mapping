@@ -3,6 +3,7 @@ CLASS net/minecraft/class_169 net/minecraft/packet/AbstractPacket
 	FIELD field_900 classToId Ljava/util/Map;
 	FIELD field_901 serverToClientPackets Ljava/util/Set;
 	FIELD field_902 clientToServerPackets Ljava/util/Set;
+	FIELD field_903 counters Ljava/util/HashMap;
 	FIELD field_904 readPackets I
 	FIELD field_905 createdTimestamp J
 	FIELD field_906 levelPacket Z

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_573 net/minecraft/client/render/ClientBoxCollider
+	FIELD field_2465 frustum Lnet/minecraft/class_84;
 	FIELD field_2466 posX D
 	FIELD field_2467 posY D
 	FIELD field_2468 posZ D

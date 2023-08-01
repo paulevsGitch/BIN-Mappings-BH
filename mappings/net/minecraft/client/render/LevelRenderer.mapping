@@ -1,10 +1,63 @@
 CLASS net/minecraft/class_471 net/minecraft/client/render/LevelRenderer
+	FIELD field_1775 glEndList I
+	FIELD field_1782 viewDistance I
+	FIELD field_1795 blockEntities Ljava/util/List;
+	FIELD field_1803 blockBreakDelta F
+	FIELD field_1804 checkCount I
 	FIELD field_1805 level Lnet/minecraft/class_18;
 	FIELD field_1806 textureManager Lnet/minecraft/class_76;
-	FIELD field_1814 client Lnet/minecraft/client/Minecraft;
+	FIELD field_1807 areaRenderers Ljava/util/List;
+	FIELD field_1809 areaRenderersCache [Lnet/minecraft/class_66;
+	FIELD field_1810 sectionCounX I
+	FIELD field_1811 sectionCounY I
+	FIELD field_1812 sectionCounZ I
+	FIELD field_1813 glListTarget I
+	FIELD field_1814 minecraft Lnet/minecraft/client/Minecraft;
 	FIELD field_1815 blockRenderer Lnet/minecraft/class_13;
+	FIELD field_1817 isOcclusionEnabled Z
+	FIELD field_1819 glStartList I
+	FIELD field_1820 glSkyPlaneList I
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_76;)V
+		ARG 1 minecraft
+		ARG 2 textureManager
+	METHOD method_1537 updateFromOptions ()V
 	METHOD method_1539 renderSky (F)V
+		ARG 1 delta
+	METHOD method_1543 updateAreas (IIIIII)V
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 z1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 z2
+	METHOD method_1545 renderBox (Lnet/minecraft/class_25;)V
+		ARG 1 box
+	METHOD method_1546 (Lnet/minecraft/class_18;)V
+		ARG 1 level
+	METHOD method_1547 renderBlockBreak (Lnet/minecraft/class_54;Lnet/minecraft/class_27;ILnet/minecraft/class_31;F)V
+		ARG 1 player
+		ARG 2 hit
+		ARG 3 type
+		ARG 4 stack
+		ARG 5 delta
+	METHOD method_1548 (Lnet/minecraft/class_127;ID)I
+		ARG 1 entity
+	METHOD method_1549 (Lnet/minecraft/class_127;Z)Z
+		ARG 1 entity
+	METHOD method_1550 checkVisibility (Lnet/minecraft/class_68;F)V
+		ARG 1 collider
+		ARG 2 delta
 	METHOD method_1551 getDebugFirstLine ()Ljava/lang/String;
+	METHOD method_1552 renderEnvironment (F)V
+		ARG 1 delta
+	METHOD method_1554 renderBlockOutline (Lnet/minecraft/class_54;Lnet/minecraft/class_27;ILnet/minecraft/class_31;F)V
+		ARG 1 player
+		ARG 2 hit
+		ARG 3 flag
+		ARG 4 stack
+		ARG 5 delta
 	METHOD method_1555 getDebugSecondLine ()Ljava/lang/String;
 	METHOD method_1556 renderClouds (F)V
+		ARG 1 delta
+	METHOD method_1558 removeBuffer ()V
 	METHOD method_1559 renderStars ()V

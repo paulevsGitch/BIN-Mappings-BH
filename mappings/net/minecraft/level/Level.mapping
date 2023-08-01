@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_18 net/minecraft/level/Level
 	FIELD field_179 areaUpdates I
-	FIELD field_180 isClientSide Z
+	FIELD field_180 isRemote Z
 	FIELD field_181 lightingUpdates Ljava/util/List;
 	FIELD field_182 entityToRemove Ljava/util/List;
 	FIELD field_183 treeSet Ljava/util/TreeSet;
@@ -281,7 +281,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 3 z
 		ARG 4 id
 		ARG 5 meta
-	METHOD method_202 callAreaEvents (IIIIII)V
+	METHOD method_202 updateArea (IIIIII)V
 		ARG 1 x1
 		ARG 2 y1
 		ARG 3 z1
@@ -422,7 +422,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 3 z
 		ARG 4 id
 	METHOD method_245 processEnvironmentLight ()V
-	METHOD method_246 callAreaEvents (III)V
+	METHOD method_246 updateBlock (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

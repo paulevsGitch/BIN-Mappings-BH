@@ -19,6 +19,7 @@ CLASS net/minecraft/class_66 net/minecraft/client/render/AreaRenderer
 	FIELD field_240 wrappedX I
 	FIELD field_241 wrappedY I
 	FIELD field_242 wrappedZ I
+	FIELD field_243 isVisible Z
 	FIELD field_244 layerIsEmpty [Z
 	FIELD field_245 centerX I
 	FIELD field_246 centerY I
@@ -26,6 +27,7 @@ CLASS net/minecraft/class_66 net/minecraft/client/render/AreaRenderer
 	FIELD field_248 distanceToCenter F
 	FIELD field_249 canUpdate Z
 	FIELD field_250 box Lnet/minecraft/class_25;
+	FIELD field_251 distance I
 	METHOD <init> (Lnet/minecraft/class_18;Ljava/util/List;IIIII)V
 		ARG 1 level
 		ARG 2 blockEntities
@@ -43,6 +45,8 @@ CLASS net/minecraft/class_66 net/minecraft/client/render/AreaRenderer
 		ARG 3 z
 	METHOD method_299 distance (Lnet/minecraft/class_57;)F
 		ARG 1 entity
+	METHOD method_300 checkVisibility (Lnet/minecraft/class_68;)V
+		ARG 1 collider
 	METHOD method_301 resetFlags ()V
 	METHOD method_302 reset ()V
 	METHOD method_303 renderTranslucent ()V

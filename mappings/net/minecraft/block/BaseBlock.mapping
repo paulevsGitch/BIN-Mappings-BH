@@ -37,9 +37,9 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 	FIELD field_1856 COBBLESTONE_STAIRS Lnet/minecraft/class_17;
 	FIELD field_1857 WALL_SIGN Lnet/minecraft/class_17;
 	FIELD field_1858 LEVER Lnet/minecraft/class_17;
-	FIELD field_1859 WOODEN_PRESSURE_PLATE Lnet/minecraft/class_17;
+	FIELD field_1859 STONE_PRESSURE_PLATE Lnet/minecraft/class_17;
 	FIELD field_1860 IRON_DOOR Lnet/minecraft/class_17;
-	FIELD field_1861 STONE_PRESSURE_PLATE Lnet/minecraft/class_17;
+	FIELD field_1861 WOODEN_PRESSURE_PLATE Lnet/minecraft/class_17;
 	FIELD field_1862 REDSTONE_ORE Lnet/minecraft/class_17;
 	FIELD field_1863 REDSTONE_ORE_LIT Lnet/minecraft/class_17;
 	FIELD field_1864 REDSTONE_TORCH Lnet/minecraft/class_17;
@@ -129,13 +129,13 @@ CLASS net/minecraft/class_17 net/minecraft/block/BaseBlock
 	FIELD field_1948 COBBLESTONE Lnet/minecraft/class_17;
 	FIELD field_1949 WOOD Lnet/minecraft/class_17;
 	FIELD field_1950 SAPLING Lnet/minecraft/class_17;
-	METHOD <init> (ILnet/minecraft/class_15;)V
-		ARG 1 id
-		ARG 2 material
 	METHOD <init> (IILnet/minecraft/class_15;)V
 		ARG 1 id
 		ARG 2 texture
 		ARG 3 material
+	METHOD <init> (ILnet/minecraft/class_15;)V
+		ARG 1 id
+		ARG 2 material
 	METHOD method_1560 onSteppedOn (Lnet/minecraft/class_18;IIILnet/minecraft/class_57;)V
 		ARG 1 level
 		ARG 2 x

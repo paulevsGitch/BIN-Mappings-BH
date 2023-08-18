@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_71 net/minecraft/container/ContainerBase
+CLASS net/minecraft/class_71 net/minecraft/container/BaseContainer
 	FIELD field_2731 revision S
 	FIELD field_2732 playersSet Ljava/util/Set;
 	FIELD field_2733 items Ljava/util/List;

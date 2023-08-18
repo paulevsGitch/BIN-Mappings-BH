@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_91 net/minecraft/client/gui/screen/ingame/Stats
+CLASS net/minecraft/class_91 net/minecraft/client/gui/screen/ingame/StatsScreen
 	FIELD field_303 parent Lnet/minecraft/class_32;
 	FIELD field_304 header Ljava/lang/String;
 	FIELD field_305 itemRenderer Lnet/minecraft/class_92;
@@ -35,6 +35,7 @@ CLASS net/minecraft/class_91 net/minecraft/client/gui/screen/ingame/Stats
 		ARG 1 statId
 	CLASS 1 1
 		METHOD compare sort (Ljava/lang/Object;Ljava/lang/Object;)I
+	CLASS class_93 StatsTab
 	CLASS class_99
 		METHOD <init> (Lnet/minecraft/class_91;)V
 			ARG 1 statsScreen

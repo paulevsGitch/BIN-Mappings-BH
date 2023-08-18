@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_194 net/minecraft/client/gui/screen/menu/TexturePacks
+CLASS net/minecraft/class_194 net/minecraft/client/gui/screen/menu/TexturePacksScreen
 	FIELD field_703 parent Lnet/minecraft/class_32;
 	FIELD field_704 size I
 	FIELD field_705 texturePackDirectory Ljava/lang/String;

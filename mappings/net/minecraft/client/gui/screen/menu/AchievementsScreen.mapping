@@ -1,5 +1,7 @@
-CLASS net/minecraft/class_609 net/minecraft/client/gui/screen/menu/Achievements
+CLASS net/minecraft/class_609 net/minecraft/client/gui/screen/menu/AchievementsScreen
 	FIELD field_2633 statsFileWriter Lnet/minecraft/class_96;
+	METHOD <init> (Lnet/minecraft/class_96;)V
+		ARG 1 writer
 	METHOD method_1998 (IIF)V
 		ARG 1 mouseX
 		ARG 2 mouseY

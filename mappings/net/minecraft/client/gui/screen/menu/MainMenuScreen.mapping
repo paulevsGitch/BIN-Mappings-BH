@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_197 net/minecraft/client/gui/screen/menu/MainMenu
+CLASS net/minecraft/class_197 net/minecraft/client/gui/screen/menu/MainMenuScreen
 	FIELD field_716 RANDOM Ljava/util/Random;
 	FIELD field_717 ticksOpened F
 	FIELD field_718 splashMessage Ljava/lang/String;

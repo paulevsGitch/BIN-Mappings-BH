@@ -1,8 +1,10 @@
-CLASS net/minecraft/class_180 net/minecraft/client/gui/screen/menu/CreateLevel
+CLASS net/minecraft/class_180 net/minecraft/client/gui/screen/menu/CreateLevelScreen
 	FIELD field_631 parent Lnet/minecraft/class_32;
 	FIELD field_632 levelName Lnet/minecraft/class_181;
 	FIELD field_633 levelSeed Lnet/minecraft/class_181;
 	FIELD field_634 levelNameString Ljava/lang/String;
 	FIELD field_635 isGenerating Z
+	METHOD <init> (Lnet/minecraft/class_32;)V
+		ARG 1 parent
 	METHOD method_607 checkLevelExists (Lnet/minecraft/class_182;Ljava/lang/String;)Ljava/lang/String;
 	METHOD method_608 addButtons ()V

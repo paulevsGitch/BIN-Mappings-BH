@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_218 net/minecraft/client/gui/screen/DownloadingTerrainScreen
+	FIELD field_840 handler Lnet/minecraft/class_219;
+	FIELD field_841 ticksRan I
+	METHOD <init> (Lnet/minecraft/class_219;)V
+		ARG 1 handler

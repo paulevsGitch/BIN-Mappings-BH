@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_222 net/minecraft/client/gui/screen/ingame/SleepingScreen
+	METHOD method_758 sendWakeUp ()V

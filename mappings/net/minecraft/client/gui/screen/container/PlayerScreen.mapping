@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_585 net/minecraft/client/gui/screen/container/PlayerInventory
+CLASS net/minecraft/class_585 net/minecraft/client/gui/screen/container/PlayerScreen
 	FIELD field_2523 mouseX F
 	FIELD field_2524 mouseY F
 	METHOD <init> (Lnet/minecraft/class_54;)V

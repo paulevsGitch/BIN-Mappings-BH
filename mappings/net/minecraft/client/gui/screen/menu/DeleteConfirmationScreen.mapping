@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_565 net/minecraft/client/gui/screen/menu/DeleteConfirmation
+CLASS net/minecraft/class_565 net/minecraft/client/gui/screen/menu/DeleteConfirmationScreen
 	FIELD field_2394 parent Lnet/minecraft/class_32;
 	FIELD field_2395 deleteText Ljava/lang/String;
 	FIELD field_2396 levelName Ljava/lang/String;

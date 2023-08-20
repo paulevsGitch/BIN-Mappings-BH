@@ -1,11 +1,14 @@
 CLASS net/minecraft/class_494 net/minecraft/block/TorchBlock
 	METHOD <init> (II)V
 		ARG 1 id
-	METHOD method_1674 (Lnet/minecraft/class_18;III)Z
+		ARG 2 texture
+	METHOD method_1674 isFloorSupport (Lnet/minecraft/class_18;III)Z
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1675 (Lnet/minecraft/class_18;III)Z
+	METHOD method_1675 checkAndDrop (Lnet/minecraft/class_18;III)Z
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

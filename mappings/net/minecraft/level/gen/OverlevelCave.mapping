@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_415 net/minecraft/level/gen/OverlevelCave
+CLASS net/minecraft/class_415 net/minecraft/level/gen/OverworldCave
 	METHOD method_1399 generate (II[BDDD)V
 		ARG 1 centreX
 		ARG 2 centreZ

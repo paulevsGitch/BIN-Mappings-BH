@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_484 net/minecraft/entity/projectile/SnowballEntity
+	FIELD field_1990 shake I
+	FIELD field_1991 xBlock I
+	FIELD field_1992 yBlock I
+	FIELD field_1993 zBlock I
+	FIELD field_1994 inBlock I
+	FIELD field_1995 inGround Z
+	FIELD field_1996 owner Lnet/minecraft/class_127;
+	FIELD field_1997 onGroundTicks I
+	FIELD field_1998 flyTicks I
+	METHOD <init> (Lnet/minecraft/class_18;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_127;)V
+		ARG 1 level
+		ARG 2 owner
+	METHOD method_1656 setVelocity (DDDFF)V
+		ARG 1 dirX
+		ARG 3 dirY
+		ARG 5 dirZ
+		ARG 7 speed
+		ARG 8 randomness

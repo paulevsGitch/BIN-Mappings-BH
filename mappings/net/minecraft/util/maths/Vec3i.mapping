@@ -1,8 +1,11 @@
-CLASS net/minecraft/class_29 net/minecraft/util/maths/Vec3i
+CLASS net/minecraft/class_29 net/minecraft/util/maths/Vec3I
 	FIELD field_140 x I
 	FIELD field_141 y I
 	FIELD field_142 z I
 	FIELD field_143 listIndex I
+	FIELD field_144 totalDistance F
+	FIELD field_145 distanceCache F
+	FIELD field_146 distance F
 	FIELD field_147 parent Lnet/minecraft/class_29;
 	FIELD field_148 isCached Z
 	FIELD field_149 hashcode I
@@ -12,6 +15,7 @@ CLASS net/minecraft/class_29 net/minecraft/util/maths/Vec3i
 		ARG 3 z
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 object
+	METHOD method_112 hasListIndex ()Z
 	METHOD method_113 hash (III)I
 		ARG 0 x
 		ARG 1 y

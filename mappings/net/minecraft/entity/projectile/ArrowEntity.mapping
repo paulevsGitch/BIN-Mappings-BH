@@ -1,0 +1,26 @@
+CLASS net/minecraft/class_410 net/minecraft/entity/projectile/ArrowEntity
+	FIELD field_1574 spawnedByPlayer Z
+	FIELD field_1575 shake I
+	FIELD field_1576 owner Lnet/minecraft/class_127;
+	FIELD field_1577 blockX I
+	FIELD field_1578 blockY I
+	FIELD field_1579 blockZ I
+	FIELD field_1580 inBlock I
+	FIELD field_1581 inData I
+	FIELD field_1582 inGround Z
+	FIELD field_1583 onGroundTicks I
+	FIELD field_1584 ticksFlying I
+	METHOD <init> (Lnet/minecraft/class_18;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_127;)V
+		ARG 1 level
+		ARG 2 owner
+	METHOD method_1291 setVelocity (DDDFF)V
+		ARG 1 dirX
+		ARG 3 dirY
+		ARG 5 dirZ
+		ARG 7 speed
+		ARG 8 randomness

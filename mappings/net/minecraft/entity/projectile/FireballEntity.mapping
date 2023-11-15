@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_372 net/minecraft/entity/projectile/FireballEntity
+	FIELD field_2192 shake I
+	FIELD field_2193 owner Lnet/minecraft/class_127;
+	FIELD field_2194 dirX D
+	FIELD field_2195 dirY D
+	FIELD field_2196 dirZ D
+	FIELD field_2197 xBlock I
+	FIELD field_2198 yBlock I
+	FIELD field_2199 zBlock I
+	FIELD field_2200 inBlock I
+	FIELD field_2201 inGround Z
+	FIELD field_2202 onGroundTicks I
+	FIELD field_2203 flyTicks I
+	METHOD <init> (Lnet/minecraft/class_18;DDDDDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 dirX
+		ARG 10 dirY
+		ARG 12 dirZ
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_127;DDD)V
+		ARG 1 level
+		ARG 2 owner
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z

@@ -1,18 +1,30 @@
 CLASS net/minecraft/class_216 net/minecraft/entity/data/DataTracker
-	FIELD field_1740 dataIds Ljava/util/HashMap;
+	FIELD field_1740 DATA_IDS Ljava/util/HashMap;
 	FIELD field_1741 data Ljava/util/Map;
+	FIELD field_1742 update Z
+	METHOD method_1500 needUpdate ()Z
 	METHOD method_1501 getByte (I)B
+		ARG 1 index
 	METHOD method_1502 startTracking (ILjava/lang/Object;)V
-		ARG 1 valueId
-		ARG 2 object
+		ARG 1 valueID
+		ARG 2 value
 	METHOD method_1503 readTrackedData (Ljava/io/DataInputStream;)Ljava/util/List;
 		ARG 0 in
 	METHOD method_1504 write (Ljava/io/DataOutputStream;)V
 		ARG 1 out
 	METHOD method_1505 write (Ljava/io/DataOutputStream;Lnet/minecraft/class_270;)V
 		ARG 0 out
+		ARG 1 data
 	METHOD method_1506 write (Ljava/util/List;Ljava/io/DataOutputStream;)V
+		ARG 0 list
+		ARG 1 stream
 	METHOD method_1507 getMetadata ()Ljava/util/ArrayList;
 	METHOD method_1508 getInt (I)I
-	METHOD method_1509 setInt (ILjava/lang/Object;)V
+		ARG 1 index
+	METHOD method_1509 setData (ILjava/lang/Object;)V
+		ARG 1 index
+		ARG 2 value
 	METHOD method_1510 getString (I)Ljava/lang/String;
+		ARG 1 index
+	METHOD method_1511 updateData (Ljava/util/List;)V
+		ARG 1 list

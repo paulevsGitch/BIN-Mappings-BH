@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_499 net/minecraft/entity/projectile/EggEntity
+	FIELD field_2038 shake I
+	FIELD field_2039 blockX I
+	FIELD field_2040 blockY I
+	FIELD field_2041 blockZ I
+	FIELD field_2042 inBlock I
+	FIELD field_2043 inGround Z
+	FIELD field_2044 owner Lnet/minecraft/class_127;
+	FIELD field_2045 onGroundTicks I
+	FIELD field_2046 flyTicks I
+	METHOD <init> (Lnet/minecraft/class_18;DDD)V
+		ARG 1 level
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_127;)V
+		ARG 1 level
+		ARG 2 owner
+	METHOD method_1682 setVelocity (DDDFF)V
+		ARG 1 dirX
+		ARG 3 dirY
+		ARG 5 dirZ
+		ARG 7 speed
+		ARG 8 randomness

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_515 net/minecraft/util/maths/Vec2i
+CLASS net/minecraft/class_515 net/minecraft/util/maths/Vec2I
 	FIELD field_2378 x I
 	FIELD field_2379 z I
 	METHOD <init> (II)V

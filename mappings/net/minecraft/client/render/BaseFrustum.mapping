@@ -3,7 +3,7 @@ CLASS net/minecraft/class_84 net/minecraft/client/render/BaseFrustum
 	FIELD field_286 projectionMatrix [F
 	FIELD field_287 modelViewMatrix [F
 	FIELD field_288 frustumMatrix [F
-	METHOD method_339 (DDDDDD)Z
+	METHOD method_339 isInside (DDDDDD)Z
 		ARG 1 x1
 		ARG 3 y1
 		ARG 5 z1

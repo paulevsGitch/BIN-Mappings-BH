@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_146 net/minecraft/entity/monster/MonsterEntity
+	FIELD field_547 attackDamage I

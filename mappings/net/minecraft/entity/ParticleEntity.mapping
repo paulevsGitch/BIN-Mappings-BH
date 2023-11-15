@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_77 net/minecraft/entity/BaseParticle
+CLASS net/minecraft/class_77 net/minecraft/entity/ParticleEntity
 	FIELD field_2635 textureIndex I
 	FIELD field_2636 deltaU F
 	FIELD field_2637 deltaV F

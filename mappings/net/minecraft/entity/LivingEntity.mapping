@@ -52,5 +52,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	METHOD method_943 isSleeping ()Z
 	METHOD method_944 jump ()V
 	METHOD method_945 travel (FF)V
+		ARG 1 x
+		ARG 2 z
 	METHOD method_946 applyDamage (I)V
 		ARG 1 damageAmount

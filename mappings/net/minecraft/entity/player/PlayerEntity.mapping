@@ -1,9 +1,10 @@
-CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerBase
+CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 	FIELD field_506 playerCloakUrl Ljava/lang/String;
 	FIELD field_508 bedPosition Lnet/minecraft/class_63;
 	FIELD field_514 fishHook Lnet/minecraft/class_135;
 	FIELD field_515 sleepTimer I
 	FIELD field_516 spawnPos Lnet/minecraft/class_63;
+	FIELD field_517 ridingStartPos Lnet/minecraft/class_63;
 	FIELD field_519 inventory Lnet/minecraft/class_136;
 	FIELD field_520 playerContainer Lnet/minecraft/class_71;
 	FIELD field_521 container Lnet/minecraft/class_71;
@@ -21,6 +22,7 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerBase
 	FIELD field_535 newZ D
 	FIELD field_536 sleeping Z
 	METHOD method_481 getScore ()I
+	METHOD method_482 getWakeupRotation ()F
 	METHOD method_483 getSleepTimer ()I
 	METHOD method_484 openCraftingScreen (III)V
 		ARG 1 x
@@ -45,6 +47,9 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerBase
 		ARG 3 z
 	METHOD method_496 updateCursorItem (Lnet/minecraft/class_31;)V
 	METHOD method_497 wakeUp (ZZZ)V
+		ARG 1 resetSleepTimer
+		ARG 2 disconnect
+		ARG 3 setSpawnPos
 	METHOD method_498 isPvpable ()Z
 	METHOD method_499 updateEyeHeight ()V
 	METHOD method_500 swingHand ()V
@@ -52,8 +57,9 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerBase
 	METHOD method_502 getHeldItem ()Lnet/minecraft/class_31;
 	METHOD method_503 breakHeldItem ()V
 	METHOD method_504 hasSleptEnough ()Z
-	METHOD method_505 getSpawnPosition ()Lnet/minecraft/class_63;
+	METHOD method_505 getSpawnPos ()Lnet/minecraft/class_63;
 	METHOD method_506 setPlayerSpawn (Lnet/minecraft/class_63;)V
+		ARG 1 spawnPos
 	METHOD method_507 getRespawnPos (Lnet/minecraft/class_18;Lnet/minecraft/class_63;)Lnet/minecraft/class_63;
 		ARG 0 level
 		ARG 1 respawnPos
@@ -68,4 +74,12 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerBase
 	METHOD method_514 canRemoveBlock (Lnet/minecraft/class_17;)Z
 	METHOD method_515 interactWith (Lnet/minecraft/class_57;)V
 	METHOD method_516 attack (Lnet/minecraft/class_57;)V
+	METHOD method_518 updateMovementStats (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_519 updateRidingPos (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_521 isBedPosValid ()Z

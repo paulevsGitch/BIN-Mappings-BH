@@ -7,19 +7,39 @@ CLASS net/minecraft/class_245 net/minecraft/client/render/entity/LivingEntityRen
 	METHOD method_815 setModel (Lnet/minecraft/class_173;)V
 		ARG 1 model
 	METHOD method_816 (Lnet/minecraft/class_127;)F
-		ARG 1 spider
+		ARG 1 entity
+	METHOD method_817 (Lnet/minecraft/class_127;FF)I
+		ARG 1 entity
+		ARG 3 delta
+	METHOD method_818 renderEntityName (Lnet/minecraft/class_127;Ljava/lang/String;DDDI)V
+		ARG 1 entity
+		ARG 2 name
+		ARG 3 dx
+		ARG 5 dy
+		ARG 7 dz
+		ARG 9 maxDistance
+	METHOD method_819 renderLayer (Lnet/minecraft/class_127;IF)Z
+		ARG 1 entity
+		ARG 2 layer
+		ARG 3 delta
 	METHOD method_820 getHandSwing (Lnet/minecraft/class_127;F)F
 		ARG 1 entity
 		ARG 2 delta
-	METHOD method_821 (Lnet/minecraft/class_127;DDD)V
-		ARG 1 player
+	METHOD method_821 renderEntityName (Lnet/minecraft/class_127;DDD)V
+		ARG 1 entity
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
-	METHOD method_825 renderOuterLayers (Lnet/minecraft/class_127;IF)Z
-		ARG 1 player
+	METHOD method_823 (Lnet/minecraft/class_127;F)V
+		ARG 1 entity
+		ARG 2 delta
+	METHOD method_825 renderOuterLayer (Lnet/minecraft/class_127;IF)Z
+		ARG 1 entity
 		ARG 2 layer
 		ARG 3 delta
 	METHOD method_827 renderPlayerEffects (Lnet/minecraft/class_127;F)V
-		ARG 1 player
+		ARG 1 entity
+		ARG 2 delta
+	METHOD method_828 getRenderTime (Lnet/minecraft/class_127;F)F
+		ARG 1 entity
 		ARG 2 delta

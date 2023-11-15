@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_134 net/minecraft/inventory/BaseInventory
+CLASS net/minecraft/class_134 net/minecraft/inventory/Inventory
 	METHOD method_947 markDirty ()V
 	METHOD method_948 getInventorySize ()I
 	METHOD method_949 takeItem (II)Lnet/minecraft/class_31;

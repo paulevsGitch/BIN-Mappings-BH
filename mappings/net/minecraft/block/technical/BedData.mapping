@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_213 net/minecraft/block/technical/BedData
+	FIELD field_792 sidesVisibilityA [I
+	FIELD field_793 sidesVisibilityB [I
+	FIELD field_794 textureIndices [[I

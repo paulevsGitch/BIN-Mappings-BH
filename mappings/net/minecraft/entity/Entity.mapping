@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
+CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1590 globalEntityID I
 	FIELD field_1591 entityId I
 	FIELD field_1592 renderDistanceMultiplier D
@@ -19,6 +19,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	FIELD field_1608 prevYaw F
 	FIELD field_1609 prevPitch F
 	FIELD field_1610 boundingBox Lnet/minecraft/class_25;
+	FIELD field_1612 fallen Z
 	FIELD field_1614 air I
 	FIELD field_1615 immuneToFire Z
 	FIELD field_1616 dataTracker Lnet/minecraft/class_216;
@@ -40,6 +41,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	FIELD field_1640 offsetY F
 	FIELD field_1642 updateFromBB Z
 	FIELD field_1644 random Ljava/util/Random;
+	FIELD field_1645 ticks I
 	FIELD field_1647 fire I
 	FIELD field_1648 maxAir I
 	FIELD field_1650 pitchAngle D
@@ -80,6 +82,9 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	METHOD method_1323 interact (Lnet/minecraft/class_54;)Z
 		ARG 1 palyer
 	METHOD method_1324 movementInputToVelocity (FFF)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 speed
 	METHOD method_1325 dropItem (IIF)Lnet/minecraft/class_142;
 		ARG 1 id
 		ARG 2 amount
@@ -96,8 +101,18 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 	METHOD method_1330 packFloats ([F)Lnet/minecraft/class_202;
 		ARG 1 data
 	METHOD method_1331 getDataTracker ()Lnet/minecraft/class_216;
+	METHOD method_1332 setOnFire ()V
 	METHOD method_1333 isTouchingWater ()Z
+	METHOD method_1334 isFallen ()Z
+	METHOD method_1335 isInLava ()Z
+	METHOD method_1336 markToUpdateVelocity ()V
 	METHOD method_1337 getStringId ()Ljava/lang/String;
+	METHOD method_1338 setPosAndRotNet (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
 	METHOD method_1339 dropItem (II)Lnet/minecraft/class_142;
 		ARG 1 id
 		ARG 2 amount
@@ -105,7 +120,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_1341 setPositionAndAngles (DDDFF)V
+	METHOD method_1341 setPosAndRot (DDDFF)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
@@ -116,11 +131,15 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 2 pitch
 	METHOD method_1343 checkAndSave (Lnet/minecraft/class_8;)Z
 		ARG 1 tag
+	METHOD method_1344 noCollisionsWithEntitiesAndLiquids (DDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_1345 getBoolean (I)Z
 		ARG 1 index
 	METHOD method_1346 toTag (Lnet/minecraft/class_8;)V
 		ARG 1 tag
-	METHOD method_1347 squaredDistanceTo (DDD)D
+	METHOD method_1347 distanceToSqr (DDD)D
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
@@ -133,7 +152,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 3 y
 		ARG 5 z
 	METHOD method_1351 distanceTo (Lnet/minecraft/class_57;)F
-	METHOD method_1352 getDistanceSqr (Lnet/minecraft/class_57;)D
+		ARG 1 entity
+	METHOD method_1352 distanceToSqr (Lnet/minecraft/class_57;)D
 		ARG 1 entity
 	METHOD method_1353 addPassenger (Lnet/minecraft/class_57;)V
 		ARG 1 entity
@@ -152,14 +172,14 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 2 pitch
 	METHOD method_1363 readCustomDataFromTag (Lnet/minecraft/class_8;)V
 		ARG 1 tag
-	METHOD method_1364 shouldRenderAtDistance (D)Z
+	METHOD method_1364 canRender (D)Z
 		ARG 1 distance
 	METHOD method_1365 setVelocity (DDD)V
 		ARG 1 velocityX
 		ARG 3 velocityY
 		ARG 5 velocityZ
 	METHOD method_1366 getEyeHeight ()F
-	METHOD method_1367 shouldRenderFrom (Lnet/minecraft/class_26;)Z
+	METHOD method_1367 canRenderFrom (Lnet/minecraft/class_26;)Z
 		ARG 1 pos
 	METHOD method_1368 writeCustomDataToTag (Lnet/minecraft/class_8;)V
 		ARG 1 tag
@@ -197,5 +217,6 @@ CLASS net/minecraft/class_57 net/minecraft/entity/BaseEntity
 		ARG 2 score
 	METHOD method_1392 damageByFire (I)V
 		ARG 1 amount
+	METHOD method_1393 checkGroundCollision ()Z
 	METHOD method_1394 getBrightnessAtEyes (F)F
 		ARG 1 delta

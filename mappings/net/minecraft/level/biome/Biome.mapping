@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_153 net/minecraft/level/biome/BaseBiome
+CLASS net/minecraft/class_153 net/minecraft/level/biome/Biome
 	FIELD field_875 RAINFOREST Lnet/minecraft/class_153;
 	FIELD field_876 SWAMPLAND Lnet/minecraft/class_153;
 	FIELD field_877 SEASONAL_FOREST Lnet/minecraft/class_153;

@@ -12,7 +12,7 @@ CLASS net/minecraft/class_163 net/minecraft/client/model/Cuboid
 	FIELD field_2302 faces [Lnet/minecraft/class_552;
 	FIELD field_2303 textureOffsetX I
 	FIELD field_2304 testureOffsetY I
-	FIELD field_2305 compiled Z
+	FIELD field_2305 hasRenderList Z
 	FIELD field_2306 list I
 	METHOD <init> (II)V
 		ARG 1 xTexOffset
@@ -38,9 +38,9 @@ CLASS net/minecraft/class_163 net/minecraft/client/model/Cuboid
 		ARG 5 sizeY
 		ARG 6 sizeZ
 		ARG 7 dilation
-	METHOD method_1819 (F)V
+	METHOD method_1819 renderList (F)V
 		ARG 1 delta
-	METHOD method_1820 (F)V
+	METHOD method_1820 update (F)V
 		ARG 1 delta
-	METHOD method_1821 (F)V
+	METHOD method_1821 makeRenderList (F)V
 		ARG 1 delta

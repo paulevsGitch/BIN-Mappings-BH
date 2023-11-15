@@ -33,18 +33,18 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 	FIELD field_66 colorBlue11 F
 	FIELD field_67 fancyGraphics Z
 	FIELD field_68 colorBlue10 F
-	FIELD field_69 allowsGrassUnderTopEast Z
-	FIELD field_70 allowsGrassUnderTopSouth Z
-	FIELD field_71 allowsGrassUnderTopNorth Z
-	FIELD field_72 allowsGrassUnderTopWest Z
-	FIELD field_73 allowsGrassUnderNorthEast Z
-	FIELD field_74 allowsGrassUnderSouthWest Z
-	FIELD field_75 allowsGrassUnderNorthWest Z
-	FIELD field_76 allowsGrassUnderSouthEast Z
-	FIELD field_77 allowsGrassUnderBottomEast Z
-	FIELD field_78 allowsGrassUnderBottomSouth Z
-	FIELD field_79 allowsGrassUnderBottomNorth Z
-	FIELD field_80 allowsGrassUnderBottomWest Z
+	FIELD field_69 aoTopEast Z
+	FIELD field_70 aoTopSouth Z
+	FIELD field_71 aoTopNorth Z
+	FIELD field_72 aoTopWest Z
+	FIELD field_73 aoNorthEast Z
+	FIELD field_74 aoSouthWest Z
+	FIELD field_75 aoNorthWest Z
+	FIELD field_76 aoSouthEast Z
+	FIELD field_77 aoBottomEast Z
+	FIELD field_78 aoBottomSouth Z
+	FIELD field_79 aoBottomNorth Z
+	FIELD field_80 aoBottomWest Z
 	FIELD field_81 itemColorEnabled Z
 	FIELD field_82 blockView Lnet/minecraft/class_14;
 	FIELD field_83 textureOverride I
@@ -66,6 +66,15 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 	FIELD field_99 brightnessWest F
 	METHOD <init> (Lnet/minecraft/class_14;)V
 		ARG 1 blockView
+	METHOD method_41 renderPistonHeadY (DDDDDDFD)V
+		ARG 1 x1
+		ARG 3 y1
+		ARG 5 z1
+		ARG 7 x2
+		ARG 9 y2
+		ARG 11 z2
+		ARG 13 light
+		ARG 14 dv
 	METHOD method_42 isSpecificRenderType (I)Z
 		ARG 0 type
 	METHOD method_43 getFluidHeight (IIILnet/minecraft/class_15;)F
@@ -86,6 +95,11 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 8 skewX
 		ARG 10 skewZ
 	METHOD method_46 renderBottomFace (Lnet/minecraft/class_17;DDDI)V
+		ARG 1 block
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 texture
 	METHOD method_47 renderCross (Lnet/minecraft/class_17;IDDD)V
 		ARG 1 block
 		ARG 2 meta
@@ -127,7 +141,21 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 3 x
 		ARG 4 y
 		ARG 5 z
+	METHOD method_54 renderPistonHeadZ (DDDDDDFD)V
+		ARG 1 x1
+		ARG 3 y1
+		ARG 5 z1
+		ARG 7 x2
+		ARG 9 y2
+		ARG 11 z2
+		ARG 13 light
+		ARG 14 dv
 	METHOD method_55 renderTopFace (Lnet/minecraft/class_17;DDDI)V
+		ARG 1 block
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 texture
 	METHOD method_56 renderCrop (Lnet/minecraft/class_17;IDDD)V
 		ARG 1 block
 		ARG 2 meta
@@ -140,13 +168,20 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 3 y
 		ARG 4 z
 	METHOD method_58 renderFast (Lnet/minecraft/class_17;IIIFFF)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 r
+		ARG 6 g
+		ARG 7 b
 	METHOD method_59 renderPiston (Lnet/minecraft/class_17;IIIZ)Z
 		ARG 1 block
 		ARG 2 blockX
 		ARG 3 blockY
 		ARG 4 blockZ
 		ARG 5 forceExtended
-	METHOD method_60 (DDDDDDFD)V
+	METHOD method_60 renderPistonHeadX (DDDDDDFD)V
 		ARG 1 x1
 		ARG 3 x2
 		ARG 5 y1
@@ -156,11 +191,24 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 13 light
 		ARG 14 textureOffset
 	METHOD method_61 renderEastFace (Lnet/minecraft/class_17;DDDI)V
+		ARG 1 block
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 texture
 	METHOD method_62 renderTorch (Lnet/minecraft/class_17;III)Z
 		ARG 1 block
 		ARG 2 blockX
 		ARG 3 blockY
 		ARG 4 blockZ
+	METHOD method_63 renderCactus (Lnet/minecraft/class_17;IIIFFF)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 r
+		ARG 6 g
+		ARG 7 b
 	METHOD method_64 renderPistonHead (Lnet/minecraft/class_17;IIIZ)Z
 		ARG 1 block
 		ARG 2 x
@@ -168,13 +216,27 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 4 z
 		ARG 5 extended
 	METHOD method_65 renderWestFace (Lnet/minecraft/class_17;DDDI)V
+		ARG 1 block
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 texture
 	METHOD method_66 renderPistonExtended (Lnet/minecraft/class_17;III)V
 		ARG 1 block
 		ARG 2 blockX
 		ARG 3 blockY
 		ARG 4 blockZ
 	METHOD method_67 renderNorthFace (Lnet/minecraft/class_17;DDDI)V
+		ARG 1 block
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 texture
 	METHOD method_68 renderLever (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_69 renderSouthFace (Lnet/minecraft/class_17;DDDI)V
 		ARG 1 block
 		ARG 2 x
@@ -182,7 +244,15 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 6 z
 		ARG 8 texture
 	METHOD method_70 renderFire (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_71 renderRedstoneDust (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_72 renderLadder (Lnet/minecraft/class_17;III)Z
 		ARG 1 block
 		ARG 2 x
@@ -209,14 +279,30 @@ CLASS net/minecraft/class_13 net/minecraft/client/render/block/BlockRenderer
 		ARG 3 y
 		ARG 4 z
 	METHOD method_77 renderCactus (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_78 renderFence (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_79 renderStairs (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_80 renderDoor (Lnet/minecraft/class_17;III)Z
+		ARG 1 block
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_81 renderBed (Lnet/minecraft/class_17;III)Z
 		ARG 1 block
-		ARG 2 blockX
-		ARG 3 blockY
-		ARG 4 blockZ
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_82 renderRedstoneRepeater (Lnet/minecraft/class_17;III)Z
 		ARG 1 block
 		ARG 2 blockX

@@ -9,10 +9,31 @@ CLASS net/minecraft/class_474 net/minecraft/block/FireBlock
 		ARG 2 flammability
 		ARG 3 spreadDelayChance
 	METHOD method_1823 fireTick (Lnet/minecraft/class_18;IIIILjava/util/Random;I)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1824 (Lnet/minecraft/class_14;III)Z
+		ARG 5 spreadChance
+		ARG 6 random
+		ARG 7 burnDestroyChance
+	METHOD method_1824 canBurnBlock (Lnet/minecraft/class_14;III)Z
+		ARG 1 view
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1825 getBurningTime (Lnet/minecraft/class_18;IIII)I
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 time
+	METHOD method_1826 hasBurnableAround (Lnet/minecraft/class_18;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1827 getBurningTime (Lnet/minecraft/class_18;III)I
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_97 net/minecraft/client/gui/widgets/ScrollableBase
+CLASS net/minecraft/class_97 net/minecraft/client/gui/widgets/ScrollableScreen
 	FIELD field_1528 minecraft Lnet/minecraft/client/Minecraft;
 	FIELD field_1529 x I
 	FIELD field_1530 y I

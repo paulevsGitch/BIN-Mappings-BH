@@ -1,8 +1,24 @@
 CLASS net/minecraft/class_359 net/minecraft/level/source/NetherLevelSource
-	FIELD field_1344 rand Ljava/util/Random;
+	FIELD field_1344 random Ljava/util/Random;
 	FIELD field_1350 level Lnet/minecraft/class_18;
+	FIELD field_1351 density [D
 	FIELD field_1355 cave Lnet/minecraft/class_105;
+	METHOD <init> (Lnet/minecraft/class_18;J)V
+		ARG 1 level
+		ARG 2 seed
 	METHOD method_1180 generate (II[B)V
+		ARG 1 cx
+		ARG 2 cz
+		ARG 3 blocks
 	METHOD method_1181 calculateNoise ([DIIIIII)[D
 		ARG 1 noiseArray
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 dx
+		ARG 6 dy
+		ARG 7 dz
 	METHOD method_1182 generateExtras (II[B)V
+		ARG 1 cx
+		ARG 2 cz
+		ARG 3 blocks

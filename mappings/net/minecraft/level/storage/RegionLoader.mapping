@@ -2,6 +2,18 @@ CLASS net/minecraft/class_379 net/minecraft/level/storage/RegionLoader
 	FIELD field_1429 regionCache Ljava/util/Map;
 	METHOD method_1212 clearCache ()V
 	METHOD method_1213 getRegion (Ljava/io/File;II)Lnet/minecraft/class_353;
-		ARG 0 levelDir
+		ARG 0 folder
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1214 getSizeDelta (Ljava/io/File;II)I
+		ARG 0 folder
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1215 getInputStream (Ljava/io/File;II)Ljava/io/DataInputStream;
+		ARG 0 folder
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1216 getOutputStream (Ljava/io/File;II)Ljava/io/DataOutputStream;
+		ARG 0 folder
 		ARG 1 x
 		ARG 2 z

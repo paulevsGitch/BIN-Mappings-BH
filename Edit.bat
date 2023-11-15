@@ -1,2 +1,0 @@
-gradlew yarn
-pause

@@ -1,8 +1,12 @@
 CLASS net/minecraft/class_445 net/minecraft/level/LevelManager
 	FIELD field_1701 levelFile Ljava/io/File;
+	FIELD field_1702 createFolder Z
 	METHOD <init> (Ljava/io/File;Z)V
 		ARG 1 file
+		ARG 2 createFolder
 	METHOD method_1478 getLevelDat (II)Ljava/io/File;
+		ARG 1 x
+		ARG 2 z
 	METHOD method_1479 loadData (Lnet/minecraft/class_18;Lnet/minecraft/class_8;)Lnet/minecraft/class_43;
 		ARG 0 level
 		ARG 1 tag

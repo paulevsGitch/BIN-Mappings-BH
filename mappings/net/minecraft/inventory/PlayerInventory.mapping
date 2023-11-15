@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_136 net/minecraft/entity/living/player/PlayerInventory
+CLASS net/minecraft/class_136 net/minecraft/inventory/PlayerInventory
 	FIELD field_745 main [Lnet/minecraft/class_31;
 	FIELD field_746 armor [Lnet/minecraft/class_31;
 	FIELD field_747 selectedHotbarSlot I

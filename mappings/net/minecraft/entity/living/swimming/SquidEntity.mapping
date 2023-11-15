@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_151 net/minecraft/entity/living/swimming/SquidEntity
+	FIELD field_2225 attenuation F
+	FIELD field_2228 velX F
+	FIELD field_2229 velY F
+	FIELD field_2230 velZ F

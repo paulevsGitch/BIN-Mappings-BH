@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_450 net/minecraft/client/render/entity/SlimeRenderer
+	FIELD field_1711 model Lnet/minecraft/class_173;
+	METHOD <init> (Lnet/minecraft/class_173;Lnet/minecraft/class_173;F)V
+		ARG 1 model
+		ARG 2 innerModel
+		ARG 3 shadowSize

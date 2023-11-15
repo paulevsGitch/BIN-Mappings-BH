@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_127 net/minecraft/entity/living/LivingEntity
+	FIELD field_1012 bodyYaw F
+	FIELD field_1013 prevBodyYaw F
 	FIELD field_1019 texture Ljava/lang/String;
 	FIELD field_1021 unusedFloat F
 	FIELD field_1022 type Ljava/lang/String;
@@ -12,7 +14,9 @@ CLASS net/minecraft/class_127 net/minecraft/entity/living/LivingEntity
 	FIELD field_1038 hurtTime I
 	FIELD field_1041 deathTime I
 	FIELD field_1042 attackTime I
+	FIELD field_1048 prevLimbDistance F
 	FIELD field_1049 limbDistance F
+	FIELD field_1050 invLimbDistance F
 	FIELD field_1059 despawnCounter I
 	FIELD field_1060 perpendicularMovement F
 	METHOD method_909 getMonsterHeldItem ()Lnet/minecraft/class_31;

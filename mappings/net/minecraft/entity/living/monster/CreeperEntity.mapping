@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_114 living/monster/Creeper
+CLASS net/minecraft/class_114 net/minecraft/entity/living/monster/CreeperEntity
 	FIELD field_350 currentFuseTime I
 	FIELD field_351 lastFuseTime I
 	METHOD method_410 getFuseDelta (F)F

@@ -1,13 +1,16 @@
 CLASS net/minecraft/class_113 net/minecraft/entity/vehicle/BoatEntity
+	FIELD field_338 damage I
+	FIELD field_339 damageTicks I
+	FIELD field_340 damageAngle I
 	FIELD field_341 flag I
 	FIELD field_342 posX D
 	FIELD field_343 posY D
 	FIELD field_344 posZ D
-	FIELD field_345 newYaw D
-	FIELD field_346 newPitch D
-	FIELD field_347 newVelX D
-	FIELD field_348 newVelY D
-	FIELD field_349 newVelZ D
+	FIELD field_345 nextYaw D
+	FIELD field_346 nextPitch D
+	FIELD field_347 nextVelX D
+	FIELD field_348 nextVelY D
+	FIELD field_349 nextVelZ D
 	METHOD <init> (Lnet/minecraft/class_18;DDD)V
 		ARG 1 level
 		ARG 2 x

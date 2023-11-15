@@ -6,10 +6,11 @@ CLASS net/minecraft/class_245 net/minecraft/client/render/entity/LivingEntityRen
 		ARG 2 shadowSize
 	METHOD method_815 setModel (Lnet/minecraft/class_173;)V
 		ARG 1 model
-	METHOD method_816 (Lnet/minecraft/class_127;)F
+	METHOD method_816 getRotation (Lnet/minecraft/class_127;)F
 		ARG 1 entity
-	METHOD method_817 (Lnet/minecraft/class_127;FF)I
+	METHOD method_817 getColor (Lnet/minecraft/class_127;FF)I
 		ARG 1 entity
+		ARG 2 light
 		ARG 3 delta
 	METHOD method_818 renderEntityName (Lnet/minecraft/class_127;Ljava/lang/String;DDDI)V
 		ARG 1 entity
@@ -30,13 +31,23 @@ CLASS net/minecraft/class_245 net/minecraft/client/render/entity/LivingEntityRen
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
-	METHOD method_823 (Lnet/minecraft/class_127;F)V
+	METHOD method_823 preRender (Lnet/minecraft/class_127;F)V
 		ARG 1 entity
 		ARG 2 delta
+	METHOD method_824 setupTransform (Lnet/minecraft/class_127;FFF)V
+		ARG 1 entity
+		ARG 2 renderTime
+		ARG 3 y
+		ARG 4 delta
 	METHOD method_825 renderOuterLayer (Lnet/minecraft/class_127;IF)Z
 		ARG 1 entity
 		ARG 2 layer
 		ARG 3 delta
+	METHOD method_826 translate (Lnet/minecraft/class_127;DDD)V
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
 	METHOD method_827 renderPlayerEffects (Lnet/minecraft/class_127;F)V
 		ARG 1 entity
 		ARG 2 delta

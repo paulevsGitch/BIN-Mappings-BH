@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_535 net/minecraft/entity/living/monster/ZombiePigman
+CLASS net/minecraft/class_535 net/minecraft/entity/living/monster/ZombiePigmanEntity
 	FIELD field_2242 anger I
 	FIELD field_2243 angerTime I
 	FIELD field_2244 heldItem Lnet/minecraft/class_31;

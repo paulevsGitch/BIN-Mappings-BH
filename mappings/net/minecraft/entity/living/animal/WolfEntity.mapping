@@ -12,6 +12,7 @@ CLASS net/minecraft/class_121 net/minecraft/entity/living/animal/WolfEntity
 		ARG 1 delta
 	METHOD method_422 getBegAnimationProgress (F)F
 	METHOD method_423 isWet ()Z
+	METHOD method_424 getRenderTime ()F
 	METHOD method_425 isTamed ()Z
 	METHOD method_426 setOwner (Ljava/lang/String;)V
 		ARG 1 newOwnerUsername

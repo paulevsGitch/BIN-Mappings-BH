@@ -2,6 +2,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1590 globalEntityID I
 	FIELD field_1591 entityId I
 	FIELD field_1592 renderDistanceMultiplier D
+	FIELD field_1593 notAffectEntitySpawn Z
 	FIELD field_1594 passenger Lnet/minecraft/class_57;
 	FIELD field_1595 vehicle Lnet/minecraft/class_57;
 	FIELD field_1596 level Lnet/minecraft/class_18;
@@ -11,9 +12,9 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1600 x D
 	FIELD field_1601 y D
 	FIELD field_1602 z D
-	FIELD field_1603 oldVelX D
-	FIELD field_1604 oldVelY D
-	FIELD field_1605 oldVelZ D
+	FIELD field_1603 prevVelX D
+	FIELD field_1604 prevVelY D
+	FIELD field_1605 prevVelZ D
 	FIELD field_1606 yaw F
 	FIELD field_1607 pitch F
 	FIELD field_1608 prevYaw F
@@ -63,6 +64,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 7 yaw
 		ARG 8 pitch
 		ARG 9 flag
+	METHOD method_1312 hurtAnimation ()V
 	METHOD method_1313 handleStatus (B)V
 		ARG 1 status
 	METHOD method_1314 getTextured ()Ljava/lang/String;
@@ -196,7 +198,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	METHOD method_1373 isChild ()Z
 	METHOD method_1375 setLevel (Lnet/minecraft/class_18;)V
 		ARG 1 level
-	METHOD method_1376 startRiding (Lnet/minecraft/class_57;)V
+	METHOD method_1376 stopRiding (Lnet/minecraft/class_57;)V
 		ARG 1 entity
 	METHOD method_1377 getInventory ()[Lnet/minecraft/class_31;
 	METHOD method_1378 getStandingEyeHeight ()F

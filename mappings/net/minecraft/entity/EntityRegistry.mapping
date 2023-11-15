@@ -4,8 +4,19 @@ CLASS net/minecraft/class_206 net/minecraft/entity/EntityRegistry
 	FIELD field_759 ID_TO_CLASS Ljava/util/Map;
 	FIELD field_760 CLASS_TO_ID Ljava/util/Map;
 	METHOD method_730 create (Lnet/minecraft/class_8;Lnet/minecraft/class_18;)Lnet/minecraft/class_57;
+		ARG 0 tag
+		ARG 1 level
 	METHOD method_731 register (Ljava/lang/Class;Ljava/lang/String;I)V
+		ARG 0 entityClass
+		ARG 1 stringID
+		ARG 2 intID
 	METHOD method_732 create (Ljava/lang/String;Lnet/minecraft/class_18;)Lnet/minecraft/class_57;
-	METHOD method_733 getId (Lnet/minecraft/class_57;)I
+		ARG 0 stringID
+		ARG 1 level
+	METHOD method_733 getIntId (Lnet/minecraft/class_57;)I
+		ARG 0 entity
 	METHOD method_734 getStringId (Lnet/minecraft/class_57;)Ljava/lang/String;
+		ARG 0 entity
 	METHOD method_735 create (ILnet/minecraft/class_18;)Lnet/minecraft/class_57;
+		ARG 0 intID
+		ARG 1 level

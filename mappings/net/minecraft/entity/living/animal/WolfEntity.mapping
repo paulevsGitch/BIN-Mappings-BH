@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_121 net/minecraft/entity/living/animal/Wolf
+CLASS net/minecraft/class_121 net/minecraft/entity/living/animal/WolfEntity
 	FIELD field_368 begging Z
 	FIELD field_369 begAnimationProgress F
 	FIELD field_370 lastBegAnimationProgress F
@@ -7,7 +7,9 @@ CLASS net/minecraft/class_121 net/minecraft/entity/living/animal/Wolf
 	FIELD field_373 shakeProgress F
 	FIELD field_374 lastShakeProgress F
 	METHOD method_420 getShakeAnimationProgress (FF)F
+		ARG 1 delta
 	METHOD method_421 getWetBrightnessMultiplier (F)F
+		ARG 1 delta
 	METHOD method_422 getBegAnimationProgress (F)F
 	METHOD method_423 isWet ()Z
 	METHOD method_425 isTamed ()Z
@@ -17,6 +19,9 @@ CLASS net/minecraft/class_121 net/minecraft/entity/living/animal/Wolf
 		ARG 1 tamed
 	METHOD method_428 setSitting (Z)V
 		ARG 1 newSitting
+	METHOD method_429 makePath (Lnet/minecraft/class_57;F)V
+		ARG 1 targer
+		ARG 2 distance
 	METHOD method_430 setAngry (Z)V
 		ARG 1 newAngry
 	METHOD method_431 setHasOwner (Z)V

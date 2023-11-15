@@ -202,6 +202,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	METHOD method_1378 getStandingEyeHeight ()F
 	METHOD method_1379 getBoundingBox (Lnet/minecraft/class_57;)Lnet/minecraft/class_25;
 		ARG 1 entity
+	METHOD method_1380 isRideable ()Z
 	METHOD method_1381 getBoundingBox ()Lnet/minecraft/class_25;
 	METHOD method_1382 updatePassenger ()V
 	METHOD method_1383 onStruckByLightning (Lnet/minecraft/class_411;)V

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_313 net/minecraft/entity/living/animal/ChickenEntity
+	FIELD field_2165 eggSpawnTicks I

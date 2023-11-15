@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_613 net/minecraft/entity/living/animal/Sheep
+CLASS net/minecraft/class_613 net/minecraft/entity/living/animal/SheepEntity
 	FIELD field_2698 COLORS [[F
 	METHOD method_2044 getNaturalColor (Ljava/util/Random;)I
 		ARG 0 random

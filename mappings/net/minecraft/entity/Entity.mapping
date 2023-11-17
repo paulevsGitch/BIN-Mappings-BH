@@ -20,6 +20,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1608 prevYaw F
 	FIELD field_1609 prevPitch F
 	FIELD field_1610 boundingBox Lnet/minecraft/class_25;
+	FIELD field_1611 stepsCount I
 	FIELD field_1612 fallen Z
 	FIELD field_1614 air I
 	FIELD field_1615 immuneToFire Z
@@ -36,6 +37,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1631 standingEyeHeight F
 	FIELD field_1632 width F
 	FIELD field_1633 height F
+	FIELD field_1635 walkedDistance F
 	FIELD field_1636 fallDistance F
 	FIELD field_1637 prevRenderX D
 	FIELD field_1638 prevRenderY D

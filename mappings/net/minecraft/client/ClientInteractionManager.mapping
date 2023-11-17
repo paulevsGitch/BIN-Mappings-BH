@@ -56,3 +56,4 @@ CLASS net/minecraft/class_504 net/minecraft/client/ClientInteractionManager
 		ARG 2 y
 		ARG 3 z
 		ARG 4 facing
+	METHOD method_1722 renderSurvivalHUD ()Z

@@ -81,6 +81,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 		ARG 2 thread
 	METHOD method_2102 showGameStartupError (Lnet/minecraft/class_447;)V
 		ARG 1 error
+	METHOD method_2103 pickupHitBlock ()V
 	METHOD method_2104 startLoginThread ()V
 	METHOD method_2105 forceResourceReload ()V
 	METHOD method_2106 init ()V
@@ -163,7 +164,6 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD method_2150 loadingScreen ()V
 	METHOD method_2151 getOperatingSystem ()Lnet/minecraft/class_531;
 	METHOD method_2152 checkTakingScreenshot ()V
-	METHOD run ()V
 	METHOD run run ()V
 	METHOD windowClosing (Ljava/awt/event/WindowEvent;)V
 		ARG 1 event

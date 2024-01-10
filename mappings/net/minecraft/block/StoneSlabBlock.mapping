@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_553 net/minecraft/block/StoneSlabBlock
-	FIELD field_2323 names [Ljava/lang/String;
+	FIELD field_2323 NAMES [Ljava/lang/String;
 	FIELD field_2324 isFullBlock Z
 	METHOD <init> (IZ)V
 		ARG 1 id

@@ -205,14 +205,10 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 			logger.lifecycle(":downloading minecraft client")
 			FileUtils.copyURLToFile(new URL(version.downloads.client.url), clientJar)
 		}
-
-//		if (!serverJar.exists() || !validateChecksum(serverJar, version.downloads.server.sha1)) {
-//			logger.lifecycle(":downloading minecraft 1server")
-//			FileUtils.copyURLToFile(new URL(version.downloads.server.url), serverJar)
-//		}
+		
 		if (!serverJar.exists() || !validateChecksum(serverJar, "2f90dc1cb5ca7e9d71786801b307390a67fcf954")) {
 			logger.lifecycle(":downloading minecraft server")
-			URL url = new URL("http://files.pymcl.net/server/vanilla/bin/Beta%201.7.3.jar");
+			URL url = new URL("https://files.betacraft.uk/server-archive/beta/b1.7.jar");
 
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestProperty("User-Agent", "Mozilla/5.0"); //Discord wants some kind of user agent before it lets you download things
@@ -232,13 +228,6 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 
 task downloadMcLibs(dependsOn: downloadWantedVersionManifest) {
 	inputs.files versionFile
-
-	// Broken.
-//	outputs.file(libraries)
-//
-//	outputs.upToDateWhen {
-//		return false
-//	}
 
 	doLast {
 		if (!versionFile.exists()) {

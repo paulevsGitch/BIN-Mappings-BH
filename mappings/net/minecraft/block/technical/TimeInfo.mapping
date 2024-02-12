@@ -11,7 +11,7 @@ CLASS net/minecraft/class_366 net/minecraft/block/technical/TimeInfo
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
-	METHOD compareTo (Ljava/lang/Object;)I
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
 		ARG 1 info
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 obj

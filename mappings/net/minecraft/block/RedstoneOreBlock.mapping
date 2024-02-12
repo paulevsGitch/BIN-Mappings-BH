@@ -5,10 +5,12 @@ CLASS net/minecraft/class_396 net/minecraft/block/RedstoneOreBlock
 		ARG 2 texture
 		ARG 3 isLit
 	METHOD method_1252 onTouch (Lnet/minecraft/class_18;III)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1253 (Lnet/minecraft/class_18;III)V
+	METHOD method_1253 spawnParticles (Lnet/minecraft/class_18;III)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

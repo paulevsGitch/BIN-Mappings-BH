@@ -1,1 +1,11 @@
 CLASS net/minecraft/class_328 net/minecraft/block/TrapdoorBlock
+	METHOD method_1059 updateBlock (Lnet/minecraft/class_18;IIIZ)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 opened
+	METHOD method_1060 updateBounds (I)V
+		ARG 1 meta
+	METHOD method_1061 isOpened (I)Z
+		ARG 0 meta

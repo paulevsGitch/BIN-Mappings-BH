@@ -6,6 +6,7 @@ CLASS net/minecraft/class_469 net/minecraft/block/MovingPistonBlock
 		ARG 1 facing
 		ARG 2 meta
 		ARG 3 isExtended
+		ARG 4 render
 	METHOD method_1534 getExtendedBox (Lnet/minecraft/class_18;IIIIFI)Lnet/minecraft/class_25;
 		ARG 1 level
 		ARG 2 x
@@ -14,7 +15,8 @@ CLASS net/minecraft/class_469 net/minecraft/block/MovingPistonBlock
 		ARG 5 blockID
 		ARG 6 delta
 		ARG 7 meta
-	METHOD method_1535 (Lnet/minecraft/class_14;III)Lnet/minecraft/class_283;
+	METHOD method_1535 getPistonEntity (Lnet/minecraft/class_14;III)Lnet/minecraft/class_283;
+		ARG 1 view
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

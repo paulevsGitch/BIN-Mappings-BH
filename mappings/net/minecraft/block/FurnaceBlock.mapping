@@ -2,11 +2,17 @@ CLASS net/minecraft/class_421 net/minecraft/block/FurnaceBlock
 	FIELD field_1682 rand Ljava/util/Random;
 	FIELD field_1683 lit Z
 	FIELD field_1684 SETTING_TILE Z
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 lit
 	METHOD method_1403 updateFurnaceState (ZLnet/minecraft/class_18;III)V
+		ARG 0 lit
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_1404 (Lnet/minecraft/class_18;III)V
+	METHOD method_1404 updateDirection (Lnet/minecraft/class_18;III)V
+		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

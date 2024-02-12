@@ -50,6 +50,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/living/LivingEntity
 	METHOD method_936 getAmbientChance ()I
 	METHOD method_937 processMovement ()V
 	METHOD method_938 onKilledBy (Lnet/minecraft/class_57;)V
+		ARG 1 entity
 	METHOD method_939 addHealth (I)V
 		ARG 1 amount
 	METHOD method_940 canDespawn ()Z

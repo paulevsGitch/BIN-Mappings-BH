@@ -22,6 +22,7 @@ CLASS net/minecraft/class_471 net/minecraft/client/render/LevelRenderer
 	FIELD field_1795 blockEntities Ljava/util/List;
 	FIELD field_1796 unusedArray [I
 	FIELD field_1797 occluderBufferInternal Ljava/nio/IntBuffer;
+	FIELD field_1798 unusedInt I
 	FIELD field_1799 unusedList I
 	FIELD field_1800 posX D
 	FIELD field_1801 posY D
@@ -48,6 +49,7 @@ CLASS net/minecraft/class_471 net/minecraft/client/render/LevelRenderer
 		ARG 1 minecraft
 		ARG 2 textureManager
 	METHOD method_1537 updateFromOptions ()V
+	METHOD method_1538 clearFog (DDDF)Z
 	METHOD method_1539 renderSky (F)V
 		ARG 1 delta
 	METHOD method_1540 resetAreaLists (ID)V

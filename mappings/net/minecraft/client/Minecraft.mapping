@@ -100,6 +100,8 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD method_2110 processDigging (IZ)V
 		ARG 1 type
 		ARG 2 canDig
+	METHOD method_2111 (J)V
+		ARG 1 time
 	METHOD method_2112 openScreen (Lnet/minecraft/class_32;)V
 		ARG 1 screen
 	METHOD method_2113 setLevel (Lnet/minecraft/class_18;)V

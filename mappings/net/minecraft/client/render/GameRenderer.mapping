@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
+	FIELD field_2327 prevFOV F
+	FIELD field_2330 clearFog Z
 	FIELD field_2334 timeInMillis J
 	FIELD field_2335 systemTime J
 	FIELD field_2336 random Ljava/util/Random;
@@ -16,6 +18,11 @@ CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 	FIELD field_2352 targetEntity Lnet/minecraft/class_57;
 	FIELD field_2353 cinematicPitchSmoother Lnet/minecraft/class_12;
 	FIELD field_2354 cinematicYawSmoother Lnet/minecraft/class_12;
+	FIELD field_2355 unusedSmoother1 Lnet/minecraft/class_12;
+	FIELD field_2356 unusedSmoother2 Lnet/minecraft/class_12;
+	FIELD field_2357 unusedSmoother3 Lnet/minecraft/class_12;
+	FIELD field_2358 unusedSmoother4 Lnet/minecraft/class_12;
+	FIELD field_2365 nextFOV F
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_1837 renderTick ()V
@@ -26,7 +33,7 @@ CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 		ARG 2 g
 		ARG 3 b
 		ARG 4 a
-	METHOD method_1840 updateCamera (FI)V
+	METHOD method_1840 updateCameraAndFog (FI)V
 		ARG 1 delta
 		ARG 2 anaglyphDistance
 	METHOD method_1841 delta (FJ)V
@@ -38,13 +45,13 @@ CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 	METHOD method_1843 setupOrtho ()V
 	METHOD method_1844 renderScreen (F)V
 		ARG 1 delta
-	METHOD method_1845 (FI)V
+	METHOD method_1845 updateCamera (FI)V
 		ARG 1 delta
 		ARG 2 anaglyphDistance
 	METHOD method_1846 weatherEffects ()V
 	METHOD method_1847 renderWeather (F)V
 		ARG 1 delta
-	METHOD method_1848 (F)F
+	METHOD method_1848 getFOV (F)F
 		ARG 1 delta
 	METHOD method_1849 damageCameraRotation (F)V
 		ARG 1 delta

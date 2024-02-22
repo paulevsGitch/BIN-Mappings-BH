@@ -46,20 +46,20 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_50;)V
 		ARG 1 level
 		ARG 2 dimension
-	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;Lnet/minecraft/class_50;J)V
-		ARG 1 dimensionData
+	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;J)V
+		ARG 1 dimData
 		ARG 2 name
-		ARG 3 dimension
-		ARG 4 seed
+		ARG 3 seed
 	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;JLnet/minecraft/class_50;)V
 		ARG 1 dimData
 		ARG 2 name
 		ARG 3 seed
 		ARG 5 dimension
-	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;J)V
-		ARG 1 dimData
+	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;Lnet/minecraft/class_50;J)V
+		ARG 1 dimensionData
 		ARG 2 name
-		ARG 3 seed
+		ARG 3 dimension
+		ARG 4 seed
 	METHOD method_149 getClosestPlayer (DDDD)Lnet/minecraft/class_54;
 		ARG 1 posX
 		ARG 3 posY
@@ -512,10 +512,10 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 1 listener
 	METHOD method_281 removeLevelListener (Lnet/minecraft/class_59;)V
 		ARG 1 levelListener
-	METHOD method_282 getSunPosition (F)Lnet/minecraft/class_26;
+	METHOD method_282 getSkyColor (F)Lnet/minecraft/class_26;
 		ARG 1 delta
 	METHOD method_283 shuffleSpawnPoint ()V
-	METHOD method_284 getSkyColor (F)Lnet/minecraft/class_26;
+	METHOD method_284 getDaytimeSkyColor (F)Lnet/minecraft/class_26;
 		ARG 1 delta
 	METHOD method_285 unusedMethod ()V
 	METHOD method_286 getSunAngleClamped (F)F

@@ -10,7 +10,7 @@ CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
 	FIELD field_2060 bufferArray [I
 	FIELD field_2061 vertexCount I
 	FIELD field_2062 textureU D
-	FIELD field_2063 textureX D
+	FIELD field_2063 textureV D
 	FIELD field_2064 color I
 	FIELD field_2065 hasColor Z
 	FIELD field_2066 hasTexture Z
@@ -23,13 +23,13 @@ CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
 	FIELD field_2073 yOffset D
 	FIELD field_2074 zOffset D
 	FIELD field_2075 normal I
-	FIELD field_2076 drawing Z
+	FIELD field_2076 tesselating Z
 	FIELD field_2077 useFloatBuffer Z
 	FIELD field_2078 buffer Ljava/nio/IntBuffer;
 	FIELD field_2079 glTarget I
 	METHOD <init> (I)V
 		ARG 1 capacity
-	METHOD method_1685 draw ()V
+	METHOD method_1685 render ()V
 	METHOD method_1686 setUV (DD)V
 		ARG 1 u
 		ARG 3 v

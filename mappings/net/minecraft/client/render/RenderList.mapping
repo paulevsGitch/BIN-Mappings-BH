@@ -8,7 +8,7 @@ CLASS net/minecraft/class_472 net/minecraft/client/render/RenderList
 	FIELD field_2486 data Ljava/nio/IntBuffer;
 	FIELD field_2487 isEmpty Z
 	FIELD field_2488 flipped Z
-	METHOD method_1909 reset ()V
+	METHOD method_1909 render ()V
 	METHOD method_1910 add (I)V
 		ARG 1 value
 	METHOD method_1911 isValid (III)Z

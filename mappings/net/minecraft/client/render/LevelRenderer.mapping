@@ -52,7 +52,7 @@ CLASS net/minecraft/class_471 net/minecraft/client/render/LevelRenderer
 	METHOD method_1538 clearFog (DDDF)Z
 	METHOD method_1539 renderSky (F)V
 		ARG 1 delta
-	METHOD method_1540 resetAreaLists (ID)V
+	METHOD method_1540 renderAreas (ID)V
 		ARG 1 layerIndex
 		ARG 2 delta
 	METHOD method_1541 updateOcclusion (II)V

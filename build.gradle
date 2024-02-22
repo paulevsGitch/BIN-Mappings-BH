@@ -401,19 +401,20 @@ task mergeTiny(dependsOn: [downloadIntermediary, buildYarnTiny], type: FileOutpu
 	outputs.upToDateWhen { return false }
 
 	doLast {
-		logger.lifecycle(":merging yarn and intermediary")
-		String[] args = [
-			downloadIntermediary.dest.getAbsolutePath() + "2",
-			yarnTinyInput.getAbsolutePath(),
-			outputFile.getAbsolutePath()
-		]
-		
-		System.out.println(downloadIntermediary.dest.getAbsolutePath())
-		System.out.println(yarnTinyInput.getAbsolutePath())
-		System.out.println(outputFile.getAbsolutePath())
-
-		new CommandMergeTinyV2().run(args)
+		//logger.lifecycle(":merging yarn and intermediary")
+		//String[] args = [
+		//	downloadIntermediary.dest.getAbsolutePath() + "2",
+		//	yarnTinyInput.getAbsolutePath(),
+		//	outputFile.getAbsolutePath()
+		//]
+		//
+		//System.out.println(downloadIntermediary.dest.getAbsolutePath())
+		//System.out.println(yarnTinyInput.getAbsolutePath())
+		//System.out.println(outputFile.getAbsolutePath())
+		//
+		//new CommandMergeTinyV2().run(args)
 		//CommandCorrectMappingUnions.run(outputFile.toPath(), "intermediary", "named")
+		java.nio.file.Files.copy(yarnTinyInput.toPath(), outputFile.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
 	}
 }
 

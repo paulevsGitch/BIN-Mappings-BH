@@ -367,7 +367,7 @@ task buildYarnTiny(dependsOn: "mergeJars", type: FileOutput) {
 		String[] args = [
 			"enigma",
 			mappingsDir.getAbsolutePath(),
-			"tiny:intermediary:named",
+			"tinyv2:intermediary:named",
 			yarnTiny.getAbsolutePath()
 		]
 

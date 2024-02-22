@@ -4,7 +4,7 @@ CLASS net/minecraft/class_59 net/minecraft/level/LevelListener
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1150 updateArea (IIIIII)V
+	METHOD method_1150 updateAreaExtend (IIIIII)V
 		ARG 1 x1
 		ARG 2 y1
 		ARG 3 z1

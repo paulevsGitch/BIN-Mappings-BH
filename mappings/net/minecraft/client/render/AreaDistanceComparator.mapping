@@ -2,6 +2,6 @@ CLASS net/minecraft/class_430 net/minecraft/client/render/AreaDistanceComparator
 	FIELD field_1698 entity Lnet/minecraft/class_127;
 	METHOD <init> (Lnet/minecraft/class_127;)V
 		ARG 1 entity
-	METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
 		ARG 1 area1
 		ARG 2 area2

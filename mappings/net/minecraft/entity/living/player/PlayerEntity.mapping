@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_54 net/minecraft/entity/living/player/PlayerEntity
 	FIELD field_504 teleportTime F
+	FIELD field_505 prevTeleportTime F
 	FIELD field_506 playerCloakUrl Ljava/lang/String;
 	FIELD field_507 sleepOffsetY F
 	FIELD field_508 bedPosition Lnet/minecraft/class_63;
@@ -35,12 +36,15 @@ CLASS net/minecraft/class_54 net/minecraft/entity/living/player/PlayerEntity
 		ARG 2 y
 		ARG 3 z
 	METHOD method_485 openDispenserScreen (Lnet/minecraft/class_137;)V
+		ARG 1 entity
 	METHOD method_486 openChestScreen (Lnet/minecraft/class_134;)V
 	METHOD method_487 openFurnaceScreen (Lnet/minecraft/class_138;)V
+		ARG 1 entity
 	METHOD method_488 increaseStat (Lnet/minecraft/class_139;I)V
 		ARG 1 state
 		ARG 2 amount
 	METHOD method_489 openSignScreen (Lnet/minecraft/class_140;)V
+		ARG 1 entity
 	METHOD method_490 sendMessage (Ljava/lang/String;)V
 		ARG 1 message
 	METHOD method_491 onItemPickup (Lnet/minecraft/class_57;I)V
@@ -52,6 +56,7 @@ CLASS net/minecraft/class_54 net/minecraft/entity/living/player/PlayerEntity
 		ARG 2 y
 		ARG 3 z
 	METHOD method_496 updateCursorItem (Lnet/minecraft/class_31;)V
+		ARG 1 stack
 	METHOD method_497 wakeUp (ZZZ)V
 		ARG 1 resetSleepTimer
 		ARG 2 disconnect
@@ -84,7 +89,9 @@ CLASS net/minecraft/class_54 net/minecraft/entity/living/player/PlayerEntity
 		ARG 1 stack
 	METHOD method_514 canRemoveBlock (Lnet/minecraft/class_17;)Z
 	METHOD method_515 interactWith (Lnet/minecraft/class_57;)V
+		ARG 1 entity
 	METHOD method_516 attack (Lnet/minecraft/class_57;)V
+		ARG 1 entity
 	METHOD method_517 applyBedOffset (I)V
 		ARG 1 bedOrientation
 	METHOD method_518 updateMovementStats (DDD)V

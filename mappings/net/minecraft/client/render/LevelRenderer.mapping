@@ -1,12 +1,37 @@
 CLASS net/minecraft/class_471 net/minecraft/client/render/LevelRenderer
 	FIELD field_1775 glEndList I
+	FIELD field_1776 minX I
+	FIELD field_1777 minY I
+	FIELD field_1778 minZ I
+	FIELD field_1779 maxX I
+	FIELD field_1780 maxY I
+	FIELD field_1781 maxZ I
 	FIELD field_1782 viewDistance I
+	FIELD field_1783 entityUpdateTicks I
+	FIELD field_1784 totalEntities I
+	FIELD field_1785 renderedEntities I
+	FIELD field_1786 unusedCounter I
+	FIELD field_1787 totalChunks I
+	FIELD field_1788 invisibleAreas I
+	FIELD field_1789 occludedAreas I
+	FIELD field_1790 renderedChunks I
+	FIELD field_1791 emptyAreas I
+	FIELD field_1792 areaCacheIndex I
+	FIELD field_1793 visibleAreas Ljava/util/List;
+	FIELD field_1794 areaRenderLists [Lnet/minecraft/class_472;
 	FIELD field_1795 blockEntities Ljava/util/List;
+	FIELD field_1796 unusedArray [I
+	FIELD field_1797 occluderBufferInternal Ljava/nio/IntBuffer;
+	FIELD field_1799 unusedList I
+	FIELD field_1800 posX D
+	FIELD field_1801 posY D
+	FIELD field_1802 posZ D
 	FIELD field_1803 blockBreakDelta F
 	FIELD field_1804 checkCount I
 	FIELD field_1805 level Lnet/minecraft/class_18;
 	FIELD field_1806 textureManager Lnet/minecraft/class_76;
 	FIELD field_1807 areaRenderers Ljava/util/List;
+	FIELD field_1808 areaRenderersArray [Lnet/minecraft/class_66;
 	FIELD field_1809 areaRenderersCache [Lnet/minecraft/class_66;
 	FIELD field_1810 sectionCounX I
 	FIELD field_1811 sectionCounY I
@@ -14,7 +39,9 @@ CLASS net/minecraft/class_471 net/minecraft/client/render/LevelRenderer
 	FIELD field_1813 glListTarget I
 	FIELD field_1814 minecraft Lnet/minecraft/client/Minecraft;
 	FIELD field_1815 blockRenderer Lnet/minecraft/class_13;
+	FIELD field_1816 occludersBuffer Ljava/nio/IntBuffer;
 	FIELD field_1817 isOcclusionEnabled Z
+	FIELD field_1818 renderTicks I
 	FIELD field_1819 glStartList I
 	FIELD field_1820 glSkyPlaneList I
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_76;)V
@@ -23,33 +50,55 @@ CLASS net/minecraft/class_471 net/minecraft/client/render/LevelRenderer
 	METHOD method_1537 updateFromOptions ()V
 	METHOD method_1539 renderSky (F)V
 		ARG 1 delta
-	METHOD method_1543 updateAreas (IIIIII)V
+	METHOD method_1540 resetAreaLists (ID)V
+		ARG 1 layerIndex
+		ARG 2 delta
+	METHOD method_1541 updateOcclusion (II)V
+		ARG 1 fromLayer
+		ARG 2 toLayer
+	METHOD method_1542 updateVisibleAreas (IIID)I
+		ARG 1 fromLayer
+		ARG 2 toLayer
+		ARG 3 layerIndex
+		ARG 4 delta
+	METHOD method_1543 updateArea (IIIIII)V
 		ARG 1 x1
 		ARG 2 y1
 		ARG 3 z1
 		ARG 4 x2
 		ARG 5 y2
 		ARG 6 z2
+	METHOD method_1544 renderEntitiesFromPos (Lnet/minecraft/class_26;Lnet/minecraft/class_68;F)V
+		ARG 1 pos
+		ARG 2 collider
+		ARG 3 delta
 	METHOD method_1545 renderBox (Lnet/minecraft/class_25;)V
 		ARG 1 box
-	METHOD method_1546 (Lnet/minecraft/class_18;)V
+	METHOD method_1546 setLevel (Lnet/minecraft/class_18;)V
 		ARG 1 level
-	METHOD method_1547 renderBlockBreak (Lnet/minecraft/class_54;Lnet/minecraft/class_27;ILnet/minecraft/class_31;F)V
+	METHOD method_1547 renderBlockBreaking (Lnet/minecraft/class_54;Lnet/minecraft/class_27;ILnet/minecraft/class_31;F)V
 		ARG 1 player
 		ARG 2 hit
 		ARG 3 type
 		ARG 4 stack
 		ARG 5 delta
-	METHOD method_1548 (Lnet/minecraft/class_127;ID)I
+	METHOD method_1548 updateOcclusion (Lnet/minecraft/class_127;ID)I
 		ARG 1 entity
-	METHOD method_1549 (Lnet/minecraft/class_127;Z)Z
+		ARG 2 layerIndex
+		ARG 3 delta
+	METHOD method_1549 updateAreasAround (Lnet/minecraft/class_127;Z)Z
 		ARG 1 entity
+		ARG 2 useDistanceLimit
 	METHOD method_1550 checkVisibility (Lnet/minecraft/class_68;F)V
 		ARG 1 collider
 		ARG 2 delta
 	METHOD method_1551 getDebugFirstLine ()Ljava/lang/String;
 	METHOD method_1552 renderEnvironment (F)V
 		ARG 1 delta
+	METHOD method_1553 updateAreasBounds (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_1554 renderBlockOutline (Lnet/minecraft/class_54;Lnet/minecraft/class_27;ILnet/minecraft/class_31;F)V
 		ARG 1 player
 		ARG 2 hit
@@ -59,5 +108,6 @@ CLASS net/minecraft/class_471 net/minecraft/client/render/LevelRenderer
 	METHOD method_1555 getDebugSecondLine ()Ljava/lang/String;
 	METHOD method_1556 renderClouds (F)V
 		ARG 1 delta
+	METHOD method_1557 renderTick ()V
 	METHOD method_1558 removeBuffer ()V
 	METHOD method_1559 renderStars ()V

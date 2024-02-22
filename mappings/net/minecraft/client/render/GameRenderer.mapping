@@ -4,6 +4,7 @@ CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 	FIELD field_2336 random Ljava/util/Random;
 	FIELD field_2337 ambientSoundTick I
 	FIELD field_2340 anaglyph3d Z
+	FIELD field_2341 isRedAnaglyph I
 	FIELD field_2342 overlayRenderer Lnet/minecraft/class_556;
 	FIELD field_2345 colorBuffer Ljava/nio/FloatBuffer;
 	FIELD field_2346 fogColorR F
@@ -17,6 +18,7 @@ CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 	FIELD field_2354 cinematicYawSmoother Lnet/minecraft/class_12;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD method_1837 renderTick ()V
 	METHOD method_1838 updateHit (F)V
 		ARG 1 delta
 	METHOD method_1839 putColorInBuffer (FFFF)Ljava/nio/FloatBuffer;
@@ -24,6 +26,9 @@ CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 		ARG 2 g
 		ARG 3 b
 		ARG 4 a
+	METHOD method_1840 updateCamera (FI)V
+		ARG 1 delta
+		ARG 2 anaglyphDistance
 	METHOD method_1841 delta (FJ)V
 		ARG 1 delta
 		ARG 2 time
@@ -35,14 +40,17 @@ CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 		ARG 1 delta
 	METHOD method_1845 (FI)V
 		ARG 1 delta
+		ARG 2 anaglyphDistance
 	METHOD method_1846 weatherEffects ()V
 	METHOD method_1847 renderWeather (F)V
 		ARG 1 delta
 	METHOD method_1848 (F)F
 		ARG 1 delta
-	METHOD method_1849 (F)V
+	METHOD method_1849 damageCameraRotation (F)V
 		ARG 1 delta
-	METHOD method_1850 (F)V
+	METHOD method_1850 applyBobbing (F)V
+		ARG 1 delta
+	METHOD method_1851 (F)V
 		ARG 1 delta
 	METHOD method_1852 renderFog (F)V
 		ARG 1 delta

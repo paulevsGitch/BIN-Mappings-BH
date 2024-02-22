@@ -1,1 +1,25 @@
 CLASS net/minecraft/class_472 net/minecraft/client/render/RenderList
+	FIELD field_2480 deltaX I
+	FIELD field_2481 deltaY I
+	FIELD field_2482 deltaZ I
+	FIELD field_2483 posX F
+	FIELD field_2484 posY F
+	FIELD field_2485 posZ F
+	FIELD field_2486 data Ljava/nio/IntBuffer;
+	FIELD field_2487 isEmpty Z
+	FIELD field_2488 flipped Z
+	METHOD method_1909 reset ()V
+	METHOD method_1910 add (I)V
+		ARG 1 value
+	METHOD method_1911 isValid (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1912 set (IIIDDD)V
+		ARG 1 deltaX
+		ARG 2 deltaY
+		ARG 3 deltaZ
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+	METHOD method_1913 markFilled ()V

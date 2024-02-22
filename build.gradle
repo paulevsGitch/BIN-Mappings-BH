@@ -18,7 +18,9 @@ buildscript {
 		classpath "com.github.fabricmc:enigma:63d4cfc"
 		classpath 'net.fabricmc:tiny-remapper:0.1.0.40' // TODO anything above this fails, bandaid fix.
 		classpath 'com.github.Chocohead:Stitch:f955c99'
-		classpath 'com.github.Chocohead:tiny-mappings-parser:337c8b6'
+		classpath 'com.github.FabricMC:stitch:0abaedb'
+		classpath 'com.github.FabricMC:tiny-mappings-parser:750be4e'
+		//classpath 'com.github.Chocohead:tiny-mappings-parser:337c8b6'
 	}
 }
 
@@ -57,7 +59,8 @@ configurations {
 }
 
 dependencies {
-	enigmaRuntime "com.github.fabricmc:enigma:8f9df2a"
+	enigmaRuntime "com.github.fabricmc:enigma:63d4cfc"
+	enigmaRuntime 'com.github.FabricMC:stitch:0abaedb'
 	enigmaRuntime 'com.github.Chocohead:Stitch:f955c99'
 }
 
@@ -89,7 +92,7 @@ import cuchaz.enigma.command.ConvertMappingsCommand
 
 import net.fabricmc.stitch.commands.CommandCorrectMappingUnions
 import net.fabricmc.stitch.commands.CommandFixNesting
-import net.fabricmc.stitch.commands.CommandMergeTiny
+import net.fabricmc.stitch.commands.tinyv2.CommandMergeTinyV2
 import net.fabricmc.stitch.commands.CommandRewriteIntermediary
 import net.fabricmc.stitch.merge.JarMerger
 import net.fabricmc.tinyremapper.OutputConsumerPath
@@ -270,6 +273,17 @@ task remapClientJar(dependsOn: [downloadMcJars, downloadMcLibs, downloadIntermed
 	outputs.file clientIntermediaryJar
 
 	doLast {
+		logger.lifecycle(":converting intermediaries")
+
+		String[] args = [
+			"tiny",
+			downloadIntermediary.dest.getAbsolutePath(),
+			"tinyv2:intermediary:named",
+			downloadIntermediary.dest.getAbsolutePath() + "2"
+		]
+
+		new ConvertMappingsCommand().run(args)
+		
 		logger.lifecycle(":mapping client to intermediary")
 		mapJar(clientIntermediaryJar, clientJar, downloadIntermediary.dest, libraries, "client", "intermediary")
 	}
@@ -332,7 +346,7 @@ task yarn(dependsOn: setupYarn) {
 task buildEnigma(type: Zip) {
 	from mappingsDir
 	include "**/*"
-	archiveName "BIN-Mappings-enigma.zip"
+	archiveName "BIN-BH-Mappings-enigma.zip"
 	destinationDir(libs)
 }
 
@@ -389,13 +403,17 @@ task mergeTiny(dependsOn: [downloadIntermediary, buildYarnTiny], type: FileOutpu
 	doLast {
 		logger.lifecycle(":merging yarn and intermediary")
 		String[] args = [
-			downloadIntermediary.dest.getAbsolutePath(),
+			downloadIntermediary.dest.getAbsolutePath() + "2",
 			yarnTinyInput.getAbsolutePath(),
 			outputFile.getAbsolutePath()
 		]
+		
+		System.out.println(downloadIntermediary.dest.getAbsolutePath())
+		System.out.println(yarnTinyInput.getAbsolutePath())
+		System.out.println(outputFile.getAbsolutePath())
 
-		new CommandMergeTiny().run(args)
-		CommandCorrectMappingUnions.run(outputFile.toPath(), "intermediary", "named")
+		new CommandMergeTinyV2().run(args)
+		//CommandCorrectMappingUnions.run(outputFile.toPath(), "intermediary", "named")
 	}
 }
 
@@ -403,7 +421,7 @@ subprojects.each { subproject -> evaluationDependsOn(subproject.path)}
 task tinyJar(type: Jar, dependsOn: subprojects.build) {
 	dependsOn("mergeTiny")
 	outputs.upToDateWhen { return false }
-	archiveName = "BIN-Mappings.jar"
+	archiveName = "BIN-BH-Mappings.jar"
 	destinationDir(libs)
 	classifier = ""
 	from(mergeTiny.fileOutput) {
@@ -412,7 +430,7 @@ task tinyJar(type: Jar, dependsOn: subprojects.build) {
 }
 
 task compressTiny(dependsOn: ["tinyJar", "mergeTiny"], type: FileOutput) {
-	def outputFile = new File(libs, "BIN-Mappings-tiny.gz")
+	def outputFile = new File(libs, "BIN-BH-Mappings-tiny.gz")
 	outputs.file(outputFile)
 	fileOutput = outputFile
 

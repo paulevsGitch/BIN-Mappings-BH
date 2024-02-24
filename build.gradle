@@ -332,7 +332,7 @@ task yarn(dependsOn: setupYarn) {
 task buildEnigma(type: Zip) {
 	from mappingsDir
 	include "**/*"
-	archiveName "BIN-Mappings-enigma.zip"
+	archiveName "BIN-BH-Mappings-enigma.zip"
 	destinationDir(libs)
 }
 
@@ -403,7 +403,7 @@ subprojects.each { subproject -> evaluationDependsOn(subproject.path)}
 task tinyJar(type: Jar, dependsOn: subprojects.build) {
 	dependsOn("mergeTiny")
 	outputs.upToDateWhen { return false }
-	archiveName = "BIN-Mappings.jar"
+	archiveName = "BIN-BH-Mappings.jar"
 	destinationDir(libs)
 	classifier = ""
 	from(mergeTiny.fileOutput) {
@@ -412,7 +412,7 @@ task tinyJar(type: Jar, dependsOn: subprojects.build) {
 }
 
 task compressTiny(dependsOn: ["tinyJar", "mergeTiny"], type: FileOutput) {
-	def outputFile = new File(libs, "BIN-Mappings-tiny.gz")
+	def outputFile = new File(libs, "BIN-BH-Mappings-tiny.gz")
 	outputs.file(outputFile)
 	fileOutput = outputFile
 

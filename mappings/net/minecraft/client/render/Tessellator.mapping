@@ -24,7 +24,7 @@ CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
 	FIELD field_2074 zOffset D
 	FIELD field_2075 normal I
 	FIELD field_2076 tesselating Z
-	FIELD field_2077 useFloatBuffer Z
+	FIELD field_2077 useVBO Z
 	FIELD field_2078 buffer Ljava/nio/IntBuffer;
 	FIELD field_2079 glTarget I
 	METHOD <init> (I)V

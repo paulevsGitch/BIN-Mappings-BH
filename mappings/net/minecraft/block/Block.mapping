@@ -23,8 +23,8 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1842 DETECTOR_RAIL Lnet/minecraft/class_17;
 	FIELD field_1843 STICKY_PISTON Lnet/minecraft/class_17;
 	FIELD field_1844 COBWEB Lnet/minecraft/class_17;
-	FIELD field_1845 TALLGRASS Lnet/minecraft/class_392;
-	FIELD field_1846 DEADBUSH Lnet/minecraft/class_204;
+	FIELD field_1845 TALL_GRASS Lnet/minecraft/class_392;
+	FIELD field_1846 DEAD_BUSH Lnet/minecraft/class_204;
 	FIELD field_1847 translationKey Ljava/lang/String;
 	FIELD field_1848 CROPS Lnet/minecraft/class_17;
 	FIELD field_1849 FARMLAND Lnet/minecraft/class_17;
@@ -106,11 +106,11 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1925 maxZ D
 	FIELD field_1926 sounds Lnet/minecraft/class_475;
 	FIELD field_1927 particalSpeed F
-	FIELD field_1928 DEFAULT_SOUNDS Lnet/minecraft/class_475;
+	FIELD field_1928 STONE_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1929 WOOD_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1930 GRAVEL_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1931 GRASS_SOUNDS Lnet/minecraft/class_475;
-	FIELD field_1932 STONE_SOUNDS Lnet/minecraft/class_475;
+	FIELD field_1932 PISTON_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1933 METAL_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1934 GLASS_SOUNDS Lnet/minecraft/class_475;
 	FIELD field_1935 WOOL_SOUNDS Lnet/minecraft/class_475;
@@ -118,7 +118,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1937 BY_ID [Lnet/minecraft/class_17;
 	FIELD field_1938 TICKS_RANDOMLY [Z
 	FIELD field_1939 FULL_OPAQUE [Z
-	FIELD field_1940 HAS_TILE_ENTITY [Z
+	FIELD field_1940 HAS_BLOCK_ENTITY [Z
 	FIELD field_1941 LIGHT_OPACITY [I
 	FIELD field_1942 NO_AMBIENT_OCCLUSION [Z
 	FIELD field_1943 EMITTANCE [I
@@ -127,7 +127,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1946 GRASS Lnet/minecraft/class_476;
 	FIELD field_1947 DIRT Lnet/minecraft/class_17;
 	FIELD field_1948 COBBLESTONE Lnet/minecraft/class_17;
-	FIELD field_1949 WOOD Lnet/minecraft/class_17;
+	FIELD field_1949 PLANKS Lnet/minecraft/class_17;
 	FIELD field_1950 SAPLING Lnet/minecraft/class_17;
 	METHOD <init> (IILnet/minecraft/class_15;)V
 		ARG 1 id

@@ -42,6 +42,5 @@ CLASS net/minecraft/class_117 net/minecraft/server/network/ClientConnection
 	METHOD method_1135 getQueuedChunkDataPacketsSize ()I
 	METHOD method_1137 sendQueuedPacket ()Z
 	METHOD method_1139 read ()Z
-	METHOD run ()V
 	CLASS 1 1
 		METHOD run ()V

@@ -23,6 +23,7 @@ CLASS net/minecraft/class_71 net/minecraft/container/Container
 		ARG 2 remove
 	METHOD method_2081 insertItem (Lnet/minecraft/class_31;IIZ)V
 		ARG 1 stack
+		ARG 2 slotIndex
 	METHOD method_2082 getItemSlot (Lnet/minecraft/class_134;I)Lnet/minecraft/class_133;
 		ARG 1 inventory
 		ARG 2 index

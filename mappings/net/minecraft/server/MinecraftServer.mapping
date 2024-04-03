@@ -16,7 +16,6 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	FIELD field_2853 running Z
 	FIELD field_2854 playerLists Ljava/util/List;
 	FIELD field_2855 pendingCommands Ljava/util/List;
-	FIELD field_2858 time J
 	METHOD main ([Ljava/lang/String;)V
 		ARG 0 args
 	METHOD method_2156 stopRunning ()V

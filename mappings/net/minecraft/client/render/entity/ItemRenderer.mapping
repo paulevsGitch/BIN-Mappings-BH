@@ -9,7 +9,6 @@ CLASS net/minecraft/class_92 net/minecraft/client/render/entity/ItemRenderer
 		ARG 4 v
 		ARG 5 width
 		ARG 6 height
-	METHOD method_1484 render (Lnet/minecraft/class_142;DDDFF)V
 	METHOD method_1485 renderRectangle (Lnet/minecraft/class_67;IIIII)V
 		ARG 1 tesselator
 		ARG 2 x

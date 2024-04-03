@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_351 net/minecraft/level/structure/NetherSpringStructure
+	FIELD field_1313 blockID I
+	METHOD <init> (I)V
+		ARG 1 blockID

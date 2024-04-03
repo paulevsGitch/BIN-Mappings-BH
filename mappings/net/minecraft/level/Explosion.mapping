@@ -15,6 +15,6 @@ CLASS net/minecraft/class_60 net/minecraft/level/Explosion
 		ARG 5 y
 		ARG 7 z
 		ARG 9 power
-	METHOD method_1195 kaboomPhase1 ()V
-	METHOD method_1196 kaboomPhase2 (Z)V
+	METHOD method_1195 phase1 ()V
+	METHOD method_1196 phase2 (Z)V
 		ARG 1 showParticles

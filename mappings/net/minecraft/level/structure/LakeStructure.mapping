@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_624 net/minecraft/level/structure/LakeStructure
+	FIELD field_2697 blockID I
+	METHOD <init> (I)V
+		ARG 1 blockID

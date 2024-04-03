@@ -8,13 +8,6 @@ CLASS net/minecraft/class_198 net/minecraft/level/storage/MapStorage
 	FIELD field_726 updateTrackers Ljava/util/List;
 	FIELD field_727 icons Ljava/util/List;
 	FIELD field_728 updateTrackersByPlayer Ljava/util/Map;
-	FIELD field_734 player Lnet/minecraft/class_54;
-	FIELD field_735 startZ [I
-	FIELD field_736 endZ [I
-	FIELD field_739 colorsUpdateInterval I
-	FIELD field_740 iconsData [B
-	METHOD <init> (Lnet/minecraft/class_198;Lnet/minecraft/class_54;)V
-		ARG 2 player
 	METHOD method_666 markDirty (III)V
 		ARG 1 x
 		ARG 2 startZ
@@ -28,8 +21,6 @@ CLASS net/minecraft/class_198 net/minecraft/level/storage/MapStorage
 		ARG 3 player
 	METHOD method_669 readUpdateData ([B)V
 		ARG 1 updateData
-	METHOD method_670 getUpdateData (Lnet/minecraft/class_31;)[B
-		ARG 1 stack
 	CLASS class_199
 		FIELD field_733 mapStorage Lnet/minecraft/class_198;
 		METHOD <init> (Lnet/minecraft/class_198;BBBB)V

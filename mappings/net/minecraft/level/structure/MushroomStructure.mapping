@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_231 net/minecraft/level/structure/MushroomStructure
+	FIELD field_858 blockID I
+	METHOD <init> (I)V
+		ARG 1 blockID

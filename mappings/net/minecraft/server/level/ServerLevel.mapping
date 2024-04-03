@@ -7,7 +7,6 @@ CLASS net/minecraft/class_73 net/minecraft/server/level/ServerLevel
 		ARG 1 server
 		ARG 4 dimId
 		ARG 5 seed
-	METHOD method_197 createLevelSource ()Lnet/minecraft/class_51;
 	METHOD method_328 getEntityById (I)Lnet/minecraft/class_57;
 		ARG 1 id
 	METHOD method_330 getBlockEntitiesInArea (IIIIII)Ljava/util/List;

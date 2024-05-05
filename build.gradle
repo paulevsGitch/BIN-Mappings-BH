@@ -28,7 +28,7 @@ task putToJar(type: Zip) {
 }
 
 build.dependsOn "convertMappings", "putToJar"
-assemble.dependsOn "convertMappings", "putToJar"
+publishToMavenLocal.dependsOn "putToJar"
 
 publishing {
 	publications {

@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-	implementation "com.github.paulevsGitch:EnigmaToV2:e4860b0e9d"
+	implementation "com.github.paulevsGitch:EnigmaToV2:0acfbf1"
 }
 
 task convertMappings(type: JavaExec) {
@@ -20,22 +20,16 @@ task convertMappings(type: JavaExec) {
 	args = ["./mappings", "./temp/mappings"]
 }
 
-//task putToJar(type: Zip) {
-//	from "temp"
-//	include "mappings/mappings.tiny"
-//	archiveFileName = jar.archiveFileName
-//	destinationDirectory = new File(buildDir, "libs")
-//}
-
 build.dependsOn convertMappings
 clean.finalizedBy convertMappings
-//build.finalizedBy putToJar
 
 jar {
 	from("temp") {
 		include "mappings/mappings.tiny"
 	}
-	manifest {}
+	manifest {
+		attributes("Minecraft-Version-Id": "b1.7.3")
+	}
 }
 
 publishing {

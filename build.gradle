@@ -17,16 +17,17 @@ task convertMappings(type: JavaExec) {
 	description = "Mappings convertion"
 	classpath = sourceSets.main.runtimeClasspath
 	mainClass = "paulevs.enigmatov2.Main"
-	args = ["./mappings", "./temp"]
+	args = ["./mappings", "./temp/mappings"]
 }
 
 jar {
 	from("temp") {
-		include "mappings.tiny"
+		include "mappings/mappings.tiny"
 	}
 }
 
 build.dependsOn convertMappings
+build.shouldRunAfter convertMappings
 
 publishing {
 	publications {

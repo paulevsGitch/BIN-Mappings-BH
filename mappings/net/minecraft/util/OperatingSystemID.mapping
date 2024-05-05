@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_581 net/minecraft/util/OperatingSystemID
+	FIELD field_2517 ids [I

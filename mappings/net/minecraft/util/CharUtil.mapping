@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_89 net/minecraft/util/CharUtil
+	FIELD field_298 VALID_CHARS Ljava/lang/String;
+	FIELD field_299 INVALID_CHARS [C
+	METHOD method_350 getValidChars ()Ljava/lang/String;

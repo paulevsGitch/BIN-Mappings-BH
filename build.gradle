@@ -23,12 +23,12 @@ task convertMappings(type: JavaExec) {
 task putToJar(type: Zip) {
 	from "temp"
 	include "mappings/mappings.tiny"
-	archiveFileName = "BIN-Mappings-BH.jar"
-	destinationDirectory = file("/build/libs")
+	archiveFileName = jar.archiveFileName
+	destinationDirectory = new File(buildDir, "libs")
 }
 
-build.dependsOn "convertMappings", "putToJar"
-publishToMavenLocal.dependsOn "putToJar"
+build.dependsOn convertMappings
+build.finalizedBy putToJar
 
 publishing {
 	publications {

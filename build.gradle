@@ -20,15 +20,23 @@ task convertMappings(type: JavaExec) {
 	args = ["./mappings", "./temp/mappings"]
 }
 
-task putToJar(type: Zip) {
-	from "temp"
-	include "mappings/mappings.tiny"
-	archiveFileName = jar.archiveFileName
-	destinationDirectory = new File(buildDir, "libs")
-}
+//task putToJar(type: Zip) {
+//	from "temp"
+//	include "mappings/mappings.tiny"
+//	archiveFileName = jar.archiveFileName
+//	destinationDirectory = new File(buildDir, "libs")
+//}
 
 build.dependsOn convertMappings
-build.finalizedBy putToJar
+clean.finalizedBy convertMappings
+//build.finalizedBy putToJar
+
+jar {
+	from("temp") {
+		include "mappings/mappings.tiny"
+	}
+	manifest {}
+}
 
 publishing {
 	publications {

@@ -32,8 +32,7 @@ build.dependsOn "convertMappings", "putToJar"
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
-			groupId "paulevs.bin-bh"
-			artifactId "BIN-BH"
+			from components.java
 		}
 	}
 	repositories {}

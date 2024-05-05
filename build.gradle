@@ -20,19 +20,20 @@ task convertMappings(type: JavaExec) {
 	args = ["./mappings", "./temp/mappings"]
 }
 
-jar {
-	from("temp") {
-		include "mappings/mappings.tiny"
-	}
+task putToJar(type: Zip) {
+	from "temp"
+	include "mappings/mappings.tiny"
+	archiveFileName = "BIN-Mappings-BH.jar"
+	destinationDirectory = file("/build/libs")
 }
 
-build.dependsOn convertMappings
-build.shouldRunAfter convertMappings
+build.dependsOn "convertMappings", "putToJar"
 
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
-			from components.java
+			groupId "paulevs.bin-bh"
+			artifactId "BIN-BH"
 		}
 	}
 	repositories {}

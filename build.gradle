@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-	implementation "com.github.paulevsGitch:EnigmaToV2:3cb2e3cb1c"
+	implementation "com.github.paulevsGitch:EnigmaToV2:ae0b187798"
 }
 
 task convertMappings(type: JavaExec) {
@@ -17,7 +17,7 @@ task convertMappings(type: JavaExec) {
 	description = "Mappings convertion"
 	classpath = sourceSets.main.runtimeClasspath
 	mainClass = "paulevs.enigmatov2.Main"
-	args = ["./mappings", "./temp/mappings", "./intermediary-b1.7.3.tiny"]
+	args = ["./mappings", "./temp/mappings", "./intermediary-b1.7.3.tiny", "./exclude.txt"]
 }
 
 build.dependsOn convertMappings

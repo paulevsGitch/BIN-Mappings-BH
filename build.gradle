@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-	implementation "com.github.paulevsGitch:EnigmaToV2:0f40526e58"
+	implementation "com.github.paulevsGitch:EnigmaToV2:d2177b32d1"
 }
 
 task convertMappings(type: JavaExec) {

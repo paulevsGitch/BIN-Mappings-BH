@@ -60,6 +60,7 @@ CLASS net/minecraft/class_18 net/minecraft/level/Level
 		ARG 2 name
 		ARG 3 dimension
 		ARG 4 seed
+	METHOD method_1781 getBiomeSource ()Lnet/minecraft/class_519;
 	METHOD method_149 getClosestPlayer (DDDD)Lnet/minecraft/class_54;
 		ARG 1 posX
 		ARG 3 posY

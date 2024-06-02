@@ -36,3 +36,10 @@ CLASS net/minecraft/class_92 net/minecraft/client/render/entity/ItemRenderer
 		ARG 3 item
 		ARG 4 x
 		ARG 5 y
+	METHOD method_2022 render (Lnet/minecraft/class_142;DDDFF)V
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 yaw
+		ARG 9 delta
